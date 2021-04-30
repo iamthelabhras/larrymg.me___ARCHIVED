@@ -1,0 +1,73 @@
+/* To Do:       Refactoring
+                Break utility classes out into separate Sass partial? */
+
+/* #region "Locally" Hosted Fonts */
+
+@font-face {
+  font-family: "main_text";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/KulimPark-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "cursive_flourish";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/helvetia-verbundene.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* #endregion */
+
+body {
+  background: #feffd0;
+  font-family: "main_text", sans-serif;
+  color: black;
+}
+
+h2,
+p {
+  font-family: inherit;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  color: blue;
+}
+
+/* #region Utility Classes */
+
+.text_center {
+  text-align: center;
+}
+
+.text_bold {
+  font-weight: 700;
+}
+
+.clean_break_on_wrap {
+  display: inline-block;
+  word-wrap: break-word;
+}
+
+.cursive {
+  font-family: cursive_flourish, cursive;
+}
+
+.code {
+  line-height: 1.55;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 0px 15px;
+  background: whitesmoke;
+  font-family: monospace;
+  color: grey;
+}
+
+/* #endregion Utility Classes */

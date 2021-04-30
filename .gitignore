@@ -1,0 +1,8 @@
+# Tell Git to ignore these folders:
+archived/
+attributions/
+
+# Tell Git to ignore these files:
+.htaccess
+.htpasswd
+.DS_store
