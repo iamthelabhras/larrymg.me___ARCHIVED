@@ -240,6 +240,7 @@ div.coding_assumption div.assumption_concrete_applications li {
 @media screen and (min-width: 0px) and (max-width: 575px) {
   main#coding_rules_and_assumptions h2 {
     width: 95%;
+    font-size: 2rem;
   }
 
   div#container--coding_rules div.coding_rule,
