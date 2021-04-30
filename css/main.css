@@ -21,6 +21,10 @@
 
 /* #endregion */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #feffd0;
   font-family: "main_text", sans-serif;
@@ -44,12 +48,52 @@ a:active {
 
 /* #region Utility Classes */
 
+.show_mobile {
+  position: relative;
+  display: none;
+}
+
+p.show_mobile {
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.show_mobile i.fa-mobile-alt {
+  position: absolute;
+  top: 10px;
+  left: -55px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px;
+  background: white;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.show_desktop {
+  display: initial;
+}
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  .show_mobile {
+    display: initial;
+  }
+
+  .show_desktop {
+    display: none;
+  }
+}
+
 .text_center {
   text-align: center;
 }
 
 .text_bold {
   font-weight: 700;
+}
+
+.text_emphasis {
+  font-style: italic;
 }
 
 .clean_break_on_wrap {
