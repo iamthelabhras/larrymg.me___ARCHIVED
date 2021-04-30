@@ -53,15 +53,21 @@ a:active {
   display: none;
 }
 
-p.show_mobile {
+p.show_mobile-encourage_larger_screen {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 5px double black;
+  padding-top: 15px;
   font-size: 0.85rem;
   font-style: italic;
 }
 
-.show_mobile i.fa-mobile-alt {
-  position: absolute;
+.show_mobile-encourage_larger_screen i.fa-mobile-alt {
+  /* position: absolute;
   top: 10px;
-  left: -55px;
+  left: -55px; */
+  align-self: center;
   border: 1px solid black;
   border-radius: 50%;
   padding: 10px;
@@ -70,6 +76,9 @@ p.show_mobile {
   font-weight: 800;
 }
 
+p.show_mobile-encourage_larger_screen span {
+  max-width: 45ch;
+}
 .show_desktop {
   display: initial;
 }
