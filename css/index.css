@@ -1,3 +1,7 @@
+html {
+  scroll-padding: 10px;
+}
+
 main {
   display: flex;
   flex-direction: row;
@@ -148,7 +152,7 @@ div.block_quotes {
   display: grid;
   place-items: center;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   padding: 1rem;
   margin-bottom: 50px;
   border: 1px solid grey;
@@ -167,6 +171,11 @@ div.block_quotes p {
 
 div.block_quotes span.block_quote--attribution {
   font-weight: 700;
+}
+
+/* Links to attribution's text, article, or other media. */
+div.block_quotes a {
+  font-style: italic;
 }
 
 /* #endregion Content -- Block Quote */
@@ -225,6 +234,10 @@ div.intro {
   max-width: 60%;
 }
 
+div.intro p:nth-of-type(2) {
+  font-size: 1.75rem;
+}
+
 /* #endregion *?
 
 
@@ -234,7 +247,47 @@ div.intro {
 
 /* #region Content -- Explore */
 
-div.content nav.explore {
+div.content nav.explore_concise {
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 50px 0px;
+  background: white;
+}
+
+p#explore_concise_menu-instructions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 5px solid #cecece;
+  padding-bottom: 15px;
+}
+
+p#explore_concise_menu-instructions span {
+  max-width: 45ch;
+}
+
+p#explore_concise_menu-instructions span:first-of-type {
+  align-self: center;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(206, 206, 206, 0.45);
+  font-size: 1.25rem;
+}
+
+div.content nav.explore_concise div.explore_link_roll {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 100%;
+}
+
+div.content nav.explore_concise div.explore_link_roll a {
+  padding: 15px;
+}
+
+div.content nav.explore_verbose {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -260,14 +313,63 @@ div.explore_item:hover {
 
 div.explore_item h2 {
   text-align: center;
-  flex-grow: 1;
   color: #252627;
+}
+
+div.explore_item p {
+  flex-grow: 1;
+}
+
+div.explore_item p + a {
+  text-decoration: none;
+  /* Use adjacent sibling selector to prevent resizing of linked h2 elements. */
+  font-size: 1.25rem;
+  transition: transform 0.25s linear;
+}
+
+div.explore_item a:hover,
+div.explore_item a:focus {
+  transform: translateY(-5px);
+}
+
+div#my_work {
+  position: relative;
+}
+
+p#my_work-current_job_status {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  padding: 5px;
+  background: white;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: black;
+  transition: all 0.25s ease-in-out;
+}
+
+div.explore_item:hover p#my_work-current_job_status {
+  background: blue;
+  color: white;
 }
 
 /* #endregion Content -- Explore */
 
 /* #region Media Queries */
 @media screen and (min-width: 0px) and (max-width: 575px) {
+  div.grid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+  }
+
+  div.sidebar {
+    display: none;
+  }
+
   div.sidebar ul {
     margin: 0;
     padding-left: 20px;
@@ -296,6 +398,21 @@ div.explore_item h2 {
 
   div.hello_and_intro p:nth-of-type(2) {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1069px) {
+  /* Tweak layout of Conciuse Menu Instructions on flex-wrap. */
+  p#explore_concise_menu-instructions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 5px solid #cecece;
+    padding-bottom: 15px;
+  }
+
+  p#explore_concise_menu-instructions span:first-of-type {
+    margin-bottom: 20px;
   }
 }
 
