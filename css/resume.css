@@ -278,12 +278,23 @@ header div.header_contact_info div {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+header div.header_contact_info div a {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+header div.header_contact_info div a:hover {
+  transform: scale(1.2);
 }
 
 header div.header_contact_info div img {
   width: 40px;
   height: 40px;
+  padding-right: 10px;
 }
 
 /* #endregion Resume -- Header */
