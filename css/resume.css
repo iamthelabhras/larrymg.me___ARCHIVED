@@ -773,6 +773,21 @@ section#objective_wrapped {
     --width__container--resume-col_1: 100%;
     --width__container--resume-col_2: 100%;
   }
+  main {
+    /* Add margin to left & right of main element to create "gutters" &
+        allow me to use margin: 25px auto to center resume's outermost container. */
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  div.container--header_and_columns {
+    /* Pseudo-"freeze" resume's width from 1079px to 835px to 835px &
+          Center resume's outermost container.  NOTE: Resume will resize arís at 
+          835px width breakpoint.*/
+    width: initial;
+    max-width: 835px;
+    margin: 25px auto;
+  }
 
   div#container--resume-col_2_unwrapped,
   section#objective_unwrapped {
@@ -792,20 +807,19 @@ section#objective_wrapped {
     margin-top: 0px;
   }
 
-  div.container--resume-col_1 {
-    /* set min-width & width to 100% to ensure resume sections "strech" across 
-          whole of parent container. */
-    min-width: var(--width__container--resume-col_1);
-    width: var(--width__container--resume-col_1);
-    padding-left: 0px;
-  }
-
   div.container--resume-col_2 {
     /* Set min-width & width to 100% and remove left margin to ensure 
         resume sections "stretch" across whole of parent container. */
     min-width: var(--width__container--resume-col_2);
     width: var(--width__container--resume-col_2);
     margin-left: 0px;
+  }
+  div.container--resume-col_1 {
+    /* set min-width & width to 100% to ensure resume sections "strech" across 
+          whole of parent container. */
+    min-width: var(--width__container--resume-col_1);
+    width: var(--width__container--resume-col_1);
+    padding-left: 0px;
   }
 
   div.resume_section_with_bullets {
@@ -816,6 +830,31 @@ section#objective_wrapped {
 
   section#experience {
     padding-right: 0px;
+  }
+
+  section#skills li {
+    flex-wrap: wrap;
+  }
+
+  section#skills li span:first-of-type {
+    width: 50%;
+    text-align: left;
+  }
+
+  section#skills li span:nth-of-type(2) {
+    text-align: right;
+    width: 50%;
+  }
+
+  section#skills li span:nth-of-type(3) {
+    max-width: none;
+    width: 100%;
+  }
+
+  span.resume_section_list_item_icons {
+    display: block;
+    flex-grow: 1;
+    width: 100%;
   }
 }
 
@@ -874,6 +913,21 @@ section#objective_wrapped {
 @media screen and (min-width: 0px) and (max-width: 490px) {
   section.resume_section h2 {
     font-size: calc(var(--font_size__section_titles) * 0.85);
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 465px) {
+  /* Change width of skill family (e.g. "Web Dev") & skill family members
+        (e.g. "Vanilla JavaScript") on smaller screens to prevent unsightly wrap
+         of text in second span. */
+  section#skills li span:first-of-type {
+    width: 30%;
+    text-align: left;
+  }
+
+  section#skills li span:nth-of-type(2) {
+    text-align: right;
+    width: 70%;
   }
 }
 
