@@ -793,6 +793,12 @@ section#objective_wrapped {
     max-width: 635px;
   }
 
+  div.container--header_and_columns h1 span.clean_break_on_wrap {
+    /* Force "Mac Gabhann" to wrap from a screen width of 835px down to ensure enough white space remains
+        between the "Mac Gabhann" and the PDF icon on smaller screens. */
+    display: block;
+  }
+
   section#experience span.job_title {
     font-size: calc(var(--font_size__job_titles) * 0.85);
   }
