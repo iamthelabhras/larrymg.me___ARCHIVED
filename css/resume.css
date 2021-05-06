@@ -68,7 +68,17 @@
 
 /* #Region Resume -- Fonts */
 
-@font-face {
+/* Commented out locally-hosted Century Gothic @font-faces after
+    noticing they didn't appear to be working on website.  Replaced
+    with a sensible font-stack aimed at leveraging fonts already
+    installed on a user's system.  
+
+    At some point, I may want to consider locally hosting Didact Gothic
+      (available through Google Fonts here: 
+      https://fonts.google.com/specimen/Didact+Gothic?query=Didact)
+      at top of this stack. */
+
+/* @font-face {
   font-family: "resume_sans_serif";
   font-style: normal;
   src: url("../fonts/CenturyGothic.ttf") format("truetype");
@@ -80,7 +90,7 @@
   font-weight: bold;
   src: url("../fonts/CenturyGothicBold.ttf") format("truetype");
   font-display: swap;
-}
+} */
 
 /* Not sure why, but when I uncommented the commented code below, 
     the browser renders all resume_sans_serif fonts in italics, 
