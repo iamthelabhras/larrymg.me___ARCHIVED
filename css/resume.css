@@ -252,9 +252,21 @@ div.resume_section_with_dates ul.resume_section_list ul img {
 /* #region Resume -- Header */
 
 header {
+  position: relative;
   border-bottom: 5px solid black;
   padding-bottom: 15px;
   background: white;
+}
+
+header a#download_pdf_link {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+
+header img#download_pdf {
+  width: 35px;
+  height: 35px;
 }
 
 header h1 {
