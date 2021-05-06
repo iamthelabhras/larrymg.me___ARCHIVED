@@ -775,7 +775,7 @@ section#objective_wrapped {
   }
   main {
     /* Add margin to left & right of main element to create "gutters" &
-        allow me to use margin: 25px auto to center resume's outermost container. */
+          allow me to use margin: 25px auto to center resume's outermost container. */
     margin-right: 15px;
     margin-left: 15px;
   }
@@ -873,6 +873,10 @@ section#objective_wrapped {
     display: block;
   }
 
+  header div.header_contact_info span {
+    display: none;
+  }
+
   section#experience span.job_title {
     font-size: calc(var(--font_size__job_titles) * 0.85);
   }
@@ -891,10 +895,6 @@ section#objective_wrapped {
 }
 
 @media screen and (min-width: 0px) and (max-width: 725px) {
-  header div.header_contact_info span {
-    display: none;
-  }
-
   header h1 {
     font-size: calc(var(--font_size__header_name) * 0.75);
   }
