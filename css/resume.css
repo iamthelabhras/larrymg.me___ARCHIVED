@@ -516,6 +516,35 @@ section#skills li.resume_section_list_item span:nth-of-type(3) img {
   margin: var(--margin__skills_images);
 }
 
+section#skills li {
+  flex-wrap: wrap;
+}
+
+section#skills li span:first-of-type {
+  width: 50%;
+  text-align: left;
+}
+
+section#skills li span:nth-of-type(2) {
+  text-align: left;
+  width: 50%;
+}
+
+section#skills li span:nth-of-type(3) {
+  max-width: none;
+  width: 100%;
+  /* Just a little bit of margin to allow the image & text to 'breath'.*/
+  margin-top: 5px;
+  text-align: left;
+}
+
+span.resume_section_list_item_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 /* #endregion */
 
 /* #region Resume -- Column 1 -- Projects & Side Hustles */
