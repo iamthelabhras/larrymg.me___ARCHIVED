@@ -622,6 +622,15 @@ div#container--currently_studying_icons_and_text span {
 
 /* #region Resume -- Column 2 */
 
+div#container--resume-col_2_wrapped section#experience {
+  /* Put white space between wrapped Objective & Exeperience resume sections. 
+        For some reason, I wasn't able to apply margin-bottom to 
+        the Objective section & had to settle for this inconsistent implementation
+         (i.e. applying top margin to the proceeding section rather than bottom margin
+         to the preceding section) after I spent time attempting to debug. */
+  margin-top: 30px;
+}
+
 /* Bump up font size on Experience list items. */
 div.container--resume-col_2 li.resume_section_list_item {
   font-size: var(--font_size__bullets-col_2);
@@ -708,10 +717,6 @@ section#experience ul.resume_section_list {
 
 /* #region Resume -- Columns 1 & 2 */
 
-/* #region Resume -- Columns 1 & 2 -- Wrapped */
-
-/* #endregion Resume -- Columns 1 & 2 -- Wrapped */
-
 /* #region Resume -- Columns 1 & 2 -- Projects & Side Hustles & Experience */
 
 div.flex_test {
@@ -782,20 +787,22 @@ section#objective_wrapped {
   }
 
   div.container--resume-col_2 {
-    /* Remove top-margin from container--resume-col_2 class (shared by both wrapped & unwrapped columns)
-          to ensure objective is flush with header. */
+    /* Remove top-margin from container--resume-col_2 class (shared by both 
+          wrapped & unwrapped columns) to ensure objective is flush with header. */
     margin-top: 0px;
   }
 
   div.container--resume-col_1 {
-    /* set min-width & width to 100% to ensure resume sections "strech" across whole of parent container. */
+    /* set min-width & width to 100% to ensure resume sections "strech" across 
+          whole of parent container. */
     min-width: var(--width__container--resume-col_1);
     width: var(--width__container--resume-col_1);
     padding-left: 0px;
   }
 
   div.container--resume-col_2 {
-    /* Set min-width & width to 100% to ensure resume sections "stretch" across whole of parent container. */
+    /* Set min-width & width to 100% and remove left margin to ensure 
+        resume sections "stretch" across whole of parent container. */
     min-width: var(--width__container--resume-col_2);
     width: var(--width__container--resume-col_2);
     margin-left: 0px;
@@ -821,8 +828,9 @@ section#objective_wrapped {
   }
 
   div.container--header_and_columns h1 span.clean_break_on_wrap {
-    /* Force "Mac Gabhann" to wrap from a screen width of 835px down to ensure enough white space remains
-        between the "Mac Gabhann" and the PDF icon on smaller screens. */
+    /* Force "Mac Gabhann" to wrap from a screen width of 835px down to 
+        ensure enough white space remains between the "Mac Gabhann" and 
+        the PDF icon on smaller screens. */
     display: block;
   }
 
