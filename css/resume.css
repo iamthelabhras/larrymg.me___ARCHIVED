@@ -223,7 +223,7 @@ ul ul li {
 
 /* #region Resume -- All Sections -- Components */
 
-/* #region Resume Section With Dates */
+/* #region Resume Section With Bullets */
 
 div.resume_section_with_bullets {
   margin-bottom: 15px;
@@ -243,7 +243,7 @@ div.resume_section_with_bullets ul.resume_section_list ul img {
   margin-right: 10px;
 }
 
-/* #endregion Resume Section With Dates */
+/* #endregion Resume Section With Bullets */
 
 /* #endregion */
 
@@ -615,10 +615,6 @@ div#container--currently_studying_icons_and_text span {
 
 /* #region Resume -- Column 2 */
 
-div#container--resume-col_2_wrapped div.resume_section {
-  margin-bottom: 10px !important;
-}
-
 /* Bump up font size on Experience list items. */
 div.container--resume-col_2 li.resume_section_list_item {
   font-size: var(--font_size__bullets-col_2);
@@ -703,6 +699,12 @@ section#experience ul.resume_section_list {
 
 /* #endregion Resume -- Column 2 */
 
+/* #region Resume -- Columns 1 & 2 */
+
+/* #region Resume -- Columns 1 & 2 -- Wrapped */
+
+/* #endregion Resume -- Columns 1 & 2 -- Wrapped */
+
 /* #region Resume -- Columns 1 & 2 -- Projects & Side Hustles & Experience */
 
 div.flex_test {
@@ -721,6 +723,8 @@ div.flex_test > * {
 }
 
 /* #endregion Resume -- Columns 1 & 2 -- Projects & Side HUstles & Experience */
+
+/* #endregion */
 
 /* #region Utility Classes */
 
@@ -768,6 +772,10 @@ section#objective_wrapped {
   section#objective_wrapped {
     /* Reveal "wrapped" elements on Flex wrap. */
     display: initial;
+  }
+
+  div.container--resume-col_2 {
+    margin-top: 0px;
   }
 
   div.container--resume-col_1 {
