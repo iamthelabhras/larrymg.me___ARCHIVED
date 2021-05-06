@@ -513,6 +513,9 @@ section#skills li.resume_section_list_item span:nth-of-type(3) img {
 
 section#projects_and_side_hustles span.side_hustle {
   display: inline-block;
+  /* Use align-self to ensure project / side hustle title remains flush with solid border line when 
+        dates wrap. */
+  align-self: flex-end;
   font-family: resume_sans_serif, sans-serif;
   font-size: var(--font_size__side_hustle);
 }
@@ -673,6 +676,8 @@ section#experience span.employer {
 
 section#experience span.dates {
   display: inline-block;
+  /* Use align-self to ensure jobe title remains flush with solid border line when 
+        dates wrap. */
   align-self: flex-end;
   text-align: right;
   font-size: var(--font_size__dates);
@@ -782,6 +787,8 @@ section#objective_wrapped {
 
 @media screen and (min-width: 0px) and (max-width: 835px) {
   div.container--header_and_columns {
+    /* Pseudo-"freeze" resume's width from 835px to 635px. 
+          Resume will shrink to fit screen below 635px. */
     width: initial;
     max-width: 635px;
   }
@@ -814,7 +821,10 @@ section#objective_wrapped {
 }
 
 @media screen and (min-width: 0px) and (max-width: 545px) {
-  section#experience span.dates span.clean_break_on_wrap {
+  section#experience span.dates span.clean_break_on_wrap,
+  section#projects_and_side_hustles span.dates span.clean_break_on_wrap {
+    /* Synchronize styling of dated resume actions on wrap, 
+        ensure end date (i.e. start date - end date) string wraps as a single "element" for increased legibility. */
     display: block;
     padding-right: 10px;
   }
