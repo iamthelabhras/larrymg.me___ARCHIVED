@@ -726,6 +726,14 @@ span.deemphasize {
 
 /* #region Media Queries */
 
+/* "Default" settings to hide "wrapped" & show "unwrapped" resume elements prior to @media query changes.
+
+      Implementation logic here is simple: 
+      
+      When resume is show as a single column, section-over-section 
+      document, you I want Experience (which appears in the right-hand "second" column on larger screens,
+      to be the topmost section.  */
+
 div#container--resume-col_2_unwrapped,
 section#objective_unwrapped {
   display: initial;
@@ -737,6 +745,7 @@ section#objective_wrapped {
 }
 
 @media screen and (min-width: 0px) and (max-width: 1079px) {
+  /* Set resume column width custom variable to 100% at breakpoint where right-hand column / column 2 wraps. */
   :root {
     --width__container--resume-col_1: 100%;
     --width__container--resume-col_2: 100%;
@@ -753,12 +762,15 @@ section#objective_wrapped {
   }
 
   div.container--resume-col_1 {
-    min-width: initial;
+    /* set min-width & width to 100% to ensure resume sections "strech" across whole of parent container. */
+    min-width: var(--width__container--resume-col_1);
+    width: var(--width__container--resume-col_1);
     padding-left: 0px;
   }
 
   div.container--resume-col_2 {
-    min-width: initial;
+    /* Set min-width & width to 100% to ensure resume sections "stretch" across whole of parent container. */
+    min-width: var(--width__container--resume-col_2);
     width: var(--width__container--resume-col_2);
     margin-left: 0px;
   }
