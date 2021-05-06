@@ -583,6 +583,7 @@ section#projects_and_side_hustles span.side_hustle {
   align-self: flex-end;
   font-family: resume_sans_serif, sans-serif;
   font-size: var(--font_size__side_hustle);
+  font-weight: var(--font_weight__project_and_side_hustles_titles);
 }
 
 section#projects_and_side_hustles span.dates {
