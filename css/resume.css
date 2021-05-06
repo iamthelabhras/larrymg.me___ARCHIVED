@@ -132,6 +132,8 @@ div.container--header_and_columns {
   display: flex;
   flex-direction: column;
   width: var(--width__container--header_and_columns);
+  /* Set max-width of 1600px so resume doesn't grow to ridiculous sizes on very large screens. */
+  max-width: 1600px;
   border: 1px solid var(--black);
   box-shadow: 2px 2px 2px black;
   margin: var(--margin__container--header_and_columns);
