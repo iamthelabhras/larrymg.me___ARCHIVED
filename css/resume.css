@@ -37,11 +37,11 @@
   --font_size__section_titles: 2rem;
   /* #endregion Font Sizes */
   /* #region Font Weights */
-  --font_weight__objective: 700;
+  --font_weight__objective: 400;
   --font_weight__job_titles: 700;
   --font_weight__education_titles: 700;
   --font_weight__skills_titles: 700;
-  --font_weight__employer: 400;
+  --font_weight__employer: 500;
   --font_weight__project_and_side_hustles_titles: 700;
   --font_weight__courses_and_certifications_titles: 700;
   --font_weight__interests_and_hobbies_titles: 700;
@@ -77,24 +77,29 @@
 
 @font-face {
   font-family: "resume_sans_serif";
-  font-style: normal;
+  font-weight: bold;
   src: url("../fonts/CenturyGothicBold.ttf") format("truetype");
   font-display: swap;
 }
 
-@font-face {
+/* Not sure why, but when I uncommented the commented code below, 
+    the browser renders all resume_sans_serif fonts in italics, 
+    regardless of of an element's declared font-style? */
+
+/* @font-face {
   font-family: "resume_sans_serif";
-  font-style: normal;
+  font-weight: bold;
+  font-style: italic, oblique;
   src: url("../fonts/CenturyGothicBoldItalic.ttf") format("truetype");
   font-display: swap;
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: "resume_sans_serif";
-  font-style: normal;
+  font-style: italic, oblique;
   src: url("../fonts/CenturyGothicItalic.ttf") format("truetype");
   font-display: swap;
-}
+} */
 
 @font-face {
   font-family: "resume_monospace";
@@ -714,6 +719,7 @@ section#experience span.job_title {
   padding-left: 5px;
   font-family: "resume_sans_serif", sans-serif;
   font-size: var(--font_size__job_titles);
+  font-weight: var(--font_weight__job_titles);
   /* High Contrast Complimentary Color for Job Title "tab". */
   /* background: #00ffff; */
   /* Subtle Texture SVG BG for Job Title "tab". */
