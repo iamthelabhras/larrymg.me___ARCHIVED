@@ -437,11 +437,18 @@ section#objective_unwrapped h2 {
 section#objective_wrapped p,
 section#objective_unwrapped p {
   display: block;
-  margin-top: 10px;
   padding: var(--padding__objective_p);
   background: var(--yellow);
   font-size: var(--font_size__objective);
   font-weight: var(--font_weight__objective);
+}
+
+section#objective_unwrapped p {
+  margin-top: 10px;
+}
+
+section#objective_wrapped p {
+  margin-top: 0px;
 }
 
 /* #endregion */
@@ -775,6 +782,8 @@ section#objective_wrapped {
   }
 
   div.container--resume-col_2 {
+    /* Remove top-margin from container--resume-col_2 class (shared by both wrapped & unwrapped columns)
+          to ensure objective is flush with header. */
     margin-top: 0px;
   }
 
