@@ -225,19 +225,19 @@ ul ul li {
 
 /* #region Resume Section With Dates */
 
-div.resume_section_with_dates {
+div.resume_section_with_bullets {
   margin-bottom: 15px;
   padding-left: 5px;
 }
 
-div.resume_section_with_dates
+div.resume_section_with_bullets
   ul.resume_section_list
   li.resume_section_list_item {
   margin-bottom: 10px;
 }
 
 /* Style List-Within-List Stack & Megaphone Icons */
-div.resume_section_with_dates ul.resume_section_list ul img {
+div.resume_section_with_bullets ul.resume_section_list ul img {
   height: 14px;
   width: 14px;
   margin-right: 10px;
@@ -315,7 +315,9 @@ header div.header_contact_info div img {
 
 /* #region Resume -- Column 1 -- All Sections */
 
-div.container--resume-col_1 div.resume_section_with_dates > span:first-of-type {
+div.container--resume-col_1
+  div.resume_section_with_bullets
+  > span:first-of-type {
   /* Bold text (e.g. "MBA (Finance & Strategic Management)" & "Front-End Web Development"
       within individual resume sections (e.g. "Education" & "Skills". ) */
   display: block;
@@ -758,11 +760,13 @@ section#objective_wrapped {
 
   div#container--resume-col_2_unwrapped,
   section#objective_unwrapped {
+    /* Hide "unwrapped" elements on Flex wrap. */
     display: none;
   }
 
   div#container--resume-col_2_wrapped,
   section#objective_wrapped {
+    /* Reveal "wrapped" elements on Flex wrap. */
     display: initial;
   }
 
@@ -778,6 +782,12 @@ section#objective_wrapped {
     min-width: var(--width__container--resume-col_2);
     width: var(--width__container--resume-col_2);
     margin-left: 0px;
+  }
+
+  div.resume_section_with_bullets {
+    /* Re-declare padding on resume sections with bullets to create "gutters" on either side of 
+        text on smaller screens & enhance legibility. */
+    padding: 0px 15px;
   }
 
   section#experience {
