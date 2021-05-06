@@ -71,7 +71,28 @@
 @font-face {
   font-family: "resume_sans_serif";
   font-style: normal;
+  src: url("../fonts/CenturyGothic.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "resume_sans_serif";
+  font-style: normal;
   src: url("../fonts/CenturyGothicBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "resume_sans_serif";
+  font-style: normal;
+  src: url("../fonts/CenturyGothicBoldItalic.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "resume_sans_serif";
+  font-style: normal;
+  src: url("../fonts/CenturyGothicItalic.ttf") format("truetype");
   font-display: swap;
 }
 
