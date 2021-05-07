@@ -316,7 +316,7 @@ header img#download_pdf {
   margin-top: 10px;
   margin-right: 15px;
   opacity: 0.35;
-  transition: all 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 header img#download_pdf:hover {
