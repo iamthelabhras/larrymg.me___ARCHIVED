@@ -33,7 +33,8 @@
   --font_size__job_titles: 1.5rem;
   --font_size__employer: 1.1rem;
   --font_size__side_hustle: 1.25rem;
-  --font_size__dates: 1.15rem;
+  /* --font_size__dates: 1.15rem; */
+  --font_size__dates: 0.875rem;
   --font_size__section_titles: 2rem;
   /* #endregion Font Sizes */
   /* #region Font Weights */
@@ -45,7 +46,7 @@
   --font_weight__project_and_side_hustles_titles: 700;
   --font_weight__courses_and_certifications_titles: 700;
   --font_weight__interests_and_hobbies_titles: 700;
-  --font_weight__dates: 500;
+  --font_weight__dates: 700;
   --font_weight__bullets: 600;
   --font_weight__stack: 700;
   --font_weight__megaphone: 600;
@@ -199,7 +200,8 @@ span.dates {
   display: inline-block;
   font-family: "Gothic A1", "Century Gothic", “Apple Gothic”, AppleGothic,
     “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
-  font-size: calc(var(--font_size__dates) * 85%);
+  /* font-size: calc(var(--font_size__dates) * 85%); */
+  font-size: var(--font_size__dates);
   font-weight: var(--font_weight__dates);
   font-style: italic;
   color: var(--red);
