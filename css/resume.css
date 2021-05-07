@@ -848,7 +848,7 @@ section#experience ul.resume_section_list {
 div.flex_test {
   /* Wraps job/project/side hustle titles & date. */
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
   flex-wrap: wrap;
   /* Pushes dates to far-right of column. */
   justify-content: space-between;
