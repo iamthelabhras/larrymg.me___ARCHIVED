@@ -329,7 +329,7 @@ header div.header_contact_info {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 header div.header_contact_info > * {
