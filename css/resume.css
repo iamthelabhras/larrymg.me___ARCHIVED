@@ -265,6 +265,28 @@ ul ul li {
 
 /* #endregion */
 
+/* #region Resume -- All Sections -- Links */
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+}
+
+a:focus {
+}
+
+a:hover {
+  text-decoration: underline dotted blue;
+}
+
+a:active {
+  color: yellow;
+}
+
+/* #endregion Resume -- All Sections -- Links */
+
 /* #region Resume -- All Sections -- Components */
 
 /* #region Resume Section With Bullets */
@@ -351,7 +373,7 @@ header div.header_contact_info div {
   justify-content: space-evenly;
 }
 
-header div.header_contact_info div a {
+header div.header_contact_info div a:link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,6 +381,9 @@ header div.header_contact_info div a {
 }
 
 header div.header_contact_info div a:hover {
+  /* Prevent defaulted dotted underline text from appearingunder contact info links on hover. */
+  text-decoration: none;
+  /* Enlarge head contact info links on hover. */
   transform: scale(1.2);
 }
 
@@ -456,6 +481,8 @@ section#courses_and_certifications li span:nth-of-type(3) {
 }
 
 /* #endregion */
+
+/* #endregion Resume -- Column 1 -- Courses & Certifications & Projects & Side Hustles */
 
 /* #region Resume -- Column 1 -- Skills & Courses & Certifications */
 
