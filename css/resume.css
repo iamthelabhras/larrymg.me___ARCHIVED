@@ -3,8 +3,10 @@
   /* #region Widths */
   --width__container--header_and_columns: 95%;
   --width__container--resume_columns: 100%;
-  --width__container--resume-col_1: 45%;
-  --width__container--resume-col_2: 50%;
+  --max_width__container--resume-col_1: 45%;
+  --max_width__container--resume-col_2: 50%;
+  --min_width__container--resume-col_1: 432px;
+  --min_width__container--resume-col_2: 432px;
   --width__resume_section: 100%;
   --width__resume_section_h2: 100%;
   --max_width__resume_section_span: 65ch;
@@ -155,19 +157,28 @@ div.container--resume-col_1,
 div.container--resume-col_2 {
   display: flex;
   flex-direction: column;
+  /* Prevents top of each resume column from being flush with header's thick bottom black border. */
   margin-top: 20px;
 }
 
 div.container--resume-col_1 {
-  min-width: 432px;
-  max-width: var(--width__container--resume-col_1);
+  /* Minimum width is an absolute pixel value that prevents column from shrinking & contained text
+      from shrinking to illegibly small size. */
+  min-width: var(--min_width__container--resume-col_1);
+  /* This value should be equal to or less than Column 2's width. */
+  max-width: var(--max_width__container--resume-col_1);
+  /* Apply padding to left-hand side of Column 1 so it's not flush with container's border. */
   padding-left: 10px;
 }
 
 div.container--resume-col_2 {
-  min-width: 432px;
-  max-width: var(--width__container--resume-col_2);
-  margin-left: 5%;
+  /* Minimum width is an absolute pixel value that prevents column from shrinking & contained text
+      from shrinking to illegibly small size. */
+  min-width: var(--min_width__container--resume-col_2);
+  /* This value should be equal to or greater than Column 2's width. */
+  max-width: var(--max_width__container--resume-col_2);
+  /* Add flex-grow value of "1" to ensure column grows to max-width. */
+  flex-grow: 1;
 }
 
 /* #endregion */
@@ -937,8 +948,8 @@ section#objective_wrapped {
         resume sections "stretch" across whole of parent container. */
     min-width: var(--width__container--resume-col_2);
     width: var(--width__container--resume-col_2);
-    margin-left: 0px;
   }
+
   div.container--resume-col_1 {
     /* set min-width & width to 100% to ensure resume sections "strech" across 
           whole of parent container. */
