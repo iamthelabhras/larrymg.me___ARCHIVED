@@ -33,7 +33,6 @@
   --font_size__job_titles: 1.5rem;
   --font_size__employer: 1.1rem;
   --font_size__side_hustle: 1.25rem;
-  /* --font_size__dates: 1.15rem; */
   --font_size__dates: 0.875rem;
   --font_size__section_titles: 2rem;
   /* #endregion Font Sizes */
@@ -64,6 +63,7 @@
   --dark_grey: #a9a9a9;
   --darkest_grey: #828282;
   /* #endregion Colors */
+  --small_phone_scaldown: 0.7;
 }
 /* #endregion Resume -- Custom Variables */
 
@@ -587,6 +587,13 @@ section#education span.asterisk_top {
   font-weight: 300 !important;
 }
 
+section#education
+  ul.resume_section_list
+  li.resume_section_list_item
+  span:nth-of-type(5) {
+  display: none;
+}
+
 /* #endregion */
 
 /* #region Resume -- Column 1 -- Skills */
@@ -772,13 +779,9 @@ section#experience h2 {
 /* Custom Styling for Experience job titles, employers, & dates */
 section#experience span.job_title {
   display: inline-block;
-  /* flex-grow: 1; */
-  /* This width is a "pseudo-breakpoint" at which the 
-        "Digital Marketing Coorindator" job title causes the
-        date to wrap.       */
-  /* min-width: 373px;
-  max-width: var(--max-width__job_titles); */
-  /* border-bottom: 2px solid var(--darkest_grey); */
+  /* This is an admittedly "brittle" value set to prevent job titles from overflowing
+        their containers on very small smparthone screens. */
+  width: 17ch;
   border-top: 2px solid var(--light_grey);
   border-left: 2px solid var(--light_grey);
   border-right: 2px solid var(--light_grey);
@@ -801,9 +804,8 @@ section#experience span.job_title {
 
 section#experience span.employer {
   display: inline-block;
+  align-self: flex-end;
   /* max-width: var(--max-width__employer); */
-  max-width: none;
-  width: 100%;
   /* margin-bottom: 25px; */
   padding-bottom: 15px;
   padding-left: 5px;
@@ -849,7 +851,7 @@ div.flex_test {
   /* Wraps job/project/side hustle titles & date. */
   display: flex;
   align-items: flex-end;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* Pushes dates to far-right of column. */
   justify-content: space-between;
   border-bottom: 2px solid var(--darkest_grey);
@@ -1060,6 +1062,119 @@ section#objective_wrapped {
   section#skills li span:nth-of-type(2) {
     text-align: right;
     width: 70%;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  section h2 {
+    display: flex;
+    align-items: center;
+  }
+
+  section#courses_and_certifications h2 span:first-of-type,
+  section#projects_and_side_hustles h2 span:first-of-type,
+  section#interests_and_hobbies h2 span:first-of-type {
+    /* Kind of hacky but this explicitly set height insures that the single-character black
+          'sidebar' next to resume section headings streches across the entire red background
+          for section headings that wrap. */
+    height: 72px;
+  }
+
+  section#experience ul ul li,
+  section#projects_and_side_hustles ul ul li {
+    /* Removes "excess" padding from megaphone & stack nested bullets 
+        on very small screens for improved legibility. */
+    padding: 0px;
+  }
+
+  section#experience span.job_title {
+    font-size: calc(
+      var(--font_size__job_titles) * var(--small_phone_scaledown)
+    );
+  }
+
+  section#experience span.employer {
+    font-size: calc(var(--font_size__employer) * var(--small_phone_scaledown));
+  }
+
+  /* First of two CSS rules that reduce size of text in each resume section with a font-size of
+      'var(--font_size__col_1_titles)' by a fixed percent ('var(--small_phone_scaledown). */
+  section#education
+    ul.resume_section_list
+    li.resume_section_list_item
+    span:first-of-type,
+  section#courses_and_certifications
+    ul.resume_section_list
+    li.resume_section_list_item
+    span:first-of-type,
+  section#skills
+    ul.resume_section_list
+    li.resume_section_list_item
+    span:first-of-type {
+    font-size: calc(
+      var(--font_size__col_1_titles) * var(--small_phone_scaledown)
+    );
+  }
+  /* Second of two CSS rules that reduce size of text in each resume section with a font-size of
+      'var(--font_size__col_1_titles)' by a fixed percent ('var(--small_phone_scaledown). */
+  section#projects_and_side_hustles span.side_hustle,
+  section#interests_and_hobbies
+    div.resume_section_with_bullets
+    > span:first-of-type {
+    font-size: calc(
+      var(--font_size__col_1_titles) * var(--small_phone_scaledown)
+    );
+  }
+
+  section#education ul.resume_section_list li.resume_section_list_item {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  /* Reflow degree flexbox items to accomodate smaller screens by splitting data into two rows, 
+      first row with three "columns" and a second row with one "column". */
+
+  section#education
+    ul.resume_section_list
+    li.resume_section_list_item
+    span:first-of-type {
+    width: 20%;
+  }
+
+  section#education
+    ul.resume_section_list
+    li.resume_section_list_item
+    span:nth-of-type(3),
+  section#education
+    ul.resume_section_list
+    li.resume_section_list_item
+    span:nth-of-type(4) {
+    width: 40%;
+  }
+
+  section#education
+    ul.resume_section_list
+    li.resume_section_list_item
+    span:nth-of-type(2) {
+    display: none;
+  }
+
+  section#education
+    ul.resume_section_list
+    li.resume_section_list_item
+    span:nth-of-type(5) {
+    display: initial;
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--dark_grey);
+  }
+  /* Reposition explanatory Irish Studies "hover text" to accomodate reflowed flex box. */
+  span.phd_hover_text {
+    top: 0px;
+    left: -232px;
   }
 }
 
