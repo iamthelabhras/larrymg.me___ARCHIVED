@@ -272,17 +272,16 @@ a:link {
 }
 
 a:visited {
+  color: var(--red);
 }
 
-a:focus {
-}
-
+a:focus,
 a:hover {
   text-decoration: underline dotted blue;
 }
 
 a:active {
-  color: yellow;
+  color: var(--yellow);
 }
 
 /* #endregion Resume -- All Sections -- Links */
@@ -1067,6 +1066,8 @@ section#objective_wrapped {
 
 @media screen and (min-width: 0px) and (max-width: 525px) {
   section h2 {
+    /* Turn h2 elements into flex boxes on smaller screen to prevent unsightly wrapping of
+        resume section headers on smaller screens. */
     display: flex;
     align-items: center;
   }
@@ -1087,12 +1088,14 @@ section#objective_wrapped {
     padding: 0px;
   }
 
+  /* Resizes job title by fixed percent ('var(--small_phone_scaledown'). */
   section#experience span.job_title {
     font-size: calc(
       var(--font_size__job_titles) * var(--small_phone_scaledown)
     );
   }
 
+  /* Resizes employer by fixed percent ('var(--small_phone_scaledown'). */
   section#experience span.employer {
     font-size: calc(var(--font_size__employer) * var(--small_phone_scaledown));
   }
@@ -1127,12 +1130,13 @@ section#objective_wrapped {
   }
 
   section#education ul.resume_section_list li.resume_section_list_item {
+    /* Turn on Education section flex box's flex-wrap on smaller screens. */
     flex-wrap: wrap;
-    align-items: flex-start;
   }
 
-  /* Reflow degree flexbox items to accomodate smaller screens by splitting data into two rows, 
-      first row with three "columns" and a second row with one "column". */
+  /* The following two CSS style rules reflow the Education section's flexbox items to enhance 
+      legibility on smaller screens by splitting data into two rows, a first row with three "columns" 
+      (degree, university, & matriculation years) and a second row with one "column" (degree concentration). */
 
   section#education
     ul.resume_section_list
@@ -1152,6 +1156,7 @@ section#objective_wrapped {
     width: 40%;
   }
 
+  /* Hide degree major/concentration span displayed on larger screens. */
   section#education
     ul.resume_section_list
     li.resume_section_list_item
@@ -1159,12 +1164,13 @@ section#objective_wrapped {
     display: none;
   }
 
+  /* Unhides & styles degree major/concentration span on smaller screens. */
   section#education
     ul.resume_section_list
     li.resume_section_list_item
     span:nth-of-type(5) {
     display: initial;
-    width: 100%;
+    min-width: 100%;
     text-align: right;
     margin-top: 10px;
     font-size: 0.8rem;
