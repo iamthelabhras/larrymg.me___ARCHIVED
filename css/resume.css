@@ -1065,7 +1065,7 @@ section#objective_wrapped {
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 320px) {
+@media screen and (min-width: 0px) and (max-width: 525px) {
   section h2 {
     display: flex;
     align-items: center;
