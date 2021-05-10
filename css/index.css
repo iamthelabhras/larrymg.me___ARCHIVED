@@ -128,7 +128,8 @@ div.this_weeks_hot_track iframe {
 /* #region Sidebar -- This Week's Hot Laugh */
 
 div.this_weeks_hot_laugh iframe,
-div.this_weeks_hot_laugh video {
+div.this_weeks_hot_laugh video,
+div.this_weeks_hot_laugh img {
   max-width: 100%;
   max-height: 200px;
   border: 1px solid gray;
