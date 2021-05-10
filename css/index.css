@@ -123,6 +123,10 @@ div.this_weeks_hot_track iframe {
   max-height: 75px;
 }
 
+div.this_weeks_hot_track iframe.youtube_iframe {
+  max-height: 400px;
+}
+
 /* #endregion - Sidebar -- This Week's Hot Track*/
 
 /* #region Sidebar -- This Week's Hot Laugh */
