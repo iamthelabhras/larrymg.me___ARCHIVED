@@ -150,11 +150,11 @@ div.this_weeks_hot_laugh img {
 /* #endregion - Sidebar */
 
 /* #region Content */
+
 div.content {
   display: grid;
   place-items: center;
   margin-bottom: 50px;
-  padding: 0px 50px;
 }
 
 /* #region Content -- Block Quote */
@@ -163,7 +163,7 @@ div.block_quotes {
   display: grid;
   place-items: center;
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
   max-width: 800px;
   padding: 1rem;
   margin-bottom: 50px;
@@ -198,7 +198,7 @@ div.hello {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 80%;
+  width: 80%;
 }
 
 div.hello p:first-of-type {
@@ -207,8 +207,8 @@ div.hello p:first-of-type {
 
 div.hello img {
   margin: 0 auto;
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 30%;
 }
 
 div.hello p:nth-of-type(2) {
@@ -260,6 +260,7 @@ div.intro p:nth-of-type(2) {
 /* #region Content -- Explore */
 
 div.content nav.explore_concise {
+  width: 80%;
   max-width: 1102px;
   margin: 50px 0px;
   border: 1px solid black;
@@ -271,7 +272,7 @@ div.content nav.explore_concise {
 p#explore_concise_menu-instructions {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom: 5px solid #cecece;
   padding-bottom: 15px;
 }
@@ -304,9 +305,11 @@ div.content nav.explore_verbose {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  width: 100%;
+  width: 90%;
   max-width: 1102px;
   margin: 50px 0px;
+  /* To prevent scrolling to right. */
+  overflow: hidden;
 }
 
 div.explore_item {
