@@ -117,8 +117,13 @@ div.what_im_watching li {
 
 /* #region Sidebar -- This Week's Hot Track */
 
+div.this_weeks_hot_track {
+  display: grid;
+}
+
 div.this_weeks_hot_track iframe {
   /* Embedded Spotify player overflows container at max-width: 100%? */
+  place-self: center;
   max-width: 100%;
   max-height: 75px;
 }
