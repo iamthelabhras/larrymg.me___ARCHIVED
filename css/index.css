@@ -243,7 +243,8 @@ div.intro {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 60%;
+  width: 60%;
+  max-width: 55ch;
 }
 
 div.intro p:nth-of-type(2) {
