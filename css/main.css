@@ -95,6 +95,10 @@ p.show_mobile-encourage_larger_screen span {
   p.show_mobile-encourage_larger_screen {
     display: flex;
   }
+
+  p.show_mobile-encourage_larger_screen span {
+    max-width: 40ch;
+  }
 }
 
 .text_center {
