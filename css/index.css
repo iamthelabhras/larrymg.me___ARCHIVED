@@ -306,11 +306,12 @@ div.content nav.explore_verbose {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  width: 90%;
-  max-width: 1102px;
+  /* width: 90%;
+  max-width: 1102px; */
+  width: clamp(90%, 90%, 1102px);
   margin: 50px 0px;
   /* To prevent scrolling to right. */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 div.explore_item {
