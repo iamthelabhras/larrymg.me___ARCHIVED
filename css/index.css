@@ -336,7 +336,12 @@ div.explore_item h2 {
 }
 
 div.explore_item p {
+  /* Use flex-grow to ensure chenvron icons are flush with bottom of card, 
+  regardless of how much text is in indivudal cards. */
   flex-grow: 1;
+  /* Prevents overly long lines on smaller screens when cards explore_item divs
+      stack one on top of the other. */
+  max-width: 40ch;
 }
 
 div.explore_item p + a {
