@@ -331,6 +331,9 @@ div.explore_item:hover {
 }
 
 div.explore_item h2 {
+  /* Use flex-grow to produce a semi-centered alignment of card text
+      across cards. */
+  flex-grow: 1;
   text-align: center;
   color: #252627;
 }
