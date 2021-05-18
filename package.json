@@ -1,0 +1,24 @@
+{
+  "name": "larrymg_me",
+  "version": "1.0.0",
+  "description": "Labhrás Mac Gabhann's personal website.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamthelabhras/larrymg.me.git"
+  },
+  "author": "Labhrás Mac Gabhann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamthelabhras/larrymg.me/issues"
+  },
+  "homepage": "https://github.com/iamthelabhras/larrymg.me#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3",
+    "sass": "^1.32.13"
+  }
+}

@@ -1,0 +1,438 @@
+html {
+  scroll-padding: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+div.grid_container {
+  display: grid;
+  /* Set relative widths for sidebar & content divs here. */
+  grid-template-columns: minmax(225px, 20%) 1fr;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+/* #region Sidebar */
+div.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+  background: #e8e8e8;
+}
+
+/* Keep last sidebar div in view as visitors scroll through content divs. */
+div.sidebar div:last-of-type {
+  position: sticky;
+  top: 0;
+}
+
+/* #region Sidebar -- Let's Connect */
+div.sidebar div.lets_connect {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  height: 50px;
+  border-bottom: 5px solid #cecece;
+  padding: calc(10px + 2.75rem) 0px;
+}
+
+div.sidebar div.lets_connect a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  color: black;
+  text-decoration: none;
+}
+
+div.sidebar div.lets_connect a:link {
+  color: black;
+}
+
+div.sidebar div.lets_connect a:visited {
+  color: gray;
+}
+
+div.sidebar div.lets_connect a:focus {
+  color: #fdff9d;
+}
+
+div.sidebar div.lets_connect a:hover {
+  color: #fdff9d;
+}
+
+div.sidebar div.lets_connect a:active {
+  color: black;
+}
+
+div.sidebar div.lets_connect i {
+  font-size: 2.5rem;
+  transition: all 0.25s ease-in-out;
+}
+
+div.sidebar div.lets_connect i:hover {
+  font-size: 2.75rem;
+}
+
+/* #endregion */
+/* #region Sidebar -- h2 for All "Weekly" Sections */
+div.what_im_learning h2,
+div.what_im_reading h2,
+div.what_im_watching h2,
+div.this_weeks_hot_track h2,
+div.this_weeks_hot_laugh h2 {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid whitesmoke;
+  background: #cecece;
+  font-size: 1.25rem;
+}
+
+div.what_im_learning span.cursive,
+div.what_im_reading span.cursive,
+div.what_im_watching span.cursive,
+div.this_weeks_hot_track span.cursive,
+div.this_weeks_hot_laugh span.cursive {
+  display: block;
+  font-family: "cursive_flourish", cursive;
+}
+
+/* #endregion -- h2 for all "Weekly" Sections */
+/* #region Sidebar -- What I'm Watching This Week */
+div.what_im_watching li {
+  font-style: italic;
+}
+
+/* #endregion Sidebar -- What I'm Watching This Week */
+/* #region Sidebar -- This Week's Hot Track */
+div.this_weeks_hot_track {
+  display: grid;
+}
+
+div.this_weeks_hot_track iframe {
+  /* Embedded Spotify player overflows container at max-width: 100%? */
+  place-self: center;
+  max-width: 100%;
+  max-height: 75px;
+}
+
+div.this_weeks_hot_track iframe.youtube_iframe {
+  max-height: 400px;
+}
+
+/* #endregion - Sidebar -- This Week's Hot Track*/
+/* #region Sidebar -- This Week's Hot Laugh */
+div.this_weeks_hot_laugh iframe,
+div.this_weeks_hot_laugh video,
+div.this_weeks_hot_laugh img {
+  max-width: 100%;
+  max-height: 200px;
+  border: 1px solid gray;
+}
+
+/* #endregion */
+/* #endregion - Sidebar */
+/* #region Content */
+div.content {
+  display: grid;
+  place-items: center;
+  margin-bottom: 50px;
+}
+
+/* #region Content -- Block Quote */
+div.block_quotes {
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  padding: 1rem;
+  margin-bottom: 50px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background: #fff9fb;
+}
+
+div.block_quotes p,
+div.block_quotes span {
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+div.block_quotes p {
+  max-width: 55ch;
+}
+
+div.block_quotes span.block_quote--attribution {
+  font-weight: 700;
+}
+
+/* Links to attribution's text, article, or other media. */
+div.block_quotes a {
+  font-style: italic;
+}
+
+/* #endregion Content -- Block Quote */
+/* #region Content -- Hello  */
+div.hello {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+div.hello p:first-of-type {
+  font-size: 3.25rem;
+}
+
+div.hello img {
+  margin: 0 auto;
+  width: 30%;
+  height: 30%;
+}
+
+div.hello p:nth-of-type(2) {
+  font-size: 2.25rem;
+}
+
+div.hello a.test_performance {
+  display: inline-block;
+  text-align: center;
+  align-self: center;
+  margin: 25px 0px;
+  border: 1px dotted black;
+  border-radius: 15px;
+  padding: 5px;
+  transition: background 0.5s ease-in-out;
+}
+
+div.hello a.test_performance p {
+  max-width: 25ch;
+  font-size: 0.75rem;
+}
+
+div.hello a.test_performance:hover {
+  background: black;
+  color: #fff9fb;
+}
+
+/* #endregion Content - - Hello */
+/* #region Content -- Intro */
+div.intro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-indent: 3%;
+  width: 60%;
+  max-width: 55ch;
+}
+
+div.intro p:nth-of-type(2) {
+  font-size: 1.75rem;
+}
+
+/* #endregion *?
+
+
+/* #endregion Content -- Hello & Intro */
+/* #endregion Content */
+/* #region Content -- Explore */
+div.content nav.explore_concise {
+  width: 80%;
+  max-width: 1102px;
+  margin: 50px 0px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  background: white;
+}
+
+p#explore_concise_menu-instructions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-bottom: 5px solid #cecece;
+  padding-bottom: 15px;
+}
+
+p#explore_concise_menu-instructions span {
+  max-width: 45ch;
+}
+
+p#explore_concise_menu-instructions span:first-of-type {
+  align-self: center;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(206, 206, 206, 0.45);
+  font-size: 1.25rem;
+}
+
+div.content nav.explore_concise div.explore_link_roll {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 100%;
+}
+
+div.content nav.explore_concise div.explore_link_roll a {
+  padding: 15px;
+}
+
+div.content nav.explore_verbose {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* width: 90%;
+  max-width: 1102px; */
+  width: clamp(90%, 90%, 1102px);
+  margin: 50px 0px;
+  /* To prevent scrolling to right. */
+  /* overflow: hidden; */
+}
+
+div.explore_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 8px;
+  background: #cecece;
+  transition: all 0.5s ease-in-out;
+}
+
+div.explore_item:hover {
+  background: #fff9fb;
+  transform: scale(1.045);
+}
+
+div.explore_item h2 {
+  /* Use flex-grow to produce a semi-centered alignment of card text
+      across cards. */
+  flex-grow: 1;
+  text-align: center;
+  color: #252627;
+}
+
+div.explore_item p {
+  /* Use flex-grow to ensure chenvron icons are flush with bottom of card, 
+  regardless of how much text is in indivudal cards. */
+  flex-grow: 1;
+  /* Prevents overly long lines on smaller screens when cards explore_item divs
+      stack one on top of the other. */
+  max-width: 40ch;
+}
+
+div.explore_item p + a {
+  text-decoration: none;
+  /* Use adjacent sibling selector to prevent resizing of linked h2 elements. */
+  font-size: 1.25rem;
+  transition: transform 0.25s linear;
+}
+
+div.explore_item a:hover,
+div.explore_item a:focus {
+  transform: translateY(-5px);
+}
+
+div#my_work {
+  position: relative;
+}
+
+p#my_work-current_job_status {
+  position: absolute;
+  bottom: -5px;
+  right: 5px;
+  display: inline-block;
+  border-radius: 15px;
+  padding: 4px;
+  background: white;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: black;
+  transition: all 0.25s ease-in-out;
+}
+
+div.explore_item:hover p#my_work-current_job_status {
+  background: blue;
+  color: white;
+}
+
+/* #endregion Content -- Explore */
+/* #region Media Queries */
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  div.grid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+  }
+
+  div.sidebar {
+    display: none;
+  }
+
+  div.sidebar ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  div.content {
+    padding: 0px 5px;
+  }
+
+  div.block_quotes {
+    max-width: 90%;
+  }
+
+  div.hello_and_intro {
+    max-width: 90%;
+  }
+
+  div.hello_and_intro p:first-of-type {
+    font-size: 2.25rem;
+  }
+
+  div.hello_and_intro img {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  div.hello_and_intro p:nth-of-type(2) {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 1069px) {
+  /* Tweak layout of Conciuse Menu Instructions on flex-wrap. */
+  p#explore_concise_menu-instructions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 5px solid #cecece;
+    padding-bottom: 15px;
+  }
+
+  p#explore_concise_menu-instructions span:first-of-type {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 1075px) {
+  div.this_weeks_hot_track iframe {
+    /* Embedded Spotify player overflows container at max-width: 100%? */
+    max-width: 75%;
+  }
+}
+/* #endregion Media Queries */
+
+/*# sourceMappingURL=/scss.6b84482b.css.map */

@@ -1,9 +1,11 @@
 # Tell Git to ignore these folders:
 archived/
 attributions/
+node_modules/
 
 # Tell Git to ignore these files:
+.DS_store
 .htaccess
 .htpasswd
-.DS_store
+audio/appletone.mp3
 pdfs/ALIAS_on_website
