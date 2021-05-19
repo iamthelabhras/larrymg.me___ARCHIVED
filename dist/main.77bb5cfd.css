@@ -1311,7 +1311,7 @@ section#objective_wrapped {
     display: block;
   }
 
-  header div.header_contact_info span {
+  header#resume_header div.header_contact_info span {
     display: none;
   }
 
@@ -1338,7 +1338,7 @@ section#objective_wrapped {
   }
 }
 @media screen and (min-width: 0px) and (max-width: 725px) {
-  header h1 {
+  header#resume_header h1 {
     font-size: calc(var(--font_size__header_name) * 0.75);
   }
 }
