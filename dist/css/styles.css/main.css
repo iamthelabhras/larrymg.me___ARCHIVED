@@ -496,12 +496,6 @@ span.web_dev_quote_text {
   src: url("../fonts/CenturyGothicItalic.ttf") format("truetype");
   font-display: swap;
 } */
-@font-face {
-  font-family: "resume_monospace";
-  font-style: normal;
-  src: url("../fonts/MonofurForPowerLine.ttf") format("truetype");
-  font-display: swap;
-}
 /* #endregion */
 /* #region Resume -- All Sections */
 section.resume_section {
