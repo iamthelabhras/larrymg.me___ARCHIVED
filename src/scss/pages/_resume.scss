@@ -236,11 +236,11 @@ img.megaphone ~ span {
 
 /* #region Resume -- All Sections -- Lists */
 
-ul {
+section.resume_section ul {
   max-width: var(--max_width_resume_section_ul);
 }
 
-li {
+section.resume_section li {
   display: flex;
   list-style: none;
   list-style-position: inside;
@@ -256,13 +256,13 @@ li {
   font-family: "resume_monospace", monospace;
 }
 
-li span {
+section.resume_section li span {
   padding: 0;
   margin: 0;
 }
 
 /* Remove list-styling for stack & megaphone list items. */
-ul ul li {
+section.resume_section ul ul li {
   background: none;
   list-style: none;
 }
@@ -271,20 +271,20 @@ ul ul li {
 
 /* #region Resume -- All Sections -- Links */
 
-a:link {
+section.resume_section a:link {
   text-decoration: none;
 }
 
-a:visited {
+section.resume_section a:visited {
   color: var(--red);
 }
 
-a:focus,
-a:hover {
+section.resume_section a:focus,
+section.resume_section a:hover {
   text-decoration: underline dotted blue;
 }
 
-a:active {
+section.resume_section a:active {
   color: var(--yellow);
 }
 
