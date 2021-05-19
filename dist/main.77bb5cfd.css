@@ -500,10 +500,25 @@ div.what_im_watching ul {
   font-family: "main_text", sans-serif;
 }
 
+div.what_im_learning li,
+div.what_im_reading li,
+div.what_im_watching li {
+  list-style: none;
+  list-style-position: inside;
+  /* Injects space at top & bottom of *all* list items for legibility */
+  margin: 15px;
+  padding: 0px 0px 0px 25px;
+  background: url("/square-shadow.c383f376.svg") no-repeat scroll 0 0 transparent;
+  background-size: 12px 12px;
+  /* Nudges square-shadow.svg down to the baseline of each li span text. */
+  background-position-y: 6px;
+}
+
 /* #endregion What I'm Learning This Week, What I'm Reading This Week, &
       What I'm Watching This Week Sections */
 /* #region Sidebar -- What I'm Watching This Week */
 div.what_im_watching li {
+  /* Assumes everything I'm watching would require italicization. */
   font-style: italic;
 }
 
