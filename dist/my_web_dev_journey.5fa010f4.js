@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/main.scss":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/my_web_dev_journey.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../fonts/KulimPark-Regular.ttf":[["KulimPark-Regular.3f35cf68.ttf","fonts/KulimPark-Regular.ttf"],"fonts/KulimPark-Regular.ttf"],"./../fonts/helvetia-verbundene.ttf":[["helvetia-verbundene.1ed4b3c9.ttf","fonts/helvetia-verbundene.ttf"],"fonts/helvetia-verbundene.ttf"],"./../fonts/MonofurForPowerLine.ttf":[["MonofurForPowerLine.6d3115d6.ttf","fonts/MonofurForPowerLine.ttf"],"fonts/MonofurForPowerLine.ttf"],"./../images/my_work/resume/bullets/square-shadow.svg":[["square-shadow.c383f376.svg","images/my_work/resume/bullets/square-shadow.svg"],"images/my_work/resume/bullets/square-shadow.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54628" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53633" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -394,4 +394,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/main.77bb5cfd.js.map
+//# sourceMappingURL=/my_web_dev_journey.5fa010f4.js.map

@@ -1,0 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #feffd0;
+  font-family: "main_text", sans-serif;
+  color: black;
+}
+
+/* #region Base Hyperlinks */
+
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  color: blue;
+}
+
+/* @endregion */

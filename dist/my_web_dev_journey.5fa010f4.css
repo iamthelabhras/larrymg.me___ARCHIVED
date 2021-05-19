@@ -1,0 +1,10 @@
+main {
+  width: clamp(300px, 50%, 1100px);
+  background: blue;
+}
+
+span.quote_text {
+  background: orange;
+}
+
+/*# sourceMappingURL=/my_web_dev_journey.5fa010f4.css.map */
