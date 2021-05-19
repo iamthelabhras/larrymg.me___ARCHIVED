@@ -637,7 +637,7 @@ div.larrymg_me_index--hello a.test_performance:hover {
 
 /* #endregion Content - - Hello */
 /* #region Content -- Intro */
-div.intro {
+div.larrymg_me_index--intro {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -646,7 +646,8 @@ div.intro {
   max-width: 55ch;
 }
 
-div.intro p:nth-of-type(2) {
+div.larrymg_me_index--intro p:nth-of-type(2) {
+  margin-top: 15px;
   font-size: 1.75rem;
 }
 
