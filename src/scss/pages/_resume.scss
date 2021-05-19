@@ -126,7 +126,7 @@ section.resume_section {
 }
 
 /* #region Resume -- All Sections -- Flex Containers */
-div.container--header_and_columns {
+div.resume--container--header_and_columns {
   display: flex;
   flex-direction: column;
   width: var(--width__container--header_and_columns);
@@ -909,7 +909,7 @@ section#objective_wrapped {
     margin-left: 15px;
   }
 
-  div.container--header_and_columns {
+  div.resume--container--header_and_columns {
     /* Pseudo-"freeze" resume's width from 1079px to 835px to 835px &
           Center resume's outermost container.  NOTE: Resume will resize arís at 
           835px width breakpoint.*/
@@ -988,14 +988,14 @@ section#objective_wrapped {
 }
 
 @media screen and (min-width: 0px) and (max-width: 835px) {
-  div.container--header_and_columns {
+  div.resume--container--header_and_columns {
     /* Pseudo-"freeze" resume's width from 835px to 635px. 
           Resume will shrink to fit screen below 635px. */
     width: initial;
     max-width: 635px;
   }
 
-  div.container--header_and_columns h1 span.clean_break_on_wrap {
+  div.resume--container--header_and_columns h1 span.clean_break_on_wrap {
     /* Force "Mac Gabhann" to wrap from a screen width of 835px down to 
         ensure enough white space remains between the "Mac Gabhann" and 
         the PDF icon on smaller screens. */
