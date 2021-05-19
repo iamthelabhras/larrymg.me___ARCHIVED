@@ -681,7 +681,7 @@ div.resume_section_with_bullets ul.resume_section_list ul img {
 /* #endregion */
 /* #endregion Resume -- All Sections */
 /* #region Resume -- Header */
-header {
+header#resume_header {
   display: flex;
   flex-direction: column;
   /* position: relative; */
@@ -690,7 +690,7 @@ header {
   background: white;
 }
 
-header a#download_pdf_link {
+header#resume_header a#download_pdf_link {
   /* position: absolute;
   top: 5px;
   right: 15px; */
@@ -698,7 +698,7 @@ header a#download_pdf_link {
   justify-content: right;
 }
 
-header img#download_pdf {
+header#resume_header img#download_pdf {
   width: 35px;
   height: 35px;
   margin-top: 10px;
@@ -707,17 +707,17 @@ header img#download_pdf {
   transition: opacity 0.5s ease-in-out;
 }
 
-header img#download_pdf:hover {
+header#resume_header img#download_pdf:hover {
   opacity: 1;
 }
 
-header h1 {
+header#resume_header h1 {
   margin-top: 10px;
   font-family: "Gothic A1", "Century Gothic", “Apple Gothic”, AppleGothic, “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
   font-size: var(--font_size__header_name);
 }
 
-header div.header_contact_info {
+header#resume_header div.header_contact_info {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -725,32 +725,32 @@ header div.header_contact_info {
   margin-top: 20px;
 }
 
-header div.header_contact_info > * {
+header#resume_header div.header_contact_info > * {
   width: 25%;
 }
 
-header div.header_contact_info div {
+header#resume_header div.header_contact_info div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-header div.header_contact_info div a:link {
+header#resume_header div.header_contact_info div a:link {
   display: flex;
   justify-content: center;
   align-items: center;
   transition: transform 0.5s ease-in-out;
 }
 
-header div.header_contact_info div a:hover {
+header#resume_header div.header_contact_info div a:hover {
   /* Prevent defaulted dotted underline text from appearingunder contact info links on hover. */
   text-decoration: none;
   /* Enlarge head contact info links on hover. */
   transform: scale(1.2);
 }
 
-header div.header_contact_info div img {
+header#resume_header div.header_contact_info div img {
   width: 40px;
   height: 40px;
   padding-right: 10px;
