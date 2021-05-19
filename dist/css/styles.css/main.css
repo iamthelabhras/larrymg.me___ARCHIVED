@@ -388,6 +388,7 @@ main#larrymg_me_index {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 25px;
 }
 
 div.larrymg_me_index--grid_container {
