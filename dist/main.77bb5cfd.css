@@ -382,7 +382,7 @@ html {
   scroll-padding: 10px;
 }
 
-main {
+main#larrymg_me_index {
   display: flex;
   flex-direction: row;
   justify-content: center;
