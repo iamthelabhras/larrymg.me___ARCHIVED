@@ -419,21 +419,23 @@ div.container--resume-col_1 li.resume_section_list_item {
   font-size: var(--font_size__bullets-col_1);
 }
 
-div.phd_hover {
+div.resume_hover {
   position: relative;
   display: inline-block;
 }
 
-div.phd_hover img {
+div.resume_hover img {
   width: 12px;
   height: 12px;
 }
 
-span.phd_hover_text {
+span.resume_hover_text {
+  /* Note: top, bottom, left, & right values are *not* set using
+        this general class.  Instead, a unique #id is added to all spans
+        with a class of resume_hover_text and top, bottom, left, & right
+        values are applied therein. */
   z-index: 1;
   position: absolute;
-  top: -50px;
-  left: -150px;
   max-width: none;
   width: 250px !important;
   border: 1px solid black;
@@ -448,7 +450,7 @@ span.phd_hover_text {
   opacity: 0;
 }
 
-.phd_hover:hover .phd_hover_text {
+.resume_hover:hover .resume_hover_text {
   visibility: visible;
   opacity: 0.75;
 }
@@ -593,6 +595,12 @@ section#education
   li.resume_section_list_item
   span:nth-of-type(5) {
   display: none;
+}
+
+span#resume_hover_text--irish_studies {
+  /* Positions Irish Studies hover text within its unique context. */
+  top: -50px;
+  left: -150px;
 }
 
 /* #endregion */
@@ -1180,7 +1188,7 @@ section#objective_wrapped {
     color: var(--dark_grey);
   }
   /* Reposition explanatory Irish Studies "hover text" to accomodate reflowed flex box. */
-  span.phd_hover_text {
+  span#resume_hover_text--irish_studies {
     top: 0px;
     left: -232px;
   }
