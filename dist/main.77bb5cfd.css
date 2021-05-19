@@ -762,8 +762,8 @@ div#my_work {
 
 p#my_work-current_job_status {
   position: absolute;
-  bottom: -5px;
-  right: 5px;
+  bottom: 10px;
+  right: 8px;
   display: inline-block;
   border-radius: 15px;
   padding: 4px;
