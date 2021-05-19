@@ -10,7 +10,7 @@ main#larrymg_me_index {
   height: 100vh;
 }
 
-div.grid_container {
+div.larrymg_me_index--grid_container {
   display: grid;
   /* Set relative widths for sidebar & content divs here. */
   grid-template-columns: minmax(225px, 20%) 1fr;
