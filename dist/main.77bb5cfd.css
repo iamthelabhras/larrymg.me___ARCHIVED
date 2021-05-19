@@ -22,6 +22,20 @@ a:active {
 }
 
 /* @endregion */
+@font-face {
+  font-family: "main_text";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/KulimPark-Regular.3f35cf68.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "cursive_flourish";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/helvetia-verbundene.1ed4b3c9.ttf") format("truetype");
+  font-display: swap;
+}
 /* #region Browser Resets */
 /* A Modern CSS Reset by Andy Bell
         https://dev.to/hankchizljaw/a-modern-css-reset-6p3 
@@ -105,20 +119,6 @@ select {
   }
 }
 /* #endregion */
-@font-face {
-  font-family: "main_text";
-  font-style: normal;
-  font-weight: 500;
-  src: url("/KulimPark-Regular.3f35cf68.ttf") format("truetype");
-  font-display: swap;
-}
-@font-face {
-  font-family: "cursive_flourish";
-  font-style: normal;
-  font-weight: 500;
-  src: url("/helvetia-verbundene.1ed4b3c9.ttf") format("truetype");
-  font-display: swap;
-}
 h2,
 p {
   font-family: inherit;

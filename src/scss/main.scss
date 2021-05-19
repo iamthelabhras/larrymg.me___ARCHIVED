@@ -2,14 +2,8 @@
     Note: @import is deprecated!  Use @use & @forward instead.
     See Kevin Powell's video on this: https://www.youtube.com/watch?v=CR-a8upNjJ0 */
 
-@use 'base/base';
-@use 'base/reset';
-@use 'base/font-face';
-@use 'base/typography';
-@use 'pages/coding_rules';
-@use 'pages/index';
-@use 'pages/my_web_dev_journey';
-@use 'pages/resume';
-@use 'utilities/utility_classes';
+@use './base';
+@use './pages';
+@use './utilities';
 
 /* #endregion Import Sass partials into main.scss stylesheet. */
