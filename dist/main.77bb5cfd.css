@@ -382,6 +382,10 @@ div.coding_assumption div.assumption_concrete_applications {
   }
 }
 /* #endregion Media Queries */
+html {
+  scroll-padding: var(--site_wide--scroll_padding);
+}
+
 main#larrymg_me_index {
   display: flex;
   flex-direction: row;
