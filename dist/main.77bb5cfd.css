@@ -131,6 +131,10 @@ p {
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.07);
 }
 
+:root {
+  --site_wide--scroll_padding: 10px;
+}
+
 /*  To Do:  Refactoring  */
 /* #region Page-wide Styles */
 main#coding_rules_and_assumptions h2 {
@@ -378,10 +382,6 @@ div.coding_assumption div.assumption_concrete_applications {
   }
 }
 /* #endregion Media Queries */
-html {
-  scroll-padding: 10px;
-}
-
 main#larrymg_me_index {
   display: flex;
   flex-direction: row;
