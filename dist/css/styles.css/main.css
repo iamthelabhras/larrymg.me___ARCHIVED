@@ -400,7 +400,7 @@ div.larrymg_me_index--grid_container {
 }
 
 /* #region Sidebar */
-div.larrymg_me_index--sidebar {
+section.larrymg_me_index--sidebar {
   display: flex;
   flex-direction: column;
   padding: 0px 10px;
@@ -408,13 +408,13 @@ div.larrymg_me_index--sidebar {
 }
 
 /* Keep last sidebar div in view as visitors scroll through content divs. */
-div.larrymg_me_index--sidebar div:last-of-type {
+section.larrymg_me_index--sidebar div:last-of-type {
   position: sticky;
   top: 0;
 }
 
 /* #region Sidebar -- Let's Connect */
-div.larrymg_me_index--sidebar div.lets_connect {
+section.larrymg_me_index--sidebar div.lets_connect {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -428,7 +428,7 @@ div.larrymg_me_index--sidebar div.lets_connect {
   padding: calc(10px + 2.75rem) 0px;
 }
 
-div.larrymg_me_index--sidebar div.lets_connect a {
+section.larrymg_me_index--sidebar div.lets_connect a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -438,32 +438,32 @@ div.larrymg_me_index--sidebar div.lets_connect a {
   text-decoration: none;
 }
 
-div.larrymg_me_index--sidebar div.lets_connect a:link {
+section.larrymg_me_index--sidebar div.lets_connect a:link {
   color: black;
 }
 
-div.larrymg_me_index--sidebar div.lets_connect a:visited {
+section.larrymg_me_index--sidebar div.lets_connect a:visited {
   color: gray;
 }
 
-div.larrymg_me_index--sidebar div.lets_connect a:focus {
+section.larrymg_me_index--sidebar div.lets_connect a:focus {
   color: #fdff9d;
 }
 
-div.larrymg_me_index--sidebar div.lets_connect a:hover {
+section.larrymg_me_index--sidebar div.lets_connect a:hover {
   color: #fdff9d;
 }
 
-div.larrymg_me_index--sidebar div.lets_connect a:active {
+section.larrymg_me_index--sidebar div.lets_connect a:active {
   color: black;
 }
 
-div.larrymg_me_index--sidebar div.lets_connect i {
+section.larrymg_me_index--sidebar div.lets_connect i {
   font-size: 2.5rem;
   transition: all 0.25s ease-in-out;
 }
 
-div.larrymg_me_index--sidebar div.lets_connect i:hover {
+section.larrymg_me_index--sidebar div.lets_connect i:hover {
   font-size: 2.75rem;
 }
 
@@ -552,14 +552,14 @@ div.this_weeks_hot_laugh img {
 /* #endregion */
 /* #endregion - Sidebar */
 /* #region Content */
-div.larrymg_me_index--content {
+section.larrymg_me_index--content {
   display: grid;
   place-items: center;
   margin-bottom: 50px;
 }
 
 /* #region Content -- Block Quote */
-div.larrymg_me_index--content div.block_quotes {
+section.larrymg_me_index--content div.block_quotes {
   display: grid;
   place-items: center;
   margin: 0 auto;
@@ -572,21 +572,21 @@ div.larrymg_me_index--content div.block_quotes {
   background: #fff9fb;
 }
 
-div.larrymg_me_index--content div.block_quotes p,
-div.larrymg_me_index--content div.block_quotes span {
+section.larrymg_me_index--content div.block_quotes p,
+section.larrymg_me_index--content div.block_quotes span {
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
 }
 
-div.larrymg_me_index--content div.block_quotes p {
+section.larrymg_me_index--content div.block_quotes p {
   max-width: 55ch;
 }
 
-div.larrymg_me_index--content div.block_quotes span.block_quote--attribution {
+section.larrymg_me_index--content div.block_quotes span.block_quote--attribution {
   font-weight: 700;
 }
 
 /* Links to attribution's text, article, or other media. */
-div.larrymg_me_index--content div.block_quotes a {
+section.larrymg_me_index--content div.block_quotes a {
   font-style: italic;
 }
 
@@ -655,7 +655,7 @@ div.intro p:nth-of-type(2) {
 /* #endregion Content -- Hello & Intro */
 /* #endregion Content */
 /* #region Content -- Explore */
-div.larrymg_me_index--contentnav.explore_concise {
+section.larrymg_me_index--contentnav.explore_concise {
   width: 80%;
   max-width: 1102px;
   margin: 50px 0px;
@@ -685,7 +685,7 @@ p#explore_concise_menu-instructions span:first-of-type {
   font-size: 1.25rem;
 }
 
-div.larrymg_me_index--contentnav.explore_concise div.explore_link_roll {
+section.larrymg_me_index--contentnav.explore_concise div.explore_link_roll {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -693,11 +693,11 @@ div.larrymg_me_index--contentnav.explore_concise div.explore_link_roll {
   max-width: 100%;
 }
 
-div.larrymg_me_index--contentnav.explore_concise div.explore_link_roll a {
+section.larrymg_me_index--contentnav.explore_concise div.explore_link_roll a {
   padding: 15px;
 }
 
-div.larrymg_me_index--contentnav.explore_verbose {
+section.larrymg_me_index--contentnav.explore_verbose {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -788,16 +788,16 @@ div.explore_item:hover p#my_work-current_job_status {
     place-items: center;
   }
 
-  div.larrymg_me_index--sidebar {
+  section.larrymg_me_index--sidebar {
     display: none;
   }
 
-  div.larrymg_me_index--sidebar ul {
+  section.larrymg_me_index--sidebar ul {
     margin: 0;
     padding-left: 20px;
   }
 
-  div.larrymg_me_index--content {
+  section.larrymg_me_index--content {
     padding: 0px 5px;
   }
 
