@@ -1212,7 +1212,7 @@ section#objective_wrapped {
     --width__container--resume-col_2: 100%;
   }
 
-  main {
+  main#my_work--resume {
     /* Add margin to left & right of main element to create "gutters" &
           allow me to use margin: 25px auto to center resume's outermost container. */
     margin-right: 15px;
