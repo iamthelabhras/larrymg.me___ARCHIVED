@@ -421,6 +421,9 @@ div.larrymg_me_index--sidebar div.lets_connect {
   justify-content: space-evenly;
   align-content: center;
   height: 50px;
+  /* A little bit more margin on the bottom of this div to separate
+      it from each of the 'What I'm Learning' h2 elements that follow. */
+  margin-bottom: 20px;
   border-bottom: 5px solid #cecece;
   padding: calc(10px + 2.75rem) 0px;
 }
@@ -472,6 +475,7 @@ div.what_im_watching h2,
 div.this_weeks_hot_track h2,
 div.this_weeks_hot_laugh h2 {
   text-align: center;
+  margin: 15px 0px;
   padding: 5px;
   border: 1px solid whitesmoke;
   background: #cecece;
