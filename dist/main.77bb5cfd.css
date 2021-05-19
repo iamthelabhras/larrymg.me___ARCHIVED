@@ -1379,9 +1379,9 @@ section#projects_and_side_hustles span.resume_dates span.clean_break_on_wrap {
   }
 }
 @media screen and (min-width: 0px) and (max-width: 525px) {
-  section h2 {
+  section.resume_section h2 {
     /* Turn h2 elements into flex boxes on smaller screen to prevent unsightly wrapping of
-        resume section headers on smaller screens. */
+        resume section headers. */
     display: flex;
     align-items: center;
   }
