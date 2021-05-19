@@ -400,7 +400,7 @@ div.larrymg_me_index--grid_container {
 }
 
 /* #region Sidebar */
-section.larrymg_me_index--sidebar {
+div.larrymg_me_index--sidebar {
   display: flex;
   flex-direction: column;
   padding: 0px 10px;
@@ -408,13 +408,13 @@ section.larrymg_me_index--sidebar {
 }
 
 /* Keep last sidebar div in view as visitors scroll through content divs. */
-section.larrymg_me_index--sidebar div:last-of-type {
+div.larrymg_me_index--sidebar div:last-of-type {
   position: sticky;
   top: 0;
 }
 
 /* #region Sidebar -- Let's Connect */
-section.larrymg_me_index--sidebar div.lets_connect {
+div.larrymg_me_index--sidebar div.lets_connect {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -428,7 +428,7 @@ section.larrymg_me_index--sidebar div.lets_connect {
   padding: calc(10px + 2.75rem) 0px;
 }
 
-section.larrymg_me_index--sidebar div.lets_connect a {
+div.larrymg_me_index--sidebar div.lets_connect a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -438,32 +438,32 @@ section.larrymg_me_index--sidebar div.lets_connect a {
   text-decoration: none;
 }
 
-section.larrymg_me_index--sidebar div.lets_connect a:link {
+div.larrymg_me_index--sidebar div.lets_connect a:link {
   color: black;
 }
 
-section.larrymg_me_index--sidebar div.lets_connect a:visited {
+div.larrymg_me_index--sidebar div.lets_connect a:visited {
   color: gray;
 }
 
-section.larrymg_me_index--sidebar div.lets_connect a:focus {
+div.larrymg_me_index--sidebar div.lets_connect a:focus {
   color: #fdff9d;
 }
 
-section.larrymg_me_index--sidebar div.lets_connect a:hover {
+div.larrymg_me_index--sidebar div.lets_connect a:hover {
   color: #fdff9d;
 }
 
-section.larrymg_me_index--sidebar div.lets_connect a:active {
+div.larrymg_me_index--sidebar div.lets_connect a:active {
   color: black;
 }
 
-section.larrymg_me_index--sidebar div.lets_connect i {
+div.larrymg_me_index--sidebar div.lets_connect i {
   font-size: 2.5rem;
   transition: all 0.25s ease-in-out;
 }
 
-section.larrymg_me_index--sidebar div.lets_connect i:hover {
+div.larrymg_me_index--sidebar div.lets_connect i:hover {
   font-size: 2.75rem;
 }
 
@@ -552,14 +552,14 @@ div.this_weeks_hot_laugh img {
 /* #endregion */
 /* #endregion - Sidebar */
 /* #region Content */
-section.larrymg_me_index--content {
+div.larrymg_me_index--content {
   display: grid;
   place-items: center;
   margin-bottom: 50px;
 }
 
 /* #region Content -- Block Quote */
-section.larrymg_me_index--content div.block_quotes {
+div.larrymg_me_index--content div.block_quotes {
   display: grid;
   place-items: center;
   margin: 0 auto;
@@ -572,21 +572,21 @@ section.larrymg_me_index--content div.block_quotes {
   background: #fff9fb;
 }
 
-section.larrymg_me_index--content div.block_quotes p,
-section.larrymg_me_index--content div.block_quotes span {
+div.larrymg_me_index--content div.block_quotes p,
+div.larrymg_me_index--content div.block_quotes span {
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
 }
 
-section.larrymg_me_index--content div.block_quotes p {
+div.larrymg_me_index--content div.block_quotes p {
   max-width: 55ch;
 }
 
-section.larrymg_me_index--content div.block_quotes span.block_quote--attribution {
+div.larrymg_me_index--content div.block_quotes span.block_quote--attribution {
   font-weight: 700;
 }
 
 /* Links to attribution's text, article, or other media. */
-section.larrymg_me_index--content div.block_quotes a {
+div.larrymg_me_index--content div.block_quotes a {
   font-style: italic;
 }
 
@@ -655,7 +655,7 @@ div.intro p:nth-of-type(2) {
 /* #endregion Content -- Hello & Intro */
 /* #endregion Content */
 /* #region Content -- Explore */
-section.larrymg_me_index--contentnav.explore_concise {
+div.larrymg_me_index--contentnav.explore_concise {
   width: 80%;
   max-width: 1102px;
   margin: 50px 0px;
@@ -685,7 +685,7 @@ p#explore_concise_menu-instructions span:first-of-type {
   font-size: 1.25rem;
 }
 
-section.larrymg_me_index--contentnav.explore_concise div.explore_link_roll {
+div.larrymg_me_index--contentnav.explore_concise div.explore_link_roll {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -693,11 +693,11 @@ section.larrymg_me_index--contentnav.explore_concise div.explore_link_roll {
   max-width: 100%;
 }
 
-section.larrymg_me_index--contentnav.explore_concise div.explore_link_roll a {
+div.larrymg_me_index--contentnav.explore_concise div.explore_link_roll a {
   padding: 15px;
 }
 
-section.larrymg_me_index--contentnav.explore_verbose {
+div.larrymg_me_index--contentnav.explore_verbose {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -788,16 +788,16 @@ div.explore_item:hover p#my_work-current_job_status {
     place-items: center;
   }
 
-  section.larrymg_me_index--sidebar {
+  div.larrymg_me_index--sidebar {
     display: none;
   }
 
-  section.larrymg_me_index--sidebar ul {
+  div.larrymg_me_index--sidebar ul {
     margin: 0;
     padding-left: 20px;
   }
 
-  section.larrymg_me_index--content {
+  div.larrymg_me_index--content {
     padding: 0px 5px;
   }
 
