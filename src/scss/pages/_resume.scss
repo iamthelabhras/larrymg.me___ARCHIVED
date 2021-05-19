@@ -199,7 +199,7 @@ section.resume_section h2 span {
   color: white;
 }
 
-span.dates {
+span.resume_dates {
   /* NOTE: This class is slightly modified in Column 2 -- Experience . */
   display: inline-block;
   font-family: "Gothic A1", "Century Gothic", “Apple Gothic”, AppleGothic,
@@ -667,7 +667,7 @@ section#projects_and_side_hustles span.side_hustle {
   font-weight: var(--font_weight__project_and_side_hustles_titles);
 }
 
-section#projects_and_side_hustles span.dates {
+section#projects_and_side_hustles span.resume_dates {
   text-align: right;
 }
 
@@ -825,7 +825,7 @@ section#experience span.employer {
   color: var(--light_grey);
 }
 
-section#experience span.dates {
+section#experience span.resume_dates {
   display: inline-block;
   /* Use align-self to ensure jobe title remains flush with solid border line when 
         dates wrap. */
@@ -1018,7 +1018,7 @@ section#objective_wrapped {
     font-size: calc(var(--font_size__job_titles) * 0.85);
   }
 
-  section#experience span.dates {
+  section#experience span.resume_dates {
     font-size: calc(var(--font_size__dates) * 0.85);
   }
 
@@ -1029,7 +1029,7 @@ section#objective_wrapped {
     font-size: calc(var(--font_size__job_titles) * 0.85);
   }
 
-  section#projects_and_side_hustles span.dates {
+  section#projects_and_side_hustles span.resume_dates {
     /* This code doesn't have to be here - it's actually redundant - but it serves
         to remind me that, below 835px, I align the font sizes for job & side hustle
         titles & dates. */
@@ -1044,8 +1044,8 @@ section#objective_wrapped {
 }
 
 @media screen and (min-width: 0px) and (max-width: 545px) {
-  section#experience span.dates span.clean_break_on_wrap,
-  section#projects_and_side_hustles span.dates span.clean_break_on_wrap {
+  section#experience span.resume_dates span.clean_break_on_wrap,
+  section#projects_and_side_hustles span.resume_dates span.clean_break_on_wrap {
     /* Synchronize styling of dated resume actions on wrap, 
         ensure end date (i.e. start date - end date) string wraps as a single "element" for increased legibility. */
     display: block;
