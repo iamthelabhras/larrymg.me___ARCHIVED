@@ -8,7 +8,7 @@ main#larrymg_me_index {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 25px 25px 0px 25px;
+  // padding: 25px 25px 0px 25px;
 }
 
 div.larrymg_me_index--grid_container {
@@ -186,7 +186,7 @@ div.this_weeks_hot_laugh img {
 div.larrymg_me_index--content {
   display: grid;
   place-items: center;
-  margin-bottom: 50px;
+  padding: 25px 25px 0px 25px;
 }
 
 /* #region Content -- Block Quote */
