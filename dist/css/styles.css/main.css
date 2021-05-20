@@ -730,6 +730,7 @@ div.explore_item {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 225px;
   border: 1px solid black;
   padding: 8px;
   background: #cecece;
@@ -746,6 +747,8 @@ div.explore_item h2 {
       across cards. */
   flex-grow: 1;
   text-align: center;
+  /* Bottom margin ensures a minimal amount of space between h2 &
+      proceeding p element on cards with more text. */
   margin-bottom: 3%;
   color: #252627;
 }
@@ -757,9 +760,11 @@ div.explore_item p {
   /* Prevents overly long lines on smaller screens when cards explore_item divs
       stack one on top of the other. */
   max-width: 40ch;
+  padding: 0px 10px;
 }
 
 div.explore_item p + a {
+  /* Styles chevrons at bottom of cards that link back to nav menu. */
   text-decoration: none;
   /* Use adjacent sibling selector to prevent resizing of linked h2 elements. */
   font-size: 1.25rem;
@@ -768,7 +773,8 @@ div.explore_item p + a {
 
 div.explore_item a:hover,
 div.explore_item a:focus {
-  transform: translateY(-5px);
+  /* Move chevrons at bottom of cards up slightly & enalrge on hover. */
+  transform: translateY(-5px) scale(1.2);
 }
 
 div#my_work {
