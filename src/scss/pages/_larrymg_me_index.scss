@@ -280,9 +280,17 @@ div.larrymg_me_index--intro {
   max-width: 55ch;
 }
 
+div.larrymg_me_index--intro p {
+  margin: 10px 0px;
+  background: orange;
+}
+
 div.larrymg_me_index--intro p:nth-of-type(2) {
-  margin-top: 15px;
+  text-align: center;
+  /* Remove text-indent to prevent weird sizing issues with p element. */
+  text-indent: 0;
   font-size: 1.75rem;
+  background: green;
 }
 
 /* #endregion *?
