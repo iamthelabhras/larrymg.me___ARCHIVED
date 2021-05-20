@@ -82,7 +82,8 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  /* Tightened up initial line-height of 1.5. */
+  line-height: 1.2;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -392,7 +393,6 @@ main#larrymg_me_index {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  line-height: 1.2;
 }
 
 div.larrymg_me_index--grid_container {
