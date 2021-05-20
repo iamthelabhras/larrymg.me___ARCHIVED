@@ -392,6 +392,7 @@ main#larrymg_me_index {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  line-height: 1.2;
 }
 
 div.larrymg_me_index--grid_container {
@@ -502,6 +503,7 @@ div.what_im_learning ul,
 div.what_im_reading ul,
 div.what_im_watching ul {
   font-family: "main_text", sans-serif;
+  padding-left: 5px;
 }
 
 div.what_im_learning li,
@@ -509,11 +511,9 @@ div.what_im_reading li,
 div.what_im_watching li {
   list-style: none;
   list-style-position: inside;
-  /* Injects space at top & bottom of *all* list items for legibility */
-  margin: 15px;
-  padding: 0px 0px 0px 25px;
+  padding: 0px 20px 5px 20px;
   background: url("../images/my_work/resume/bullets/square-shadow.svg") no-repeat scroll 0 0 transparent;
-  background-size: 12px 12px;
+  background-size: 6px 6px;
   /* Nudges square-shadow.svg down to the baseline of each li span text. */
   background-position-y: 6px;
 }
