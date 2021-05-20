@@ -431,7 +431,7 @@ div.explore_item:hover p#my_work-current_job_status {
 
 /* #region Media Queries */
 @media screen and (min-width: 0px) and (max-width: 575px) {
-  div.grid_container {
+  div.larrymg_me_index--grid_container {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
@@ -443,34 +443,35 @@ div.explore_item:hover p#my_work-current_job_status {
     display: none;
   }
 
-  div.larrymg_me_index--sidebar ul {
-    margin: 0;
-    padding-left: 20px;
-  }
-
   div.larrymg_me_index--content {
     padding: 0px 5px;
   }
 
-  div.block_quotes {
+  div.larrymg_me_index--content div.block_quotes {
+    max-width: 90%;
+    margin-top: 10px;
+  }
+
+  div.larrymg_me_index--hello {
     max-width: 90%;
   }
 
-  div.hello_and_intro {
-    max-width: 90%;
-  }
-
-  div.hello_and_intro p:first-of-type {
+  div.larrymg_me_index--hello p:first-of-type {
     font-size: 2.25rem;
   }
 
-  div.hello_and_intro img {
+  div.larrymg_me_index--hello img {
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
+    height: 80%;
   }
 
-  div.hello_and_intro p:nth-of-type(2) {
+  div.larrymg_me_index--intro p:nth-of-type(2) {
     font-size: 1.5rem;
+  }
+
+  p#my_work-current_job_status {
+    display: none;
   }
 }
 
