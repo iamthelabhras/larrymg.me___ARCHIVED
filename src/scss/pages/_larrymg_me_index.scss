@@ -234,6 +234,7 @@ div.larrymg_me_index--hello {
 }
 
 div.larrymg_me_index--hello p:first-of-type {
+  margin: 10px 0px;
   font-size: 3.25rem;
 }
 
@@ -288,6 +289,7 @@ div.larrymg_me_index--intro p:nth-of-type(2) {
   text-align: center;
   /* Remove text-indent to prevent weird sizing issues with p element. */
   text-indent: 0;
+  margin: 20px 0px;
   font-size: 1.75rem;
 }
 
@@ -423,6 +425,8 @@ div.explore_item:hover p#my_work-current_job_status {
 }
 
 /* #endregion Content -- Explore */
+
+/* #endregion Content */
 
 /* #region Media Queries */
 @media screen and (min-width: 0px) and (max-width: 575px) {
