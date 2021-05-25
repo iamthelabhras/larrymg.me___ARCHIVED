@@ -577,6 +577,12 @@ section#education li.resume_section_list_item span:nth-of-type(3) {
   display: block;
 }
 
+section#education span.clean_break_on_wrap {
+  font-family: "resume_monospace", monospace;
+  font-size: 10px !important;
+  color: red;
+}
+
 section#education span.asterisk_top {
   display: inline-block !important;
   font-family: "resume_monospace", monospace !important;
@@ -1128,58 +1134,10 @@ section#objective_wrapped {
     );
   }
 
-  section#education ul.resume_section_list li.resume_section_list_item {
-    /* Turn on Education section flex box's flex-wrap on smaller screens. */
-    flex-wrap: wrap;
-  }
-
-  /* The following two CSS style rules reflow the Education section's flexbox items to enhance 
-      legibility on smaller screens by splitting data into two rows, a first row with three "columns" 
-      (degree, university, & matriculation years) and a second row with one "column" (degree concentration). */
-
-  section#education
-    ul.resume_section_list
-    li.resume_section_list_item
-    span:first-of-type {
-    width: 20%;
-  }
-
-  section#education
-    ul.resume_section_list
-    li.resume_section_list_item
-    span:nth-of-type(3),
-  section#education
-    ul.resume_section_list
-    li.resume_section_list_item
-    span:nth-of-type(4) {
-    width: 40%;
-  }
-
-  /* Hide degree major/concentration span displayed on larger screens. */
-  section#education
-    ul.resume_section_list
-    li.resume_section_list_item
-    span:nth-of-type(2) {
-    display: none;
-  }
-
-  /* Unhides & styles degree major/concentration span on smaller screens. */
-  section#education
-    ul.resume_section_list
-    li.resume_section_list_item
-    span:nth-of-type(5) {
-    display: initial;
-    min-width: 100%;
-    text-align: right;
-    margin-top: 10px;
-    font-size: 0.8rem;
-    font-style: italic;
-    color: var(--dark_grey);
-  }
   /* Reposition explanatory Irish Studies "hover text" to accomodate reflowed flex box. */
   span#resume_hover_text--irish_studies {
-    top: 0px;
-    left: -232px;
+    top: 15px;
+    left: -110px;
   }
 }
 
