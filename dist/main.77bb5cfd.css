@@ -1381,16 +1381,16 @@ section#objective_wrapped p {
 
 /* #endregion */
 /* #region Resume -- Column 1 -- Education */
-section#education li span:first-of-type {
-  width: 50%;
-}
-
 section#education li > * {
   width: 100%;
 }
 
+section#education li span:first-of-type {
+  width: 50%;
+}
+
 section#education li span:nth-of-type(3) {
-  text-align: center;
+  text-align: right;
 }
 
 section#education li.resume_section_list_item span {
@@ -1404,11 +1404,6 @@ section#education li.resume_section_list_item span:first-of-type {
   font-family: "Gothic A1", "Century Gothic", “Apple Gothic”, AppleGothic, “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
 }
 
-section#education li.resume_section_list_item span:nth-of-type(2) {
-  font-style: italic;
-  color: var(--dark_grey);
-}
-
 section#education li.resume_section_list_item span:nth-of-type(2),
 section#education li.resume_section_list_item span:nth-of-type(3) {
   display: block;
@@ -1420,10 +1415,6 @@ section#education span.asterisk_top {
   font-size: 15px !important;
   color: var(--darkest_grey);
   font-weight: 300 !important;
-}
-
-section#education ul.resume_section_list li.resume_section_list_item span:nth-of-type(5) {
-  display: none;
 }
 
 span#resume_hover_text--irish_studies {
@@ -1626,6 +1617,7 @@ section#experience span.employer {
   align-self: flex-end;
   /* max-width: var(--max-width__employer); */
   /* margin-bottom: 25px; */
+  margin-top: 2.5px;
   padding-bottom: 15px;
   padding-left: 5px;
   font-family: "Gothic A1", "Century Gothic", “Apple Gothic”, AppleGothic, “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
