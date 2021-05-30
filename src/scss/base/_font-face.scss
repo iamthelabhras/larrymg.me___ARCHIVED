@@ -1,25 +1,157 @@
+/* #region Self-Hosted Fonts - "main_text" (Kulim Park) */
+
+/*  See https://fonts.google.com/specimen/Kulim+Park */
+
 @font-face {
   font-family: "main_text";
-  font-style: normal;
-  font-weight: 500;
   src: url("../fonts/KulimPark-Regular.ttf") format("truetype");
   font-display: swap;
-  /* Note: Harry Roberts' Extend Asyncness of Font Loading Snippet is used in all site HTML headers. */
 }
+
+@font-face {
+  font-family: "main_text";
+  font-style: italic;
+  src: url("../fonts/KulimPark-Italic.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "main_text";
+  font-weight: 200;
+  src: url("../fonts/KulimPark-ExtraLight.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "main_text";
+  font-weight: 200;
+  font-style: italic;
+  src: url("../fonts/KulimPark-ExtraLightItalic.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "main_text";
+  font-weight: 300;
+  src: url("../fonts/KulimPark-Light.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "main_text";
+  font-weight: 300;
+  font-style: italic;
+  src: url("../fonts/KulimPark-LightItalic.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "main_text";
+  font-weight: 300;
+  font-style: italic;
+  src: url("../fonts/KulimPark-LightItalic.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "main_text";
+  font-weight: 600;
+  src: url("../fonts/KulimPark-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "main_text";
+  font-weight: 600;
+  font-style: italic;
+  src: url("../fonts/KulimPark-SemiBoldItalic.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "main_text";
+  font-weight: 700;
+  src: url("../fonts/KulimPark-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "main_text";
+  font-weight: 700;
+  font-style: italic;
+  src: url("../fonts/KulimPark-SemiBoldItalic.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* #endregion Self-Hosted Fonts - "Main Text" (Kulim Park) */
+
+/* #region Self-Hosted Fonts - "cursive_flourish" (Helvetia Verbundene) */
+/* See: https://www.dafont.com/helvetia-verbundene.font */
 
 @font-face {
   font-family: "cursive_flourish";
   font-style: normal;
-  font-weight: 500;
   src: url("../fonts/helvetia-verbundene.ttf") format("truetype");
   font-display: swap;
-  /* Note: Harry Roberts' Extend Asyncness of Font Loading Snippet is used in all site HTML headers. */
 }
+
+/* #endregion Self-Hosted Fonts - "cursive_flourish" (Helvetia Verbundene) */
+
+/* #region Self-hosted Fonts - RESUME - "resume_monospace" (Monofur For Powerline) */
 
 @font-face {
   font-family: "resume_monospace";
   font-style: normal;
   src: url("../fonts/MonofurForPowerLine.ttf") format("truetype");
   font-display: swap;
-  /* Note: Harry Roberts' Extend Asyncness of Font Loading Snippet is used in all site HTML headers. */
 }
+
+/* #endregion Self-hosted Fonts - RESUME - "resume_monospace" (Monofur For Powerline) */
+
+/* #region Self-hosted Fonts - RESUME - "resume_main_text" (Gothic A1) */
+/* See: https://fonts.google.com/specimen/Gothic+A1 */
+
+@font-face {
+  font-family: "resume_main_text";
+  src: url("../fonts/GothicA1-Regular-400.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* NOTE: There are no italics available for this font.  Any italicized text will be a browser-rendered
+    "best guess". */
+
+@font-face {
+  font-family: "resume_main_text";
+  src: url("../fonts/GothicA1-Regular-400.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "resume_main_text";
+  font-weight: 200;
+  src: url("../fonts/GothicA1-ExtraLight-200.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "resume_main_text";
+  font-weight: 300;
+  src: url("../fonts/GothicA1-Light-300.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "resume_main_text";
+  font-weight: 500;
+  src: url("../fonts/GothicA1-Medium-500.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "resume_main_text";
+  font-weight: 700;
+  src: url("../fonts/GothicA1-Bold-700.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* #endregion Self-hosted Fonts - RESUME - "resume_main_text" (Gothic A1) */
