@@ -4,6 +4,7 @@
   font-weight: 500;
   src: url("../fonts/KulimPark-Regular.ttf") format("truetype");
   font-display: swap;
+  /* Note: Harry Roberts' Extend Asyncness of Font Loading Snippet is used in all site HTML headers. */
 }
 
 @font-face {
@@ -12,6 +13,7 @@
   font-weight: 500;
   src: url("../fonts/helvetia-verbundene.ttf") format("truetype");
   font-display: swap;
+  /* Note: Harry Roberts' Extend Asyncness of Font Loading Snippet is used in all site HTML headers. */
 }
 
 @font-face {
@@ -19,4 +21,5 @@
   font-style: normal;
   src: url("../fonts/MonofurForPowerLine.ttf") format("truetype");
   font-display: swap;
+  /* Note: Harry Roberts' Extend Asyncness of Font Loading Snippet is used in all site HTML headers. */
 }

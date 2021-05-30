@@ -21,7 +21,17 @@
       type="font/ttf"
       crossorigin
     />
+    <!-- Harry Robert's Extend Font Loading Asyncness Snippet
+          See: https://css-tricks.com/the-fastest-google-fonts/ -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preload" as="style" href="$CSS&display=swap" />
+    <link
+      rel="stylesheet"
+      href="$CSS&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <!-- End Harry Robert's Extend Font Loading Asyncness Snippet -->
     <link
       href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;400;500;700&display=swap"
       rel="stylesheet"
