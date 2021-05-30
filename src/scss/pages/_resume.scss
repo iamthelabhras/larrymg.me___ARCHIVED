@@ -71,50 +71,7 @@
 
 /* #Region Resume -- Fonts */
 
-/* Commented out locally-hosted Century Gothic @font-faces after
-    noticing they didn't appear to be working on website.  Replaced
-    with a sensible font-stack aimed at leveraging fonts already
-    installed on a user's system.  
-
-    At some point, I may want to consider locally hosting Didact Gothic
-      (available through Google Fonts here: 
-      https://fonts.google.com/specimen/Didact+Gothic?query=Didact)
-      at top of this stack. */
-
-/* @font-face {
-  font-family: "resume_sans_serif";
-  font-style: normal;
-  src: url("../fonts/CenturyGothic.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "resume_sans_serif";
-  font-weight: bold;
-  src: url("../fonts/CenturyGothicBold.ttf") format("truetype");
-  font-display: swap;
-} */
-
-/* Not sure why, but when I uncommented the commented code below, 
-    the browser renders all resume_sans_serif fonts in italics, 
-    regardless of of an element's declared font-style? */
-
-/* @font-face {
-  font-family: "resume_sans_serif";
-  font-weight: bold;
-  font-style: italic, oblique;
-  src: url("../fonts/CenturyGothicBoldItalic.ttf") format("truetype");
-  font-display: swap;
-} */
-
-/* @font-face {
-  font-family: "resume_sans_serif";
-  font-style: italic, oblique;
-  src: url("../fonts/CenturyGothicItalic.ttf") format("truetype");
-  font-display: swap;
-} */
-
-@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;400;500;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;400;500;700&display=swap");
 
 /* #endregion */
 
@@ -182,7 +139,7 @@ section.resume_section h2 {
   width: var(--width__resume_section_h2);
   margin-bottom: 10px;
   background: red;
-  font-family: "Gothic A1", "Century Gothic", “Apple Gothic”, AppleGothic,
+  font-family: "resume_main_text", "Century Gothic", “Apple Gothic”, AppleGothic,
     “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
   font-size: var(--font_size__section_titles);
   font-weight: 800;
@@ -202,7 +159,7 @@ section.resume_section h2 span {
 span.resume_dates {
   /* NOTE: This class is slightly modified in Column 2 -- Experience . */
   display: inline-block;
-  font-family: "Gothic A1", "Century Gothic", “Apple Gothic”, AppleGothic,
+  font-family: "resume_main_text", "Century Gothic", “Apple Gothic”, AppleGothic,
     “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
   /* font-size: calc(var(--font_size__dates) * 85%); */
   font-size: var(--font_size__dates);
@@ -352,7 +309,7 @@ header#resume_header img#download_pdf:hover {
 
 header#resume_header h1 {
   margin-top: 10px;
-  font-family: "Gothic A1", "Century Gothic", “Apple Gothic”, AppleGothic,
+  font-family: "resume_main_text", "Century Gothic", “Apple Gothic”, AppleGothic,
     “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
   font-size: var(--font_size__header_name);
 }
@@ -410,7 +367,7 @@ div.container--resume-col_1
   display: block;
   font-size: var(--font_size__col_1_titles);
   font-weight: 700;
-  font-family: "Gothic A1", "Century Gothic", “Apple Gothic”, AppleGothic,
+  font-family: "resume_main_text", "Century Gothic", “Apple Gothic”, AppleGothic,
     “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
 }
 
@@ -512,7 +469,7 @@ section#courses_and_certifications
   display: block;
   font-size: var(--font_size__col_1_titles);
   font-weight: var(--font_weight__skills_titles);
-  font-family: "Gothic A1", "Century Gothic", “Apple Gothic”, AppleGothic,
+  font-family: "resume_main_text", "Century Gothic", “Apple Gothic”, AppleGothic,
     “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
 }
 
@@ -532,7 +489,7 @@ section#objective_unwrapped p {
   background: var(--yellow);
   font-size: var(--font_size__objective);
   font-weight: var(--font_weight__objective);
-  font-family: "Gothic A1", "Century Gothic", “Apple Gothic”, AppleGothic,
+  font-family: "resume_main_text", "Century Gothic", “Apple Gothic”, AppleGothic,
     “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
 }
 
@@ -568,7 +525,7 @@ section#education li.resume_section_list_item span:first-of-type {
   display: block;
   font-size: var(--font_size__col_1_titles);
   font-weight: var(--font_weight__education_titles);
-  font-family: "Gothic A1", "Century Gothic", “Apple Gothic”, AppleGothic,
+  font-family: "resume_main_text", "Century Gothic", “Apple Gothic”, AppleGothic,
     “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
 }
 
@@ -649,7 +606,7 @@ section#projects_and_side_hustles span.side_hustle {
   /* Use align-self to ensure project / side hustle title remains flush with solid border line when 
         dates wrap. */
   align-self: flex-end;
-  font-family: "Gothic A1", "Century Gothic", “Apple Gothic”, AppleGothic,
+  font-family: "resume_main_text", "Century Gothic", “Apple Gothic”, AppleGothic,
     “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
   font-size: var(--font_size__side_hustle);
   font-weight: var(--font_weight__project_and_side_hustles_titles);
@@ -695,7 +652,7 @@ section#interests_and_hobbies {
 }
 
 section#interests_and_hobbies h3 {
-  font-family: "Gothic A1", "Century Gothic", “Apple Gothic”, AppleGothic,
+  font-family: "resume_main_text", "Century Gothic", “Apple Gothic”, AppleGothic,
     “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
 }
 
@@ -784,7 +741,7 @@ section#experience span.job_title {
   border-right: 2px solid var(--light_grey);
   box-shadow: 1px 0px 2px 1px var(--darkest_grey);
   padding-left: 5px;
-  font-family: "Gothic A1", "Century Gothic", “Apple Gothic”, AppleGothic,
+  font-family: "resume_main_text", "Century Gothic", “Apple Gothic”, AppleGothic,
     “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
   font-size: var(--font_size__job_titles);
   font-weight: var(--font_weight__job_titles);
@@ -807,7 +764,7 @@ section#experience span.employer {
   margin-top: 2.5px;
   padding-bottom: 15px;
   padding-left: 5px;
-  font-family: "Gothic A1", "Century Gothic", “Apple Gothic”, AppleGothic,
+  font-family: "resume_main_text", "Century Gothic", “Apple Gothic”, AppleGothic,
     “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
   font-size: var(--font_size__employer);
   font-weight: var(--font_weight__employer);
