@@ -833,6 +833,10 @@ div.concise_menu_instructions-nav_gray_block_and_text div.concise_menu_instructi
   margin-top: 20px;
 }
 
+div.concise_menu_instructions-nav_gray_block_and_text div.concise_menu_instructions-text p:last-of-type {
+  margin-bottom: 20px;
+}
+
 div.larrymg_me_index--content nav.explore_concise div.explore_link_roll {
   display: flex;
   flex-direction: row;
