@@ -113,8 +113,7 @@ div.this_weeks_hot_laugh span.cursive {
 
 /* #endregion -- h2 for all "Weekly" Sections */
 
-/* #region What I'm Learning This Week, What I'm Reading This Week, &
-      What I'm Watching This Week Sections */
+/* #region What I'm Learning This Week, What I'm Reading This Week, & What I'm Watching This Week Sections */
 
 div.what_im_learning ul,
 div.what_im_reading ul,
@@ -135,8 +134,17 @@ div.what_im_watching li {
   background-position-y: 6px;
 }
 
-/* #endregion What I'm Learning This Week, What I'm Reading This Week, &
-      What I'm Watching This Week Sections */
+/* #endregion What I'm Learning This Week, What I'm Reading This Week, & What I'm Watching This Week Sections */
+
+/* #region Sidebar -- This Week's Hot Track & This Week's Hot Laugh */
+
+div.this_weeks_hot_track span.clean_break_on_wrap,
+div.this_weeks_hot_laugh span.clean_break_on_wrap {
+  /* Add "back" underline to cleanly broken spans for stylistic consistency. */
+  text-decoration: underline;
+}
+
+/* #endregion Sidebar -- This Week's Hot Track & This Week's Hot Laugh */
 
 /* #region Sidebar -- What I'm Watching This Week */
 
