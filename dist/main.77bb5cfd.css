@@ -720,11 +720,14 @@ div.larrymg_me_index--hello p:first-of-type {
 div.larrymg_me_index--hello img {
   margin: 0 auto;
   width: 30%;
+  min-width: 218px;
   height: 30%;
+  min-height: 218px;
 }
 
 div.larrymg_me_index--hello p:nth-of-type(2) {
   font-size: 2.25rem;
+  margin-bottom: 10px;
 }
 
 div.larrymg_me_index--hello a.test_performance {
@@ -787,26 +790,41 @@ div.larrymg_me_index--content nav.explore_concise {
   background: white;
 }
 
-p#explore_concise_menu-instructions {
+div.larrymg_me_index--content nav.explore_concise div.concise_menu_instructions-nav_gray_block_and_text {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
   border-bottom: 5px solid #cecece;
-  padding-bottom: 15px;
 }
 
-p#explore_concise_menu-instructions span {
-  max-width: 45ch;
-}
-
-p#explore_concise_menu-instructions span:first-of-type {
-  align-self: center;
-  margin-bottom: 10px;
+div.concise_menu_instructions-nav_gray_block_and_text span.concise_menu_instructions-nav_gray_block {
+  text-align: center;
   border-radius: 10px;
   padding: 15px;
   background: rgba(206, 206, 206, 0.45);
   font-size: 1.25rem;
+  width: 80%;
+}
+
+div.concise_menu_instructions-nav_gray_block_and_text div.concise_menu_instructions-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+div.concise_menu_instructions-nav_gray_block_and_text div.concise_menu_instructions-text p {
+  max-width: 55ch;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.concise_menu_instructions-nav_gray_block_and_text div.concise_menu_instructions-text p:first-of-type {
+  text-align: center;
+  margin-top: 20px;
 }
 
 div.larrymg_me_index--content nav.explore_concise div.explore_link_roll {
