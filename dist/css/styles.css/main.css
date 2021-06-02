@@ -512,7 +512,7 @@ div.larrymg_me_index--grid_container {
 }
 
 /* #region Sidebar */
-div.larrymg_me_index--sidebar {
+aside.larrymg_me_index--sidebar {
   display: flex;
   flex-direction: column;
   padding: 0px 10px;
@@ -520,13 +520,13 @@ div.larrymg_me_index--sidebar {
 }
 
 /* Keep last sidebar div in view as visitors scroll through content divs. */
-div.larrymg_me_index--sidebar div:last-of-type {
+aside.larrymg_me_index--sidebar div:last-of-type {
   position: sticky;
   top: 0;
 }
 
 /* #region Sidebar -- Let's Connect */
-div.larrymg_me_index--sidebar div.lets_connect {
+aside.larrymg_me_index--sidebar div.lets_connect {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -540,7 +540,7 @@ div.larrymg_me_index--sidebar div.lets_connect {
   padding: calc(10px + 2.75rem) 0px;
 }
 
-div.larrymg_me_index--sidebar div.lets_connect a {
+aside.larrymg_me_index--sidebar div.lets_connect a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -550,32 +550,32 @@ div.larrymg_me_index--sidebar div.lets_connect a {
   text-decoration: none;
 }
 
-div.larrymg_me_index--sidebar div.lets_connect a:link {
+aside.larrymg_me_index--sidebar div.lets_connect a:link {
   color: black;
 }
 
-div.larrymg_me_index--sidebar div.lets_connect a:visited {
+aside.larrymg_me_index--sidebar div.lets_connect a:visited {
   color: gray;
 }
 
-div.larrymg_me_index--sidebar div.lets_connect a:focus {
+aside.larrymg_me_index--sidebar div.lets_connect a:focus {
   color: #fdff9d;
 }
 
-div.larrymg_me_index--sidebar div.lets_connect a:hover {
+aside.larrymg_me_index--sidebar div.lets_connect a:hover {
   color: #fdff9d;
 }
 
-div.larrymg_me_index--sidebar div.lets_connect a:active {
+aside.larrymg_me_index--sidebar div.lets_connect a:active {
   color: black;
 }
 
-div.larrymg_me_index--sidebar div.lets_connect i {
+aside.larrymg_me_index--sidebar div.lets_connect i {
   font-size: 2.5rem;
   transition: all 0.25s ease-in-out;
 }
 
-div.larrymg_me_index--sidebar div.lets_connect i:hover {
+aside.larrymg_me_index--sidebar div.lets_connect i:hover {
   font-size: 2.75rem;
 }
 
@@ -920,7 +920,7 @@ div.explore_item:hover p#my_work-current_job_status {
     place-items: center;
   }
 
-  div.larrymg_me_index--sidebar {
+  aside.larrymg_me_index--sidebar {
     display: none;
   }
 
