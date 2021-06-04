@@ -12,4 +12,24 @@ main#my_web_dev_journey {
 
 /* #region Content */
 
+main#my_web_dev_journey div.larrymg_me--content iframe {
+  width: 100%;
+  height: 50%;
+}
+
+div.container--iframe_and_caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+span#iframe_journey_vaporwave_caption {
+  margin-top: 10px;
+  font-family: cursive_flourish, cursive;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #b9b9b9;
+}
+
 /* #endregion */

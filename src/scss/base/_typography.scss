@@ -1,4 +1,39 @@
+/* #region Header & Paragraph Modular Font Sizing
+      Starting from a base of 1rem for the <p> element, fonts are sized up using a 1.25 modular scale.
+      GRMA to https://modularscale.com for taking care of all the math for us! */
+
+h1 {
+  font-size: 3.815rem;
+}
+
+h2 {
+  font-size: 3.052rem;
+}
+
+h3 {
+  font-size: 2.441rem;
+}
+
+h4 {
+  font-size: 1.953rem;
+}
+
+h5 {
+  font-size: 1.563rem;
+}
+h6 {
+  font-size: 1.25rem;
+}
+p {
+  font-size: 1rem;
+}
+
+h1,
 h2,
+h3,
+h4,
+h5,
+h6,
 p {
   font-family: inherit;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.07);

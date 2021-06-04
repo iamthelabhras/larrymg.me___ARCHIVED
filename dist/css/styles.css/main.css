@@ -233,7 +233,43 @@ select {
   }
 }
 /* #endregion */
+/* #region Header & Paragraph Modular Font Sizing
+      Starting from a base of 1rem for the <p> element, fonts are sized up using a 1.25 modular scale.
+      GRMA to https://modularscale.com for taking care of all the math for us! */
+h1 {
+  font-size: 3.815rem;
+}
+
+h2 {
+  font-size: 3.052rem;
+}
+
+h3 {
+  font-size: 2.441rem;
+}
+
+h4 {
+  font-size: 1.953rem;
+}
+
+h5 {
+  font-size: 1.563rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1,
 h2,
+h3,
+h4,
+h5,
+h6,
 p {
   font-family: inherit;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.07);
@@ -727,9 +763,8 @@ div.larrymg_me_index--hello {
   width: 80%;
 }
 
-div.larrymg_me_index--hello p:first-of-type {
+div.larrymg_me_index--hello h1 {
   margin: 10px 0px;
-  font-size: 3.25rem;
 }
 
 div.larrymg_me_index--hello img {
@@ -740,7 +775,7 @@ div.larrymg_me_index--hello img {
   min-height: 218px;
 }
 
-div.larrymg_me_index--hello p:nth-of-type(2) {
+div.larrymg_me_index--hello p:first-of-type {
   font-size: 2.25rem;
   margin-bottom: 10px;
 }
@@ -814,7 +849,7 @@ div.larrymg_me--content nav.explore_concise div.concise_menu_instructions-nav_gr
   border-bottom: 5px solid #cecece;
 }
 
-div.concise_menu_instructions-nav_gray_block_and_text span.concise_menu_instructions-nav_gray_block {
+div.concise_menu_instructions-nav_gray_block_and_text h2.concise_menu_instructions-nav_gray_block {
   text-align: center;
   border-radius: 10px;
   padding: 15px;
@@ -887,7 +922,7 @@ div.explore_item:hover {
   transform: scale(1.045);
 }
 
-div.explore_item h2 {
+div.explore_item h3 {
   /* Use flex-grow to produce a semi-centered alignment of card text
       across cards. */
   flex-grow: 1;
@@ -949,7 +984,7 @@ div.explore_item:hover p#my_work-current_job_status {
 /* #endregion Content */
 /* #region Media Queries */
 @media screen and (min-width: 0px) and (max-width: 575px) {
-  div.larrymg_me_index--grid_container {
+  div.larrymg_me--grid_container--sidebar_and_content {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
@@ -957,15 +992,15 @@ div.explore_item:hover p#my_work-current_job_status {
     place-items: center;
   }
 
-  aside.larrymg_me_index--sidebar {
+  aside.larrymg_me--sidebar {
     display: none;
   }
 
-  div.larrymg_me_index--content {
+  div.larrymg_me--content {
     padding: 0px 5px;
   }
 
-  div.larrymg_me_index--content div.block_quotes {
+  div.larrymg_me--content div.block_quotes {
     max-width: 90%;
     margin-top: 10px;
   }
@@ -1024,6 +1059,27 @@ main#my_web_dev_journey {
 /* #region Sidebar */
 /* #endregion */
 /* #region Content */
+main#my_web_dev_journey div.larrymg_me--content iframe {
+  width: 100%;
+  height: 50%;
+}
+
+div.container--iframe_and_caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+span#iframe_journey_vaporwave_caption {
+  margin-top: 10px;
+  font-family: cursive_flourish, cursive;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #b9b9b9;
+}
+
 /* #endregion */
 /* #region Resume -- Custom Variables */
 :root {
