@@ -6,24 +6,10 @@ main#my_web_dev_journey {
   height: 100vh;
 }
 
-div.larrymg_me_my_web_dev_journey--grid_container {
-  display: grid;
-  /* Set widths for sidebar & content divs here. */
-  grid-template-columns: minmax(225px, 20%) 1fr;
-  gap: 1rem;
-  width: 100%;
-  height: 100%;
-}
-
 /* #region Sidebar */
 
 /* #endregion */
 
 /* #region Content */
-div.larrymg_me_my_web_dev_journey--content {
-  background: var(--white);
-}
-span.web_dev_quote_text {
-  font-weight: 700;
-}
+
 /* #endregion */

@@ -10,15 +10,6 @@ main#larrymg_me_index {
   height: 100vh;
 }
 
-div.larrymg_me_index--grid_container {
-  display: grid;
-  /* Set widthsfor sidebar & content divs here. */
-  grid-template-columns: minmax(225px, 20%) 1fr;
-  gap: 1rem;
-  width: 100%;
-  height: 100%;
-}
-
 /* #region Sidebar */
 
 /* #region Sidebar -- Let's Connect */
