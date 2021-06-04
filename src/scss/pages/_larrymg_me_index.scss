@@ -12,7 +12,7 @@ main#larrymg_me_index {
 
 div.larrymg_me_index--grid_container {
   display: grid;
-  /* Set relative widths for sidebar & content divs here. */
+  /* Set widthsfor sidebar & content divs here. */
   grid-template-columns: minmax(225px, 20%) 1fr;
   gap: 1rem;
   width: 100%;
@@ -21,68 +21,10 @@ div.larrymg_me_index--grid_container {
 
 /* #region Sidebar */
 
-aside.larrymg_me_index--sidebar {
-  display: flex;
-  flex-direction: column;
-  padding: 0px 10px;
-  background: #e8e8e8;
-}
-
-/* Keep last sidebar div in view as visitors scroll through content divs. */
-aside.larrymg_me_index--sidebar div:last-of-type {
-  position: sticky;
-  top: 0;
-}
-
 /* #region Sidebar -- Let's Connect */
 
-aside.larrymg_me_index--sidebar div.lets_connect {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: center;
-  height: 50px;
-  /* A little bit more margin on the bottom of this div to separate
-      it from each of the 'What I'm Learning' h2 elements that follow. */
-  margin-bottom: 20px;
-  border-bottom: 5px solid #cecece;
-  padding: calc(10px + 2.75rem) 0px;
-}
-
-aside.larrymg_me_index--sidebar div.lets_connect a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 2.75rem;
-  height: 2.75rem;
-  color: black;
-  text-decoration: none;
-}
-aside.larrymg_me_index--sidebar div.lets_connect a:link {
-  color: black;
-}
-aside.larrymg_me_index--sidebar div.lets_connect a:visited {
-  color: gray;
-}
-aside.larrymg_me_index--sidebar div.lets_connect a:focus {
-  color: #fdff9d;
-}
-aside.larrymg_me_index--sidebar div.lets_connect a:hover {
-  color: #fdff9d;
-}
-aside.larrymg_me_index--sidebar div.lets_connect a:active {
-  color: black;
-}
-
-aside.larrymg_me_index--sidebar div.lets_connect i {
-  font-size: 2.5rem;
-  transition: all 0.25s ease-in-out;
-}
-
-aside.larrymg_me_index--sidebar div.lets_connect i:hover {
-  font-size: 2.75rem;
-}
+/* Note: The "Let's Connect" part of the sidebar is a COMPONENT shared across several webpages.  
+      To view its code, see "sidebar.scss" in scss -- components folder. */
 
 /* #endregion */
 
