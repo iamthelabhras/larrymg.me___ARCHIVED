@@ -1,0 +1,41 @@
+div.larrymg_me--content {
+  display: grid;
+  place-items: center;
+  padding: 25px 25px 0px 25px;
+}
+
+/* #region Content -- Block Quote */
+
+div.larrymg_me--content div.block_quotes {
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  padding: 1rem;
+  margin-bottom: 50px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background: #fff9fb;
+}
+
+div.larrymg_me--content div.block_quotes p,
+div.larrymg_me--content div.block_quotes span {
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+div.larrymg_me--content div.block_quotes p {
+  max-width: 55ch;
+}
+
+div.larrymg_me--content div.block_quotes span.block_quote--attribution {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+/* Links to attribution's text, article, or other media. */
+div.larrymg_me--content div.block_quotes a {
+  font-style: italic;
+}
+
+/* #endregion Content -- Block Quote */

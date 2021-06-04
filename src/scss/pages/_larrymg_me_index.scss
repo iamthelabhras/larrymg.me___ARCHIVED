@@ -123,45 +123,13 @@ div.this_weeks_hot_laugh img {
 
 /* #region Content */
 
-div.larrymg_me_index--content {
-  display: grid;
-  place-items: center;
-  padding: 25px 25px 0px 25px;
-}
+/* Note: div.larrymg_me--content si a COMPONENT shared across several webpages.  
+      To view its code, see "content.scss" in scss -- components folder. */
 
 /* #region Content -- Block Quote */
 
-div.larrymg_me_index--content div.block_quotes {
-  display: grid;
-  place-items: center;
-  margin: 0 auto;
-  width: 80%;
-  max-width: 800px;
-  padding: 1rem;
-  margin-bottom: 50px;
-  border: 1px solid grey;
-  border-radius: 10px;
-  background: #fff9fb;
-}
-
-div.larrymg_me_index--content div.block_quotes p,
-div.larrymg_me_index--content div.block_quotes span {
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
-}
-
-div.larrymg_me_index--content div.block_quotes p {
-  max-width: 55ch;
-}
-
-div.larrymg_me_index--content div.block_quotes span.block_quote--attribution {
-  margin-top: 10px;
-  font-weight: 700;
-}
-
-/* Links to attribution's text, article, or other media. */
-div.larrymg_me_index--content div.block_quotes a {
-  font-style: italic;
-}
+/* Note: Content -- Block Quotes are a COMPONENT shared across several webpages.  
+      To view its code, see "content.scss" in scss -- components folder. */
 
 /* #endregion Content -- Block Quote */
 
@@ -246,7 +214,7 @@ div.larrymg_me_index--intro p:nth-of-type(2) {
 
 /* #region Content -- Explore */
 
-div.larrymg_me_index--content nav.explore_concise {
+div.larrymg_me--content nav.explore_concise {
   width: 80%;
   max-width: 1102px;
   margin: 50px 0px;
@@ -256,7 +224,7 @@ div.larrymg_me_index--content nav.explore_concise {
   background: white;
 }
 
-div.larrymg_me_index--content
+div.larrymg_me--content
   nav.explore_concise
   div.concise_menu_instructions-nav_gray_block_and_text {
   display: flex;
@@ -307,7 +275,7 @@ div.concise_menu_instructions-nav_gray_block_and_text
   margin-bottom: 20px;
 }
 
-div.larrymg_me_index--content nav.explore_concise div.explore_link_roll {
+div.larrymg_me--content nav.explore_concise div.explore_link_roll {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -315,11 +283,11 @@ div.larrymg_me_index--content nav.explore_concise div.explore_link_roll {
   max-width: 100%;
 }
 
-div.larrymg_me_index--content nav.explore_concise div.explore_link_roll a {
+div.larrymg_me--content nav.explore_concise div.explore_link_roll a {
   padding: 15px;
 }
 
-div.larrymg_me_index--content nav.explore_verbose {
+div.larrymg_me--content nav.explore_verbose {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
