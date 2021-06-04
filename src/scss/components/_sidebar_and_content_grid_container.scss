@@ -1,3 +1,11 @@
+main.sidebar_and_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 div.larrymg_me--grid_container--sidebar_and_content {
   display: grid;
   /* Set widths for sidebar & content divs here. */

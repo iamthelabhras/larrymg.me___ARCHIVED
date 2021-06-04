@@ -385,7 +385,32 @@ aside.larrymg_me--sidebar div.lets_connect i:hover {
 }
 
 /* #endregion Sidebar -- Let's Connect / Social Media Profiles & Icons */
+/* #region Sidebar -- H2 Gray Blocks */
+aside.larrymg_me--sidebar div h2 {
+  text-align: center;
+  margin: 15px 0px;
+  padding: 5px;
+  border: 1px solid whitesmoke;
+  background: #cecece;
+  font-size: 1.25rem;
+}
+
+aside.larrymg_me--sidebar div span.cursive {
+  display: block;
+  font-family: "cursive_flourish", cursive;
+  font-size: 1.15rem;
+}
+
+/* #endregion Sidebar -- H2 Gray Blocks */
 /* #endregion Sidebar */
+main.sidebar_and_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 div.larrymg_me--grid_container--sidebar_and_content {
   display: grid;
   /* Set widths for sidebar & content divs here. */
@@ -659,31 +684,10 @@ main#larrymg_me_index {
 /* Note: The "Let's Connect" part of the sidebar is a COMPONENT shared across several webpages.  
       To view its code, see "sidebar.scss" in scss -- components folder. */
 /* #endregion */
-/* #region Sidebar -- h2 for All "Weekly" Sections */
-div.what_im_learning h2,
-div.what_im_reading h2,
-div.what_im_watching h2,
-div.this_weeks_hot_track h2,
-div.this_weeks_hot_laugh h2 {
-  text-align: center;
-  margin: 15px 0px;
-  padding: 5px;
-  border: 1px solid whitesmoke;
-  background: #cecece;
-  font-size: 1.25rem;
-}
-
-div.what_im_learning span.cursive,
-div.what_im_reading span.cursive,
-div.what_im_watching span.cursive,
-div.this_weeks_hot_track span.cursive,
-div.this_weeks_hot_laugh span.cursive {
-  display: block;
-  font-family: "cursive_flourish", cursive;
-  font-size: 1.15rem;
-}
-
-/* #endregion -- h2 for all "Weekly" Sections */
+/* #region Sidebar -- H2 Elements For All "Weekly" Sections */
+/* Note: The <h2> elements that title each "Weekly" section in the main page's sidebar are COMPONENTS shared 
+    across several webpages.  To view this code, see "sidebar.scss" in scss -- components folder. */
+/* #endregion -- H2 Elements For All "Weekly" Sections */
 /* #region What I'm Learning This Week, What I'm Reading This Week, & What I'm Watching This Week Sections */
 div.what_im_learning ul,
 div.what_im_reading ul,
@@ -1048,14 +1052,6 @@ div.explore_item:hover p#my_work-current_job_status {
   }
 }
 /* #endregion Media Queries */
-main#my_web_dev_journey {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 /* #region Sidebar */
 /* #endregion */
 /* #region Content */
@@ -1078,6 +1074,11 @@ span#iframe_journey_vaporwave_caption {
   font-size: 1.25rem;
   font-weight: 600;
   color: #b9b9b9;
+}
+
+div.container--journey_text {
+  display: flex;
+  flex-direction: column;
 }
 
 /* #endregion */

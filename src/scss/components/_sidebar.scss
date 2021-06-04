@@ -64,4 +64,23 @@ aside.larrymg_me--sidebar div.lets_connect i:hover {
 
 /* #endregion Sidebar -- Let's Connect / Social Media Profiles & Icons */
 
+/* #region Sidebar -- H2 Gray Blocks */
+
+aside.larrymg_me--sidebar div h2 {
+  text-align: center;
+  margin: 15px 0px;
+  padding: 5px;
+  border: 1px solid whitesmoke;
+  background: #cecece;
+  font-size: 1.25rem;
+}
+
+aside.larrymg_me--sidebar div span.cursive {
+  display: block;
+  font-family: "cursive_flourish", cursive;
+  font-size: 1.15rem;
+}
+
+/* #endregion Sidebar -- H2 Gray Blocks */
+
 /* #endregion Sidebar */

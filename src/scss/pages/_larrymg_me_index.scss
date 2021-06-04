@@ -19,32 +19,12 @@ main#larrymg_me_index {
 
 /* #endregion */
 
-/* #region Sidebar -- h2 for All "Weekly" Sections */
+/* #region Sidebar -- H2 Elements For All "Weekly" Sections */
 
-div.what_im_learning h2,
-div.what_im_reading h2,
-div.what_im_watching h2,
-div.this_weeks_hot_track h2,
-div.this_weeks_hot_laugh h2 {
-  text-align: center;
-  margin: 15px 0px;
-  padding: 5px;
-  border: 1px solid whitesmoke;
-  background: #cecece;
-  font-size: 1.25rem;
-}
+/* Note: The <h2> elements that title each "Weekly" section in the main page's sidebar are COMPONENTS shared 
+    across several webpages.  To view this code, see "sidebar.scss" in scss -- components folder. */
 
-div.what_im_learning span.cursive,
-div.what_im_reading span.cursive,
-div.what_im_watching span.cursive,
-div.this_weeks_hot_track span.cursive,
-div.this_weeks_hot_laugh span.cursive {
-  display: block;
-  font-family: "cursive_flourish", cursive;
-  font-size: 1.15rem;
-}
-
-/* #endregion -- h2 for all "Weekly" Sections */
+/* #endregion -- H2 Elements For All "Weekly" Sections */
 
 /* #region What I'm Learning This Week, What I'm Reading This Week, & What I'm Watching This Week Sections */
 

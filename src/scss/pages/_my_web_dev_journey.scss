@@ -1,9 +1,4 @@
 main#my_web_dev_journey {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 /* #region Sidebar */
@@ -30,6 +25,11 @@ span#iframe_journey_vaporwave_caption {
   font-size: 1.25rem;
   font-weight: 600;
   color: #b9b9b9;
+}
+
+div.container--journey_text {
+  display: flex;
+  flex-direction: column;
 }
 
 /* #endregion */
