@@ -1,0 +1,10 @@
+.flexbox_basic--row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexbox_basic--column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
