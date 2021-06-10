@@ -1139,19 +1139,25 @@ div.container--journey_text p.grid_text_center {
   place-self: center;
 }
 
-div.container--journey_text p.journey_text {
+div.container--journey_text .journey_text {
   grid-column: 1/2;
 }
 
+div.container--journey_text div.journey_text {
+  display: flex;
+  flex-direction: column;
+}
+
 figure.journey_figure {
-  grid-column: 2/3;
-  place-self: center;
+  grid-column: 1/2;
+  align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-width: 223px;
   max-width: 350px;
+  margin-top: 30px;
   border: 2px solid darkgrey;
   padding: 15px;
   background: #e8e8e8;
@@ -1176,10 +1182,6 @@ figure.journey_figure figcaption {
   font-size: 15px;
   font-weight: 500;
   background: white;
-}
-
-figure#young_labhras {
-  grid-row: 8/8;
 }
 
 div.container--journey_text--2 img {

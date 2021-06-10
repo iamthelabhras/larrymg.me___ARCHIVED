@@ -184,12 +184,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/main.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../fonts/KulimPark-Regular.ttf":[["KulimPark-Regular.3f35cf68.ttf","fonts/KulimPark-Regular.ttf"],"fonts/KulimPark-Regular.ttf"],"./../fonts/KulimPark-Italic.ttf":[["KulimPark-Italic.7229b88d.ttf","fonts/KulimPark-Italic.ttf"],"fonts/KulimPark-Italic.ttf"],"./../fonts/KulimPark-ExtraLight.ttf":[["KulimPark-ExtraLight.dfa50adc.ttf","fonts/KulimPark-ExtraLight.ttf"],"fonts/KulimPark-ExtraLight.ttf"],"./../fonts/KulimPark-ExtraLightItalic.ttf":[["KulimPark-ExtraLightItalic.675d6b65.ttf","fonts/KulimPark-ExtraLightItalic.ttf"],"fonts/KulimPark-ExtraLightItalic.ttf"],"./../fonts/KulimPark-Light.ttf":[["KulimPark-Light.d3a84a08.ttf","fonts/KulimPark-Light.ttf"],"fonts/KulimPark-Light.ttf"],"./../fonts/KulimPark-LightItalic.ttf":[["KulimPark-LightItalic.a8f055e8.ttf","fonts/KulimPark-LightItalic.ttf"],"fonts/KulimPark-LightItalic.ttf"],"./../fonts/KulimPark-SemiBold.ttf":[["KulimPark-SemiBold.57ef77c2.ttf","fonts/KulimPark-SemiBold.ttf"],"fonts/KulimPark-SemiBold.ttf"],"./../fonts/KulimPark-SemiBoldItalic.ttf":[["KulimPark-SemiBoldItalic.b7d4a7f5.ttf","fonts/KulimPark-SemiBoldItalic.ttf"],"fonts/KulimPark-SemiBoldItalic.ttf"],"./../fonts/KulimPark-Bold.ttf":[["KulimPark-Bold.489cdeef.ttf","fonts/KulimPark-Bold.ttf"],"fonts/KulimPark-Bold.ttf"],"./../fonts/helvetia-verbundene.ttf":[["helvetia-verbundene.1ed4b3c9.ttf","fonts/helvetia-verbundene.ttf"],"fonts/helvetia-verbundene.ttf"],"./../fonts/MonofurForPowerLine.ttf":[["MonofurForPowerLine.6d3115d6.ttf","fonts/MonofurForPowerLine.ttf"],"fonts/MonofurForPowerLine.ttf"],"./../fonts/GothicA1-Regular-400.ttf":[["GothicA1-Regular-400.119ea2ca.ttf","fonts/GothicA1-Regular-400.ttf"],"fonts/GothicA1-Regular-400.ttf"],"./../fonts/GothicA1-ExtraLight-200.ttf":[["GothicA1-ExtraLight-200.dfdb8e54.ttf","fonts/GothicA1-ExtraLight-200.ttf"],"fonts/GothicA1-ExtraLight-200.ttf"],"./../fonts/GothicA1-Light-300.ttf":[["GothicA1-Light-300.849b5f68.ttf","fonts/GothicA1-Light-300.ttf"],"fonts/GothicA1-Light-300.ttf"],"./../fonts/GothicA1-Medium-500.ttf":[["GothicA1-Medium-500.b662fe45.ttf","fonts/GothicA1-Medium-500.ttf"],"fonts/GothicA1-Medium-500.ttf"],"./../fonts/GothicA1-Bold-700.ttf":[["GothicA1-Bold-700.fd6c9db2.ttf","fonts/GothicA1-Bold-700.ttf"],"fonts/GothicA1-Bold-700.ttf"],"./../images/my_work/resume/bullets/square-shadow.svg":[["square-shadow.c383f376.svg","images/my_work/resume/bullets/square-shadow.svg"],"images/my_work/resume/bullets/square-shadow.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -394,4 +389,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/main.77bb5cfd.js.map
+//# sourceMappingURL=/my_web_dev_journey/index.js.map
