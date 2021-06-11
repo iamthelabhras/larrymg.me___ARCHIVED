@@ -65,16 +65,25 @@ div.container--journey_text {
 
 div.container--journey_text li {
   // Not really DRY: this is 90% a copy & paste from _sidebar.scss.
+  display: flex;
   list-style: none;
   list-style-position: inside;
   // Add extra padding to bottom of links.
   padding: 0px 20px 10px 20px;
-  background: url("../images/my_work/resume/bullets/square-shadow.svg")
-    no-repeat scroll 0 0 transparent;
-  background-size: 6px 6px;
+  // background: url("../images/my_work/resume/bullets/square-shadow.svg")
+  //   no-repeat scroll 0 0 transparent;
+  // background-size: 6px 6px;
   /* Nudges square-shadow.svg down to the baseline of each li span text. */
-  background-position-y: 6px;
+  // background-position-y: 6px;
   font-size: 0.85rem;
+}
+
+div.container--journey_text li i {
+  align-self: center;
+  font-size: 1.1rem;
+  color: darkgrey;
+  transform: translateX(-20px);
+  background: green;
 }
 
 div.container--journey_text p {
