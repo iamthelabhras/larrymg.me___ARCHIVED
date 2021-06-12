@@ -1136,7 +1136,10 @@ div.container--journey_text li i {
   font-size: 1.1rem;
   color: darkgrey;
   transform: translateX(-20px);
-  background: green;
+}
+
+div.container--journey_text ul#moonrocks {
+  align-self: flex-end;
 }
 
 div.container--journey_text p {

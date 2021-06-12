@@ -85,6 +85,11 @@ div.container--journey_text li i {
   transform: translateX(-20px);
 }
 
+div.container--journey_text ul#moonrocks {
+  // Align @TheMooninites tweet with "Nerd Alert" picture.
+  align-self: flex-end;
+}
+
 div.container--journey_text p {
   max-width: 55ch;
   margin-top: 10px;
