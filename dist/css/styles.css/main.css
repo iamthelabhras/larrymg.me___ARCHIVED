@@ -1069,6 +1069,10 @@ aside ul {
   padding: 0;
 }
 
+div#tldr {
+  margin-top: 100px;
+}
+
 /* #endregion */
 /* #region Content */
 main#my_web_dev_journey div#container--home_and_header {
