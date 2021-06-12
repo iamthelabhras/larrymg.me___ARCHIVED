@@ -135,14 +135,14 @@ figure.journey_figure {
   padding: 15px;
   background: #e8e8e8;
   opacity: 0.9;
+  box-shadow: 2px 1px 1px 1px black;
 }
 
 figure.journey_figure img {
   width: 100%;
   height: 100%;
-  box-shadow: 10px black;
+  box-shadow: 1px 1px 1px 1px black;
   border-radius: 10px;
-  // transform: rotate(-5deg);
 }
 
 figure.journey_figure figcaption {
@@ -151,30 +151,17 @@ figure.journey_figure figcaption {
   // font-style: italic;
   width: 100%;
   height: 50px;
-  margin-top: 5px;
-  // Currently loaded into CSS via Google look.
+  margin-top: 15px;
+  padding: 10px;
+  // Currently loaded into CSS via Google link.
   // Need to go back and host this font locally if I decided to use it!
   font-family: "Kalam", cursive;
   font-size: 0.95rem;
   font-size: 15px;
   font-weight: 500;
   background: white;
+  border: 1px solid darkgrey;
   // transform: rotate(-5deg);
-}
-
-figure#young_labhras {
-}
-
-// div.container--journey_text--2 {
-//   background: red;
-// }
-
-div.container--journey_text--2 img {
-  width: 90%;
-  height: 90%;
-  padding-left: 15px;
-  border-radius: 10px;
-  transform: rotate(-5deg);
 }
 
 /* #endregion */
