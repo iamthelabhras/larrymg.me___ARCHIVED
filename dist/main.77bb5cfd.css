@@ -275,6 +275,41 @@ p {
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.07);
 }
 
+div.code_block {
+  align-self: center;
+  border: 1px solid darkgrey;
+  padding: 15px;
+  background: white;
+  font-family: "resume_monospace", monospace;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+div.code_block span {
+  display: block;
+}
+
+div.code_block span.one_tab {
+  text-indent: 8ch;
+}
+
+div.code_block span.two_tab {
+  text-indent: 16ch;
+}
+
+div.code_block span.three_tab {
+  text-indent: 24ch;
+}
+
+div.code_block span.four_tab {
+  text-indent: 32ch;
+}
+
+div.code_block span:first-of-type,
+div.code_block span:last-of-type {
+  text-indent: 0ch;
+}
+
 :root {
   --site_wide--scroll_padding: 10px;
 }
