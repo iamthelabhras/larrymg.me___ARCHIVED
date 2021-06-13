@@ -40,13 +40,15 @@ p {
 }
 
 div.code_block {
+  display: flex;
+  flex-direction: column;
   align-self: center;
+  width: 100%;
   border: 1px solid darkgrey;
   padding: 15px;
   background: white;
   font-family: "resume_monospace", monospace;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.1rem;
 }
 
 div.code_block span {
@@ -54,22 +56,22 @@ div.code_block span {
 }
 
 div.code_block span.one_tab {
-  text-indent: 8ch;
+  padding-left: 8%;
 }
 
 div.code_block span.two_tab {
-  text-indent: 16ch;
+  padding-left: 16%;
 }
 
 div.code_block span.three_tab {
-  text-indent: 24ch;
+  padding-left: 24%;
 }
 
 div.code_block span.four_tab {
-  text-indent: 32ch;
+  padding-left: 32%;
 }
 
 div.code_block span:first-of-type,
 div.code_block span:last-of-type {
-  text-indent: 0ch;
+  padding-left: 0;
 }
