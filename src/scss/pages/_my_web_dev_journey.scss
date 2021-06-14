@@ -67,11 +67,23 @@ div.container--journey_text {
   width: 90%;
 }
 
+div.container--journey_text ul {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  /* This value creates a "gap" between text & links by pushing links all the way to the right 
+        of their respective columns. */
+  justify-self: right;
+  /* This value controls the size of the minimum "gap" between text & links. */
+  min-width: 75%;
+}
+
 div.container--journey_text li {
-  // Not really DRY: this is 90% a copy & paste from _sidebar.scss.
   display: flex;
   list-style: none;
   list-style-position: inside;
+  /* This value controls the maximum size of the link text's lines. */
+  max-width: 35ch;
   // Add extra padding to bottom of links.
   padding: 0px 20px 10px 20px;
   // background: url("../images/my_work/resume/bullets/square-shadow.svg")
@@ -154,7 +166,6 @@ figure.journey_figure figcaption {
   place-items: center;
   // font-style: italic;
   width: 100%;
-  height: 50px;
   margin-top: 15px;
   padding: 10px;
   // Currently loaded into CSS via Google link.
@@ -166,6 +177,14 @@ figure.journey_figure figcaption {
   background: white;
   border: 1px solid darkgrey;
   // transform: rotate(-5deg);
+}
+
+figure#reading_and_notetaking_system span:first-of-type {
+  margin-bottom: 15px;
+}
+
+figure#reading_and_notetaking_system span:nth-of-type(2) {
+  font-size: 0.85rem;
 }
 
 /* #endregion */
