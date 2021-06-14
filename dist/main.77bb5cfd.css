@@ -1163,10 +1163,23 @@ div.container--journey_text {
   width: 90%;
 }
 
+div.container--journey_text ul {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  /* This value creates a "gap" between text & links by pushing links all the way to the right 
+        of their respective columns. */
+  justify-self: right;
+  /* This value controls the size of the minimum "gap" between text & links. */
+  min-width: 75%;
+}
+
 div.container--journey_text li {
   display: flex;
   list-style: none;
   list-style-position: inside;
+  /* This value controls the maximum size of the link text's lines. */
+  max-width: 35ch;
   padding: 0px 20px 10px 20px;
   /* Nudges square-shadow.svg down to the baseline of each li span text. */
   font-size: 0.85rem;
@@ -1237,7 +1250,6 @@ figure.journey_figure figcaption {
   display: grid;
   place-items: center;
   width: 100%;
-  height: 50px;
   margin-top: 15px;
   padding: 10px;
   font-family: "Kalam", cursive;
@@ -1246,6 +1258,14 @@ figure.journey_figure figcaption {
   font-weight: 500;
   background: white;
   border: 1px solid darkgrey;
+}
+
+figure#reading_and_notetaking_system span:first-of-type {
+  margin-bottom: 15px;
+}
+
+figure#reading_and_notetaking_system span:nth-of-type(2) {
+  font-size: 0.85rem;
 }
 
 /* #endregion */
