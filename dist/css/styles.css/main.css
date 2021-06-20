@@ -1110,7 +1110,7 @@ div.explore_item:hover p#my_work-current_job_status {
 }
 /* #endregion Media Queries */
 /* #region Sidebar */
-aside ul {
+main#my_web_dev_journey aside ul {
   margin: 0;
   padding: 0;
 }
