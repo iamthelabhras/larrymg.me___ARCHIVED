@@ -1178,7 +1178,7 @@ div.container--journey_text ul {
   align-self: flex-start;
   /* This value creates a "gap" between text & links by pushing links all the way to the right 
         of their respective columns. */
-  justify-self: right;
+  justify-self: left;
   /* This value controls the size of the minimum "gap" between text & links. */
   min-width: 75%;
 }
@@ -1338,6 +1338,19 @@ figure#reading_and_notetaking_system span:nth-of-type(2) {
 @media screen and (min-width: 0px) and (max-width: 1120px) {
   div.container--journey_text ul {
     display: none;
+  }
+
+  div.container--journey_text {
+    grid-template-columns: auto;
+  }
+
+  div.container--journey_text > * {
+    place-self: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  div.container--journey_text {
+    gap: 5.5rem;
   }
 }
 /* #endregion Media Queries */
