@@ -993,6 +993,12 @@ div.explore_item p {
       stack one on top of the other. */
   max-width: 40ch;
   padding: 0px 10px;
+  color: rgba(128, 128, 128, 0.6);
+  transition: color 0.5s ease-in-out;
+}
+
+div.explore_item:hover p {
+  color: black;
 }
 
 div.explore_item p + a {
