@@ -1350,7 +1350,10 @@ figure#reading_and_notetaking_system span:nth-of-type(2) {
 }
 @media screen and (min-width: 1440px) {
   div.container--journey_text {
-    gap: 15.5rem;
+    /* Push <ul> paired with .journey_text further right on larger screens.
+          Note that we cannot use "gap" here because it will add an equal amount of gap 
+          between each successive block of journey_text.  Not a good look! */
+    column-gap: 15.5rem;
   }
 }
 /* #endregion Media Queries */
