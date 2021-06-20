@@ -98,4 +98,13 @@ aside.larrymg_me--sidebar div span.cursive {
 
 /* #endregion Sidebar -- H2 Gray Blocks */
 
+/* #region Sidebar -- Media Queries */
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  aside.larrymg_me--sidebar {
+    display: none;
+  }
+}
+/* #endregion Sidebar -- Media Queries */
+
 /* #endregion Sidebar */
