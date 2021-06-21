@@ -1173,6 +1173,7 @@ main#my_web_dev_journey div.container--journey_text {
 }
 
 main#my_web_dev_journey div.container--journey_text ul {
+  /* Styles ul to the right of .journey_text. */
   display: flex;
   flex-direction: column;
   align-self: flex-start;
@@ -1184,6 +1185,7 @@ main#my_web_dev_journey div.container--journey_text ul {
 }
 
 main#my_web_dev_journey div.container--journey_text li {
+  /* Styles li to the right of .journey_text. */
   display: flex;
   list-style: none;
   list-style-position: inside;
@@ -1195,6 +1197,7 @@ main#my_web_dev_journey div.container--journey_text li {
 }
 
 main#my_web_dev_journey div.container--journey_text li i {
+  /* Styles Font Awesome icons to the right of .journey_text. */
   align-self: center;
   font-size: 1.1rem;
   color: darkgrey;
@@ -1226,9 +1229,26 @@ main#my_web_dev_journey div.container--journey_text .journey_text {
   grid-column: 1/2;
 }
 
-main#my_web_dev_journey div.container--journey_text div.journey_text {
+main#my_web_dev_journey div.container--journey_text div.journey_text,
+main#my_web_dev_journey div.container--journey_text div.journey_text ul,
+main#my_web_dev_journey div.container--journey_text div.journey_text li {
   display: flex;
   flex-direction: column;
+}
+
+main#my_web_dev_journey div.container--journey_text div.journey_text li {
+  list-style: none;
+  list-style-position: inside;
+  background: url("/square-shadow.c383f376.svg") no-repeat scroll 0 0 transparent;
+  background-size: 6px 6px;
+  /* Nudges square-shadow.svg down to the baseline of each li span text. */
+  background-position-y: 6px;
+  /* This value controls the maximum size of the link text's lines. */
+  max-width: 55ch;
+  padding: 0px 20px 10px 20px;
+  /* Nudges square-shadow.svg down to the baseline of each li span text. */
+  font-size: 0.95rem;
+  font-weight: 700;
 }
 
 main#my_web_dev_journey figure.journey_figure {
