@@ -572,7 +572,7 @@ div.coding_rule span.rule_attribution {
   grid-row: 1;
   /* grid-area: rule_attribution; */
   width: 100%;
-  margin-right: 15px;
+  padding-right: 15px;
   font-size: 0.95rem;
 }
 
@@ -669,7 +669,7 @@ div.coding_assumption span.assumption_attribution {
   grid-row: 1;
   /* grid-area: rule_attribution; */
   width: 100%;
-  margin-right: 15px;
+  padding-right: 15px;
   font-size: 0.95rem;
 }
 
