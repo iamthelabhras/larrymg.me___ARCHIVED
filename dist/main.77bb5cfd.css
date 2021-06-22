@@ -1119,6 +1119,60 @@ div#tldr {
   margin-top: 100px;
 }
 
+div#tldr p#hound_of_heaven_quote {
+  font-family: cursive_flourish, cursive;
+  margin-bottom: 20px;
+}
+
+div#tldr a {
+  font-size: 1rem;
+}
+
+div#tldr p {
+  margin: 10px 0px;
+  font-size: 0.85rem;
+}
+
+div#tldr details,
+div#tldr details a {
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+div#tldr details p {
+  display: none;
+  height: 0px;
+  border-bottom: 2px solid #cecece;
+}
+
+div#tldr details[open] p {
+  display: inline-block;
+  height: auto;
+  padding: 5px 15px 15px 15px;
+}
+
+div#tldr details[open] {
+  border-bottom: 5px solid black;
+}
+
+div#tldr details:first-of-type {
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+div#tldr details {
+  padding: 2px;
+  background: white;
+}
+
+div#tldr summary {
+  text-align: left;
+  border: 1px solid black;
+  padding: 5px;
+  font-size: 0.95rem;
+  background: #cecece;
+}
+
 /* #endregion */
 /* #region Content */
 main#my_web_dev_journey div#container--home_and_header {
@@ -1296,6 +1350,16 @@ main#my_web_dev_journey figure.click_here_smaller_text span:first-of-type {
 
 main#my_web_dev_journey figure.click_here_smaller_text span:nth-of-type(2) {
   font-size: 0.85rem;
+}
+
+main#my_web_dev_journey div.journey_text#final_paragraph_with_bullets li {
+  display: initial;
+  font-weight: 500;
+}
+
+main#my_web_dev_journey div.journey_text#final_paragraph_with_bullets li span.first_line {
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 /* #endregion */
