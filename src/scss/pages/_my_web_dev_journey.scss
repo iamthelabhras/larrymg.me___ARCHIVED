@@ -10,6 +10,16 @@ main#my_web_dev_journey aside ul {
 
 div#tldr {
   margin-top: 100px;
+  color: rgba(128, 128, 128, 0.6);
+  transition: color 0.5s ease-in-out;
+}
+
+div#tldr h2 {
+  color: black !important;
+}
+
+div#tldr:hover {
+  color: black;
 }
 
 div#tldr p#hound_of_heaven_quote {
