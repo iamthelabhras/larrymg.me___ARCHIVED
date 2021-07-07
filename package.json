@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "sasswatch": "sass --watch src/scss:dist/css/styles.css"
+    "sasswatch": "sass --watch src/scss:dist/css/"
   },
   "repository": {
     "type": "git",
