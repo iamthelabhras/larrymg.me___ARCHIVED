@@ -88,10 +88,27 @@
 /* #region Self-Hosted Fonts - "cursive_flourish" (Helvetia Verbundene) */
 /* See: https://www.dafont.com/helvetia-verbundene.font */
 
+//  TRYING LEARNING CURVE AS CURSIVE SUBSTITUTE ON TRIAL BASIS: 7/14/21.
+// @font-face {
+//   font-family: "cursive_flourish";
+//   font-style: normal;
+//   src: url("../fonts/helvetia-verbundene.ttf") format("truetype");
+//   font-display: swap;
+// }
+
 @font-face {
   font-family: "cursive_flourish";
   font-style: normal;
-  src: url("../fonts/helvetia-verbundene.ttf") format("truetype");
+  font-weight: 500;
+  src: url("../fonts/learning_curve_regular_ot_tt.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "cursive_flourish";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/learning_curve_bold_ot_tt.ttf") format("truetype");
   font-display: swap;
 }
 
