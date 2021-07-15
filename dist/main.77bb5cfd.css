@@ -98,7 +98,15 @@ a:active {
 @font-face {
   font-family: "cursive_flourish";
   font-style: normal;
-  src: url("/helvetia-verbundene.1ed4b3c9.ttf") format("truetype");
+  font-weight: 500;
+  src: url("/learning_curve_regular_ot_tt.4914e66c.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "cursive_flourish";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/learning_curve_bold_ot_tt.51abed58.ttf") format("truetype");
   font-display: swap;
 }
 /* #endregion Self-Hosted Fonts - "cursive_flourish" (Helvetia Verbundene) */
@@ -446,8 +454,10 @@ aside.larrymg_me--sidebar div h2 {
 
 aside.larrymg_me--sidebar div span.cursive {
   display: block;
+  margin-top: 5px;
   font-family: "cursive_flourish", cursive;
   font-size: 1.15rem;
+  font-size: 1.25rem;
 }
 
 /* #endregion Sidebar -- H2 Gray Blocks */
