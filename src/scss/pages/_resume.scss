@@ -1005,21 +1005,6 @@ section#objective_wrapped {
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 465px) {
-  /* Change width of skill family (e.g. "Web Dev") & skill family members
-        (e.g. "Vanilla JavaScript") on smaller screens to prevent unsightly wrap
-         of text in second span. */
-  section#skills li span:first-of-type {
-    width: 30%;
-    text-align: left;
-  }
-
-  section#skills li span:nth-of-type(2) {
-    text-align: right;
-    width: 70%;
-  }
-}
-
 @media screen and (min-width: 0px) and (max-width: 525px) {
   section.resume_section h2 {
     /* Turn h2 elements into flex boxes on smaller screen to prevent unsightly wrapping of
@@ -1089,6 +1074,24 @@ section#objective_wrapped {
   span#resume_hover_text--irish_studies {
     top: 15px;
     left: -110px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 663px) {
+  /* Change width of skill family (e.g. "Web Dev") & skill family members
+        (e.g. "Vanilla JavaScript") on smaller screens to prevent unsightly wrap
+         of text in second span. */
+  section#skills li span:first-of-type {
+    width: 30%;
+    width: 60%;
+    text-align: left;
+    background: green;
+  }
+
+  section#skills li span:nth-of-type(2) {
+    text-align: right;
+    width: 70%;
+    width: 40%;
   }
 }
 
