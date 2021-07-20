@@ -98,7 +98,15 @@ a:active {
 @font-face {
   font-family: "cursive_flourish";
   font-style: normal;
-  src: url("../fonts/helvetia-verbundene.ttf") format("truetype");
+  font-weight: 500;
+  src: url("../fonts/learning_curve_regular_ot_tt.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "cursive_flourish";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/learning_curve_bold_ot_tt.ttf") format("truetype");
   font-display: swap;
 }
 /* #endregion Self-Hosted Fonts - "cursive_flourish" (Helvetia Verbundene) */
@@ -446,8 +454,10 @@ aside.larrymg_me--sidebar div h2 {
 
 aside.larrymg_me--sidebar div span.cursive {
   display: block;
+  margin-top: 5px;
   font-family: "cursive_flourish", cursive;
   font-size: 1.15rem;
+  font-size: 1.25rem;
 }
 
 /* #endregion Sidebar -- H2 Gray Blocks */
@@ -2400,20 +2410,6 @@ section#projects_and_side_hustles span.resume_dates span.clean_break_on_wrap {
     font-size: calc(var(--font_size__section_titles) * 0.85);
   }
 }
-@media screen and (min-width: 0px) and (max-width: 465px) {
-  /* Change width of skill family (e.g. "Web Dev") & skill family members
-        (e.g. "Vanilla JavaScript") on smaller screens to prevent unsightly wrap
-         of text in second span. */
-  section#skills li span:first-of-type {
-    width: 30%;
-    text-align: left;
-  }
-
-  section#skills li span:nth-of-type(2) {
-    text-align: right;
-    width: 70%;
-  }
-}
 @media screen and (min-width: 0px) and (max-width: 525px) {
   section.resume_section h2 {
     /* Turn h2 elements into flex boxes on smaller screen to prevent unsightly wrapping of
@@ -2467,6 +2463,22 @@ section#interests_and_hobbies div.resume_section_with_bullets > span:first-of-ty
   span#resume_hover_text--irish_studies {
     top: 15px;
     left: -110px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 663px) {
+  /* Change width of skill family (e.g. "Web Dev") & skill family members
+        (e.g. "Vanilla JavaScript") on smaller screens to prevent unsightly wrap
+         of text in second span. */
+  section#skills li span:first-of-type {
+    width: 30%;
+    width: 60%;
+    text-align: left;
+  }
+
+  section#skills li span:nth-of-type(2) {
+    text-align: right;
+    width: 70%;
+    width: 40%;
   }
 }
 /* #endregion Media Queries */
