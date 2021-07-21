@@ -81,6 +81,16 @@ div.snippet_code_container {
   --santa_body_bg-lighter: #353b50;
 }
 
+span#pink_bar {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  border: 2px solid var(--santa_body_bg);
+  background-color: var(--santa_red);
+  font-family: "Rubik", sans-serif;
+  color: var(--santa_white);
+}
+
 #sounds_of_marathon_christmas .container--keys {
   display: flex;
   justify-content: center;
