@@ -164,6 +164,12 @@ a:active {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Rubik";
+  src: url("/Rubik-VariableFont_wght.62900974.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /* #endregion Self-hosted Fonts - SNIPPETS - Sounds of Marathon Christmas */
 /* #region Browser Resets */
 /* A Modern CSS Reset by Andy Bell
@@ -2835,6 +2841,16 @@ div.snippet_code_container {
   --santa_box_shadow_primary: rgba(128, 128, 128, 0.5);
   --santa_body_bg: #1f253c;
   --santa_body_bg-lighter: #353b50;
+}
+
+span#pink_bar {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  border: 2px solid var(--santa_body_bg);
+  background-color: var(--santa_red);
+  font-family: "Rubik", sans-serif;
+  color: var(--santa_white);
 }
 
 #sounds_of_marathon_christmas .container--keys {

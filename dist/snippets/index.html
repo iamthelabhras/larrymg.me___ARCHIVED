@@ -104,7 +104,8 @@
                 <a href="https://www.youtube.com/watch?v=VuN8qwZoego" target="_blank">Wes Bos' JavaScript 30 Drum Machine</a>.
               </p>
               <p>
-                Press the key listed in the pink bars beneath each block letter
+                Press the keys (e.g. "1", "2", "3") listed in the
+                <span id="pink_bar">pink bars</span> beneath each block-letter
                 to play a Christmas sound effect and trigger a CSS
                 transformation! There's a really clever use of data-attributes
                 going on underneath the hood that stitches everything together.
@@ -113,6 +114,10 @@
                 Oh, and don't forget to tune into Jon Solomon's annual 25-hour
                 holiday marathon on WPRBXmas this coming Christmas Eve at 5:00pm
                 EST!
+              </p>
+              <p>
+                All sound effects were downloaded from
+                <a href="https://freesound.org" target="_blank">freesound.org</a>.
               </p>
             </div>
             <div class="snippet_description_card">
@@ -124,13 +129,13 @@
                 event listeners.
               </p>
               <p>
-                In Wes' implementation, the addition & removal of classes on an
-                appropriate div whenever a sound was played was handled entirely
-                via <span class="text_bold">key-driven events</span>. This
-                worked fine when the sounds being sampled were extremely short,
-                but longer samples resulted in a sub-par user experience. I
-                rewrote the underlying code so that the appropriate div's class
-                was removed after an audio element's sound had finished playing.
+                In Wes' implementation, the addition & removal of classes on a
+                given div whenever a sound was played was handled entirely via
+                <span class="text_bold">key-driven events</span>. This worked
+                fine when the sounds being sampled were extremely short, but
+                longer samples resulted in a sub-par user experience. I rewrote
+                the underlying code so that a given div's class was removed
+                after an audio element's sound had finished playing.
               </p>
             </div>
           </div>
@@ -138,7 +143,7 @@
             <div class="container--keys">
               <div class="keys">
                 <div data-key="49" class="key">
-                  <kbd data-key="49">M</kbd>
+                  <kbd>M</kbd>
                   <span class="sound">1</span>
                 </div>
                 <div data-key="50" class="key">
@@ -211,13 +216,11 @@
             <audio data-key="57" src="/merry_christmas_darling.20adca79.wav"></audio>
             <audio data-key="58" src="/organ.b0d34aca.wav"></audio>
             <audio data-key="59" src="/satellite_merry_christmas_happy_new_year.9e24a865.mp3"></audio>
-            <audio data-key="57" src="/sleigh_bells.56f08055.mp3"></audio>
             <audio data-key="48" src="/three_french_hens.f1f8930c.wav"></audio>
             <audio data-key="190" src="/twinkle.c21de22f.wav"></audio>
-            <audio data-key="188" src="/twinkle.c21de22f.wav"></audio>
-            <audio data-key="59" src="/whistle_christmas_song.f29048f2.wav"></audio>
+            <audio data-key="188" src="/electronic_christmas_decoration.fd2b4dc5.mp3"></audio>
             <audio data-key="219" src="/whistle_christmas_song.f29048f2.wav"></audio>
-            <audio data-key="221" src="/whistle_christmas_song.f29048f2.wav"></audio>
+            <audio data-key="221" src="/five_golden_rings.4695bb7b.wav"></audio>
           </div>
           <!-- #endregion Sounds of Marathon Christmas -->
           <!-- #endregion Content -- Pseudo-Nav -->
