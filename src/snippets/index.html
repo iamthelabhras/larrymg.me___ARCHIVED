@@ -171,7 +171,8 @@
                 >.
               </p>
               <p>
-                Press the key listed in the pink bars beneath each block letter
+                Press the keys (e.g. "1", "2", "3") listed in the
+                <span id="pink_bar">pink bars</span> beneath each block-letter
                 to play a Christmas sound effect and trigger a CSS
                 transformation! There's a really clever use of data-attributes
                 going on underneath the hood that stitches everything together.
@@ -180,6 +181,11 @@
                 Oh, and don't forget to tune into Jon Solomon's annual 25-hour
                 holiday marathon on WPRBXmas this coming Christmas Eve at 5:00pm
                 EST!
+              </p>
+              <p>
+                All sound effects were downloaded from
+                <a href="https://freesound.org" target="_blank">freesound.org</a
+                >.
               </p>
             </div>
             <div class="snippet_description_card">
@@ -191,13 +197,13 @@
                 event listeners.
               </p>
               <p>
-                In Wes' implementation, the addition & removal of classes on an
-                appropriate div whenever a sound was played was handled entirely
-                via <span class="text_bold">key-driven events</span>. This
-                worked fine when the sounds being sampled were extremely short,
-                but longer samples resulted in a sub-par user experience. I
-                rewrote the underlying code so that the appropriate div's class
-                was removed after an audio element's sound had finished playing.
+                In Wes' implementation, the addition & removal of classes on a
+                given div whenever a sound was played was handled entirely via
+                <span class="text_bold">key-driven events</span>. This worked
+                fine when the sounds being sampled were extremely short, but
+                longer samples resulted in a sub-par user experience. I rewrote
+                the underlying code so that a given div's class was removed
+                after an audio element's sound had finished playing.
               </p>
             </div>
           </div>
@@ -205,7 +211,7 @@
             <div class="container--keys">
               <div class="keys">
                 <div data-key="49" class="key">
-                  <kbd data-key="49">M</kbd>
+                  <kbd>M</kbd>
                   <span class="sound">1</span>
                 </div>
                 <div data-key="50" class="key">
@@ -312,10 +318,6 @@
               src="../audio/snippets/sounds_of_marathon_christmas/satellite_merry_christmas_happy_new_year.mp3"
             ></audio>
             <audio
-              data-key="57"
-              src="../audio/snippets/sounds_of_marathon_christmas/sleigh_bells.mp3"
-            ></audio>
-            <audio
               data-key="48"
               src="../audio/snippets/sounds_of_marathon_christmas/three_french_hens.wav"
             ></audio>
@@ -325,11 +327,7 @@
             ></audio>
             <audio
               data-key="188"
-              src="../audio/snippets/sounds_of_marathon_christmas/twinkle.wav"
-            ></audio>
-            <audio
-              data-key="59"
-              src="../audio/snippets/sounds_of_marathon_christmas/whistle_christmas_song.wav"
+              src="../audio/snippets/sounds_of_marathon_christmas/electronic_christmas_decoration.mp3"
             ></audio>
             <audio
               data-key="219"
@@ -337,7 +335,7 @@
             ></audio>
             <audio
               data-key="221"
-              src="../audio/snippets/sounds_of_marathon_christmas/whistle_christmas_song.wav"
+              src="../audio/snippets/sounds_of_marathon_christmas/five_golden_rings.wav"
             ></audio>
           </div>
           <!-- #endregion Sounds of Marathon Christmas -->
