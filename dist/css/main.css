@@ -2780,6 +2780,10 @@ div.larrymg_me_index--hello p:first-of-type {
 
 /* #endregion index--hello styling */
 /* #region Page-specific snippet components. */
+main#snippets h2 {
+  margin-top: 20px;
+}
+
 div.snippet_description_container {
   display: flex;
   flex-direction: row;
