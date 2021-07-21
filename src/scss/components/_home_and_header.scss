@@ -1,0 +1,16 @@
+div#container--home_and_header {
+  position: sticky;
+  top: 0;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  border-bottom: 3px dotted black;
+  background: #feffd0;
+  z-index: 2;
+}
+
+div#container--home_and_header i {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 3.052rem;
+}
