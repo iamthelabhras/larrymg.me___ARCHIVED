@@ -1,4 +1,4 @@
-div#container--home_and_header {
+#container--home_and_header {
   position: sticky;
   top: 0;
   justify-content: space-evenly;
@@ -9,7 +9,7 @@ div#container--home_and_header {
   z-index: 2;
 }
 
-div#container--home_and_header i {
+#container--home_and_header i {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 3.052rem;
