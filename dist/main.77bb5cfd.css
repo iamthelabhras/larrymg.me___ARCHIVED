@@ -372,7 +372,7 @@ div.larrymg_me--content div.block_quotes a {
 }
 
 /* #endregion Content -- Block Quote */
-div#container--home_and_header {
+#container--home_and_header {
   position: sticky;
   top: 0;
   justify-content: space-evenly;
@@ -383,7 +383,7 @@ div#container--home_and_header {
   z-index: 2;
 }
 
-div#container--home_and_header i {
+#container--home_and_header i {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 3.052rem;
@@ -2781,6 +2781,7 @@ div.larrymg_me_index--hello p:first-of-type {
 /* #endregion index--hello styling */
 /* #region Page-specific snippet components. */
 main#snippets h2 {
+  text-align: center;
   margin-top: 20px;
 }
 
