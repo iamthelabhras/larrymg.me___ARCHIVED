@@ -157,6 +157,14 @@ a:active {
   font-display: swap;
 }
 /* #endregion Self-hosted Fonts - RESUME - "resume_main_text" (Gothic A1) */
+/* #region Self-hosted Fonts - SNIPPETS - Sounds of Marathon Christmas */
+@font-face {
+  font-family: "Xmas Sweater";
+  src: url("../fonts/xmassweaterstitch-xxyq-webfont.woff2") format("woff2"), url("../fonts/xmassweaterstitch-xxyq-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* #endregion Self-hosted Fonts - SNIPPETS - Sounds of Marathon Christmas */
 /* #region Browser Resets */
 /* A Modern CSS Reset by Andy Bell
         https://dev.to/hankchizljaw/a-modern-css-reset-6p3 
@@ -761,6 +769,276 @@ div.coding_assumption div.assumption_concrete_applications {
   }
 }
 /* #endregion Media Queries */
+/* #region Copy & pasted CSS from Winbox.js Github
+		https://rawcdn.githack.com/nextapps-de/winbox/0.2.0/dist/css/winbox.min.css */
+/**
+ * WinBox.js v0.2.0
+ * Copyright 2021 Nextapps GmbH
+ * Author: Thomas Wilkerling
+ * Licence: Apache-2.0
+ * https://github.com/nextapps-de/winbox
+ */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.85;
+  }
+}
+.winbox.modal:after,
+.winbox.modal:before {
+  content: "";
+}
+
+.winbox {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #0050ff;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: width 0.3s, height 0.3s, transform 0.3s;
+  transition-timing-function: cubic-bezier(0.3, 1, 0.3, 1);
+  will-change: transform, width, height;
+  contain: layout size;
+  text-align: left;
+  touch-action: none;
+}
+
+.wb-body,
+.wb-header {
+  position: absolute;
+  left: 0;
+}
+
+.max,
+.no-shadow {
+  box-shadow: none;
+}
+
+.wb-header {
+  top: 0;
+  width: 100%;
+  height: 35px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.wb-body {
+  right: 0;
+  top: 35px;
+  bottom: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  will-change: contents;
+  background: #fff;
+  margin-top: 0 !important;
+  contain: strict;
+}
+
+.wb-title {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding-left: 10px;
+  cursor: move;
+  height: 35px;
+  line-height: 35px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wb-n,
+.wb-s {
+  height: 10px;
+  position: absolute;
+  left: 0;
+}
+
+.wb-n {
+  top: -5px;
+  right: 0;
+  cursor: n-resize;
+}
+
+.wb-e {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  bottom: 0;
+  width: 10px;
+  cursor: w-resize;
+}
+
+.wb-s,
+.wb-se,
+.wb-sw {
+  bottom: -5px;
+}
+
+.wb-s {
+  right: 0;
+  cursor: n-resize;
+}
+
+.wb-w {
+  position: absolute;
+  top: 0;
+  left: -5px;
+  bottom: 0;
+  width: 10px;
+  cursor: w-resize;
+}
+
+.wb-ne,
+.wb-nw,
+.wb-sw {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+}
+
+.wb-nw {
+  top: -5px;
+  left: -5px;
+  cursor: nw-resize;
+}
+
+.wb-ne,
+.wb-sw {
+  cursor: ne-resize;
+}
+
+.wb-ne {
+  top: -5px;
+  right: -5px;
+}
+
+.wb-sw {
+  left: -5px;
+}
+
+.wb-se {
+  position: absolute;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  cursor: nw-resize;
+}
+
+.wb-icon {
+  float: right;
+  height: 35px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.wb-icon * {
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.no-close .wb-close,
+.no-full .wb-full,
+.no-header .wb-header,
+.no-max .wb-max,
+.no-min .wb-min,
+.no-resize .wb-body ~ div,
+.winbox.min .wb-body > *,
+.winbox.min .wb-full,
+.winbox.min .wb-min,
+.winbox.modal .wb-full,
+.winbox.modal .wb-max,
+.winbox.modal .wb-min {
+  display: none;
+}
+
+.winbox.max .wb-title,
+.winbox.min .wb-title {
+  cursor: default;
+}
+
+.wb-min {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAyIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNOCAwaDdhMSAxIDAgMCAxIDAgMkgxYTEgMSAwIDAgMSAwLTJoN3oiLz48L3N2Zz4=);
+  background-size: 14px auto;
+  background-position: center bottom 11px;
+}
+
+.wb-max {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmZmYiIHZpZXdCb3g9IjAgMCA5NiA5NiI+PHBhdGggZD0iTTIwIDcxLjMxMUMxNS4zNCA2OS42NyAxMiA2NS4yMyAxMiA2MFYyMGMwLTYuNjMgNS4zNy0xMiAxMi0xMmg0MGM1LjIzIDAgOS42NyAzLjM0IDExLjMxMSA4SDI0Yy0yLjIxIDAtNCAxLjc5LTQgNHY1MS4zMTF6Ii8+PHBhdGggZD0iTTkyIDc2VjM2YzAtNi42My01LjM3LTEyLTEyLTEySDQwYy02LjYzIDAtMTIgNS4zNy0xMiAxMnY0MGMwIDYuNjMgNS4zNyAxMiAxMiAxMmg0MGM2LjYzIDAgMTItNS4zNyAxMi0xMnptLTUyIDRjLTIuMjEgMC00LTEuNzktNC00VjM2YzAtMi4yMSAxLjc5LTQgNC00aDQwYzIuMjEgMCA0IDEuNzkgNCA0djQwYzAgMi4yMS0xLjc5IDQtNCA0SDQweiIvPjwvc3ZnPg==);
+  background-size: 17px auto;
+}
+
+.wb-close {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xIC0xIDE4IDE4Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJtMS42MTMuMjEuMDk0LjA4M0w4IDYuNTg1IDE0LjI5My4yOTNsLjA5NC0uMDgzYTEgMSAwIDAgMSAxLjQwMyAxLjQwM2wtLjA4My4wOTRMOS40MTUgOGw2LjI5MiA2LjI5M2ExIDEgMCAwIDEtMS4zMiAxLjQ5N2wtLjA5NC0uMDgzTDggOS40MTVsLTYuMjkzIDYuMjkyLS4wOTQuMDgzQTEgMSAwIDAgMSAuMjEgMTQuMzg3bC4wODMtLjA5NEw2LjU4NSA4IC4yOTMgMS43MDdBMSAxIDAgMCAxIDEuNjEzLjIxeiIvPjwvc3ZnPg==);
+  background-size: 15px auto;
+}
+
+.wb-full {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIuNSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNOCAzSDVhMiAyIDAgMCAwLTIgMnYzbTE4IDBWNWEyIDIgMCAwIDAtMi0yaC0zbTAgMThoM2EyIDIgMCAwIDAgMi0ydi0zTTMgMTZ2M2EyIDIgMCAwIDAgMiAyaDMiLz48L3N2Zz4=);
+  background-size: 16px auto;
+}
+
+.winbox.max .wb-body ~ div,
+.winbox.min .wb-body ~ div,
+.winbox.modal .wb-body ~ div,
+.winbox.modal .wb-title,
+body.wb-drag iframe {
+  pointer-events: none;
+}
+
+.max .wb-body {
+  margin: 0 !important;
+}
+
+.winbox iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.no-animation,
+body.wb-drag .winbox {
+  transition: none;
+}
+
+.winbox.modal:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+
+.winbox.modal:after {
+  position: absolute;
+  top: -100vh;
+  left: -100vw;
+  right: -100vw;
+  bottom: -100vh;
+  background: #0d1117;
+  animation: fade-in 0.2s ease-out forwards;
+  z-index: -1;
+}
+
+.no-header .wb-body {
+  top: 0;
+}
+
+.no-move:not(.min) .wb-title {
+  pointer-events: none;
+}
+
+/* #endregion */
 html {
   scroll-padding: var(--site_wide--scroll_padding);
 }
@@ -2482,275 +2760,151 @@ section#interests_and_hobbies div.resume_section_with_bullets > span:first-of-ty
   }
 }
 /* #endregion Media Queries */
-/* #region Copy & pasted CSS from Winbox.js Github
-		https://rawcdn.githack.com/nextapps-de/winbox/0.2.0/dist/css/winbox.min.css */
-/**
- * WinBox.js v0.2.0
- * Copyright 2021 Nextapps GmbH
- * Author: Thomas Wilkerling
- * Licence: Apache-2.0
- * https://github.com/nextapps-de/winbox
- */
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.85;
-  }
-}
-.winbox.modal:after,
-.winbox.modal:before {
-  content: "";
+/* #region larrymg.me in-a-inch index--hello styling.
+    TO DO: Componentize this! */
+div.larrymg_me_index--hello {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80%;
 }
 
-.winbox {
-  position: fixed;
-  left: 0;
-  top: 0;
-  background: #0050ff;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  transition: width 0.3s, height 0.3s, transform 0.3s;
-  transition-timing-function: cubic-bezier(0.3, 1, 0.3, 1);
-  will-change: transform, width, height;
-  contain: layout size;
-  text-align: left;
-  touch-action: none;
+div.larrymg_me_index--hello h1 {
+  margin: 10px 0px;
 }
 
-.wb-body,
-.wb-header {
-  position: absolute;
-  left: 0;
+div.larrymg_me_index--hello p:first-of-type {
+  font-size: 2.25rem;
+  margin-bottom: 10px;
 }
 
-.max,
-.no-shadow {
-  box-shadow: none;
-}
-
-.wb-header {
-  top: 0;
+/* #endregion index--hello styling */
+/* #region Page-specific snippet components. */
+div.snippet_description_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2.5rem;
+  margin: 20px 0px;
   width: 100%;
-  height: 35px;
-  color: #fff;
-  overflow: hidden;
+  height: auto;
+  padding: 20px 0px;
 }
 
-.wb-body {
-  right: 0;
-  top: 35px;
-  bottom: 0;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  overflow-scrolling: touch;
-  will-change: contents;
-  background: #fff;
-  margin-top: 0 !important;
-  contain: strict;
+div.snippet_description_card {
+  background: white;
+  min-width: 350px;
+  max-width: 45%;
+  border: 1px solid var(--light_grey);
 }
 
-.wb-title {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  padding-left: 10px;
-  cursor: move;
-  height: 35px;
-  line-height: 35px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.wb-n,
-.wb-s {
-  height: 10px;
-  position: absolute;
-  left: 0;
-}
-
-.wb-n {
-  top: -5px;
-  right: 0;
-  cursor: n-resize;
-}
-
-.wb-e {
-  position: absolute;
-  top: 0;
-  right: -5px;
-  bottom: 0;
-  width: 10px;
-  cursor: w-resize;
-}
-
-.wb-s,
-.wb-se,
-.wb-sw {
-  bottom: -5px;
-}
-
-.wb-s {
-  right: 0;
-  cursor: n-resize;
-}
-
-.wb-w {
-  position: absolute;
-  top: 0;
-  left: -5px;
-  bottom: 0;
-  width: 10px;
-  cursor: w-resize;
-}
-
-.wb-ne,
-.wb-nw,
-.wb-sw {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-}
-
-.wb-nw {
-  top: -5px;
-  left: -5px;
-  cursor: nw-resize;
-}
-
-.wb-ne,
-.wb-sw {
-  cursor: ne-resize;
-}
-
-.wb-ne {
-  top: -5px;
-  right: -5px;
-}
-
-.wb-sw {
-  left: -5px;
-}
-
-.wb-se {
-  position: absolute;
-  right: -5px;
-  width: 15px;
-  height: 15px;
-  cursor: nw-resize;
-}
-
-.wb-icon {
-  float: right;
-  height: 35px;
-  max-width: 100%;
+div.snippet_description_card h3 {
   text-align: center;
+  padding-top: 10px;
+  font-family: cursive_flourish, cursive;
 }
 
-.wb-icon * {
-  display: inline-block;
-  width: 30px;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  max-width: 100%;
+div.snippet_description_card p {
+  max-width: 45ch;
+  padding: 20px 20px;
 }
 
-.no-close .wb-close,
-.no-full .wb-full,
-.no-header .wb-header,
-.no-max .wb-max,
-.no-min .wb-min,
-.no-resize .wb-body ~ div,
-.winbox.min .wb-body > *,
-.winbox.min .wb-full,
-.winbox.min .wb-min,
-.winbox.modal .wb-full,
-.winbox.modal .wb-max,
-.winbox.modal .wb-min {
-  display: none;
-}
-
-.winbox.max .wb-title,
-.winbox.min .wb-title {
-  cursor: default;
-}
-
-.wb-min {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAyIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNOCAwaDdhMSAxIDAgMCAxIDAgMkgxYTEgMSAwIDAgMSAwLTJoN3oiLz48L3N2Zz4=);
-  background-size: 14px auto;
-  background-position: center bottom 11px;
-}
-
-.wb-max {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmZmYiIHZpZXdCb3g9IjAgMCA5NiA5NiI+PHBhdGggZD0iTTIwIDcxLjMxMUMxNS4zNCA2OS42NyAxMiA2NS4yMyAxMiA2MFYyMGMwLTYuNjMgNS4zNy0xMiAxMi0xMmg0MGM1LjIzIDAgOS42NyAzLjM0IDExLjMxMSA4SDI0Yy0yLjIxIDAtNCAxLjc5LTQgNHY1MS4zMTF6Ii8+PHBhdGggZD0iTTkyIDc2VjM2YzAtNi42My01LjM3LTEyLTEyLTEySDQwYy02LjYzIDAtMTIgNS4zNy0xMiAxMnY0MGMwIDYuNjMgNS4zNyAxMiAxMiAxMmg0MGM2LjYzIDAgMTItNS4zNyAxMi0xMnptLTUyIDRjLTIuMjEgMC00LTEuNzktNC00VjM2YzAtMi4yMSAxLjc5LTQgNC00aDQwYzIuMjEgMCA0IDEuNzkgNCA0djQwYzAgMi4yMS0xLjc5IDQtNCA0SDQweiIvPjwvc3ZnPg==);
-  background-size: 17px auto;
-}
-
-.wb-close {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xIC0xIDE4IDE4Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJtMS42MTMuMjEuMDk0LjA4M0w4IDYuNTg1IDE0LjI5My4yOTNsLjA5NC0uMDgzYTEgMSAwIDAgMSAxLjQwMyAxLjQwM2wtLjA4My4wOTRMOS40MTUgOGw2LjI5MiA2LjI5M2ExIDEgMCAwIDEtMS4zMiAxLjQ5N2wtLjA5NC0uMDgzTDggOS40MTVsLTYuMjkzIDYuMjkyLS4wOTQuMDgzQTEgMSAwIDAgMSAuMjEgMTQuMzg3bC4wODMtLjA5NEw2LjU4NSA4IC4yOTMgMS43MDdBMSAxIDAgMCAxIDEuNjEzLjIxeiIvPjwvc3ZnPg==);
-  background-size: 15px auto;
-}
-
-.wb-full {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIuNSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNOCAzSDVhMiAyIDAgMCAwLTIgMnYzbTE4IDBWNWEyIDIgMCAwIDAtMi0yaC0zbTAgMThoM2EyIDIgMCAwIDAgMi0ydi0zTTMgMTZ2M2EyIDIgMCAwIDAgMiAyaDMiLz48L3N2Zz4=);
-  background-size: 16px auto;
-}
-
-.winbox.max .wb-body ~ div,
-.winbox.min .wb-body ~ div,
-.winbox.modal .wb-body ~ div,
-.winbox.modal .wb-title,
-body.wb-drag iframe {
-  pointer-events: none;
-}
-
-.max .wb-body {
-  margin: 0 !important;
-}
-
-.winbox iframe {
-  position: absolute;
+div.snippet_code_container {
   width: 100%;
-  height: 100%;
-  border: 0;
+  height: auto;
+  margin: 25px 0px;
+  border: 2px solid var(--darkest_grey);
+  padding: 20px 0px;
+  background: #efefef;
 }
 
-.no-animation,
-body.wb-drag .winbox {
-  transition: none;
+/* #endregion Page-specific snippet components. */
+/* #region Sounds of Marathon Christmas Snippet Specific Styling */
+:root {
+  /* Sounds of Marathon Christmas Custom Variables */
+  --santa_black: rgba(1, 2, 3, 0.95);
+  --santa_red: #ec5e95;
+  --santa_white: #ffff;
+  --santa_yellow: #f9fb22;
+  --santa_box_shadow_primary: rgba(128, 128, 128, 0.5);
+  --santa_body_bg: #1f253c;
+  --santa_body_bg-lighter: #353b50;
 }
 
-.winbox.modal:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: inherit;
-  border-radius: inherit;
+#sounds_of_marathon_christmas .container--keys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
 }
 
-.winbox.modal:after {
-  position: absolute;
-  top: -100vh;
-  left: -100vw;
-  right: -100vw;
-  bottom: -100vh;
-  background: #0d1117;
-  animation: fade-in 0.2s ease-out forwards;
-  z-index: -1;
+#sounds_of_marathon_christmas .keys {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
-.no-header .wb-body {
-  top: 0;
+#sounds_of_marathon_christmas .key {
+  border: 0.4rem solid var(--santa_white);
+  border: 0.4rem solid var(--santa_body_bg-lighter);
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font-family: "Xmas Sweater", sans-serif;
+  font-size: 2.25rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.2s ease;
+  width: 10rem;
+  text-align: center;
+  color: var(--santa_yellow);
+  background: var(--santa_body_bg);
+  text-shadow: 0 0 0.1rem var(--santa_black);
+  box-shadow: 2px 2px 1px var(--santa_box_shadow-primary);
 }
 
-.no-move:not(.min) .wb-title {
-  pointer-events: none;
+#sounds_of_marathon_christmas .key:nth-child(even) {
+  transform: rotate(10deg);
 }
 
+#sounds_of_marathon_christmas .key:nth-child(odd) {
+  transform: rotate(-10deg);
+}
+
+#sounds_of_marathon_christmas .playing {
+  transform: scale(1.2) !important;
+  border-color: var(--santa_yellow);
+  box-shadow: 0 0 1rem var(--santa_white);
+}
+
+#sounds_of_marathon_christmas kbd {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+#sounds_of_marathon_christmas .sound {
+  display: block;
+  margin-top: 10px;
+  padding-top: 5px;
+  background-color: var(--santa_red);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.25rem;
+  color: var(--santa_white);
+}
+
+/* #endregion */
+/* #region Media Queries */
+@media screen and (max-width: 671px) {
+  /* Sounds of Marathon Christmas Snippet
+  	Unrotate letter blocks on smaller screens. */
+  #sounds_of_marathon_christmas .key:nth-child(even),
+#sounds_of_marathon_christmas .key:nth-child(odd) {
+    transform: rotate(0deg);
+  }
+}
 /* #endregion */
 .show_mobile {
   position: relative;
