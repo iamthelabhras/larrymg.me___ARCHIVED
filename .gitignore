@@ -1,6 +1,8 @@
 # Tell Git to ignore these folders:
+.cache/
 archived/
 attributions/
+dist/
 node_modules/
 
 # Tell Git to ignore these files:
