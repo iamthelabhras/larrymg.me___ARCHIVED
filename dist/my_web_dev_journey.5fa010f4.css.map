@@ -1,1 +1,0 @@
-{"version":3,"sources":["scss/my_web_dev_journey.scss"],"names":[],"mappings":"AAAA;EACE;EACA;;;AAGF;EACE","file":"my_web_dev_journey.5fa010f4.css","sourceRoot":"../src","sourcesContent":["main {\n  width: clamp(300px, 50%, 1100px);\n  background: blue;\n}\n\nspan.quote_text {\n  background: orange;\n}\n"]}
