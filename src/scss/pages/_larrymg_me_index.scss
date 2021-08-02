@@ -26,21 +26,59 @@ main#larrymg_me_index {
 
 /* #endregion -- H2 Elements For All "Weekly" Sections */
 
+/* #region What I'm Learning This Week */
+
+div.what_im_learning ul li {
+  margin-bottom: 10px;
+}
+
+div.what_im_learning ul ul > li {
+  margin-top: 8px;
+  padding: 0;
+  font-family: main_text, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  list-style: none;
+  background-image: none;
+}
+
+/* #endregion */
+
+/* #region What I'm Reading This Week  */
+div.what_im_reading span.author {
+  display: block;
+  text-align: center;
+  font-family: main_text, sans-serif-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+div.what_im_reading li {
+  margin-bottom: 15px;
+}
+
+/* #endregion */
+
 /* #region What I'm Learning This Week, What I'm Reading This Week, & What I'm Watching This Week Sections */
 
 div.what_im_learning ul,
 div.what_im_reading ul,
-div.what_im_watching ul {
-  font-family: "main_text", sans-serif;
+div.what_im_watching ul,
+div.this_weeks_hot_track span,
+div.this_weeks_hot_laugh span {
   padding-left: 5px;
+  font-family: "main_text", sans-serif;
+  font-family: "cursive_flourish", cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 /* #endregion What I'm Learning This Week, What I'm Reading This Week, & What I'm Watching This Week Sections */
 
 /* #region Sidebar -- This Week's Hot Track & This Week's Hot Laugh */
-
-div.this_weeks_hot_track span.clean_break_on_wrap,
-div.this_weeks_hot_laugh span.clean_break_on_wrap {
+div.what_im_watching ul span.clean_break_on_wrap,
+div.this_weeks_hot_track ul span.clean_break_on_wrap,
+div.this_weeks_hot_laugh ul span.clean_break_on_wrap {
   /* Add "back" underline to cleanly broken spans for stylistic consistency. */
   text-decoration: underline;
 }
@@ -112,6 +150,8 @@ div.larrymg_me_index--hello {
 
 div.larrymg_me_index--hello h1 {
   margin: 10px 0px;
+  font-family: cursive_flourish, cursive;
+  font-size: 6rem;
 }
 
 div.larrymg_me_index--hello img {
