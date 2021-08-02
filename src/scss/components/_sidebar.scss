@@ -1,4 +1,4 @@
-/* #region Sidebar */
+/* #region Sidebar -- Platonic Idea of a Sidebar*/
 
 aside.larrymg_me--sidebar {
   display: flex;
@@ -24,9 +24,7 @@ aside li {
   background-position-y: 6px;
 }
 
-/* #region Sidebar -- Hyperlinks */
-
-/* #endregion Sidebar -- Hyperlinks */
+/* #endregion Sidebar -- Platonic Idea of a Sidebar*/
 
 /* #region Sidebar -- Let's Connect / Social Media Profiles & Icons */
 
@@ -91,6 +89,7 @@ aside.larrymg_me--sidebar div h2 {
 }
 
 aside.larrymg_me--sidebar div h2 > span.clean_break_on_wrap {
+  /* Make sure "This Week" clean break on wrap spans match surrounding H2 font styling. */
   font-family: inherit;
   font-size: inherit;
 }
@@ -99,11 +98,113 @@ aside.larrymg_me--sidebar div span.cursive {
   display: block;
   margin-top: 5px;
   font-family: "cursive_flourish", cursive;
-  font-size: 1.15rem;
   font-size: 1.25rem;
 }
 
 /* #endregion Sidebar -- H2 Gray Blocks */
+
+/* #region Sidebar -- ALL "THIS WEEK" BLOCKS & CONTENT */
+
+/* #region Sidebar -- What I'm Learning This Week */
+
+div.what_im_learning ul li {
+  margin-bottom: 10px;
+}
+
+div.what_im_learning ul ul > li {
+  margin-top: 8px;
+  padding: 0;
+  font-family: main_text, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  list-style: none;
+  background-image: none;
+}
+
+/* #endregion Sidebar -- What I'm Learning This Week */
+
+/* #region Sidebar -- What I'm Reading This Week  */
+div.what_im_reading span.author {
+  display: block;
+  text-align: center;
+  font-family: main_text, sans-serif-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+div.what_im_reading li {
+  margin-bottom: 15px;
+}
+
+/* #endregion Sidebar -- What I'm Reading This Week */
+
+/* #region Sidebar -- What I'm Learning This Week, What I'm Reading This Week, & What I'm Watching This Week Sections */
+
+div.what_im_learning ul,
+div.what_im_reading ul,
+div.what_im_watching ul,
+div.this_weeks_hot_track span,
+div.this_weeks_hot_laugh span {
+  padding-left: 5px;
+  font-family: "main_text", sans-serif;
+  font-family: "cursive_flourish", cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* #endregion Sidebar -- What I'm Learning This Week, What I'm Reading This Week, & What I'm Watching This Week Sections */
+
+/* #region Sidebar -- This Week's Hot Track & This Week's Hot Laugh */
+div.what_im_watching ul span.clean_break_on_wrap,
+div.this_weeks_hot_track ul span.clean_break_on_wrap,
+div.this_weeks_hot_laugh ul span.clean_break_on_wrap {
+  /* Add "back" underline to cleanly broken spans for stylistic consistency. */
+  text-decoration: underline;
+}
+
+/* #endregion Sidebar -- This Week's Hot Track & This Week's Hot Laugh */
+
+/* #region Sidebar -- What I'm Watching This Week */
+
+div.what_im_watching li {
+  /* Assumes everything I'm watching would require italicization. */
+  font-style: italic;
+}
+
+/* #endregion Sidebar -- What I'm Watching This Week */
+
+/* #region Sidebar -- This Week's Hot Track */
+
+div.this_weeks_hot_track {
+  display: grid;
+}
+
+div.this_weeks_hot_track iframe {
+  /* Embedded Spotify player overflows container at max-width: 100%? */
+  place-self: center;
+  max-width: 100%;
+  max-height: 75px;
+}
+
+div.this_weeks_hot_track iframe.youtube_iframe {
+  max-height: 400px;
+}
+
+/* #endregion - Sidebar -- This Week's Hot Track*/
+
+/* #region Sidebar -- This Week's Hot Laugh */
+
+div.this_weeks_hot_laugh iframe,
+div.this_weeks_hot_laugh video,
+div.this_weeks_hot_laugh img {
+  max-width: 100%;
+  max-height: 200px;
+  border: 1px solid gray;
+}
+
+/* #endregion Sidebar -- This Week's Hot Laugh */
+
+/* #endregion Sidebar -- All "THIS WEEK" BLOCKS & CONTENTS */
 
 /* #region Sidebar -- Media Queries */
 
@@ -113,5 +214,3 @@ aside.larrymg_me--sidebar div span.cursive {
   }
 }
 /* #endregion Sidebar -- Media Queries */
-
-/* #endregion Sidebar */
