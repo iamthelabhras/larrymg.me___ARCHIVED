@@ -87,7 +87,12 @@ aside.larrymg_me--sidebar div h2 {
   padding: 5px;
   border: 1px solid whitesmoke;
   background: #cecece;
-  font-size: 1.25rem;
+  font-size: 1.65rem;
+}
+
+aside.larrymg_me--sidebar div h2 > span.clean_break_on_wrap {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 aside.larrymg_me--sidebar div span.cursive {
