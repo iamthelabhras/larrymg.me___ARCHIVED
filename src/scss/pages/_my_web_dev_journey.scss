@@ -1,7 +1,7 @@
 main#my_web_dev_journey {
 }
 
-/* #region Sidebar */
+/* #region TL;DR Sidebar */
 
 main#my_web_dev_journey aside ul {
   margin: 0;
@@ -76,9 +76,9 @@ div#tldr summary {
   background: #cecece;
 }
 
-/* #endregion */
+/* #endregion TL;DR Sidebar */
 
-/* #region Content */
+/* #region My Web Dev Journey Content */
 
 main#my_web_dev_journey div.larrymg_me--content iframe {
   width: 100%;
@@ -275,7 +275,7 @@ main#my_web_dev_journey
   font-weight: 700;
 }
 
-/* #endregion */
+/* #endregion My Web Dev Journey Content */
 
 /* #region Media Queries */
 @media screen and (min-width: 0px) and (max-width: 575px) {
