@@ -19,4 +19,11 @@ a:active {
   color: blue;
 }
 
+/* Make sure that clickable spans embedded within links are
+      underlined. */
+
+a > span.clean_break_on_wrap {
+  text-decoration: underline;
+} 
+
 /* @endregion */
