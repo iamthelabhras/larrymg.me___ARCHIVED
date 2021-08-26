@@ -1,5 +1,6 @@
 # Tell Git to ignore these folders:
 .cache/
+.parcel-cache/
 archived/
 attributions/
 dist/
