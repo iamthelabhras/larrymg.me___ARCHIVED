@@ -2,7 +2,6 @@
   "name": "larrymg_me",
   "version": "1.0.0",
   "description": "Labhrás Mac Gabhann's personal website.",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
