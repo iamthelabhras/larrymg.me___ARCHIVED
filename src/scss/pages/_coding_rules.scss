@@ -177,7 +177,7 @@ div.coding_assumption span.no_icons {
 
 /* #region Media Queries */
 
-@media screen and (min-width: 0px) and (max-width: 575px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
   main#coding_rules_and_assumptions div#coding_rules-header_and_home_link, main#coding_rules_and_assumptions div#coding_assumptions-header_and_home_link {
     width: 100%;
   }
