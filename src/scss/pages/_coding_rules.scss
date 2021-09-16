@@ -192,4 +192,18 @@ div.coding_assumption span.no_icons {
   }
 }
 
+@media screen and (min-width: 0px) and (max-width: 575px) {
+
+div.coding_rule div.rule_justifications,
+div.coding_assumption div.assumption_justifications {
+  grid-column: 1/10;
+}
+
+div.coding_rule div.rule_concrete_applications,
+div.coding_assumption div.assumption_concrete_applications {
+  grid-column: 11/21;
+}
+
+}
+
 /* #endregion Media Queries */
