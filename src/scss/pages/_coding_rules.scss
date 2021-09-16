@@ -194,6 +194,16 @@ div.coding_assumption span.no_icons {
 
 @media screen and (min-width: 0px) and (max-width: 575px) {
 
+  div.coding_rule span.rule_attribution,
+  div.coding_assumption span.assumption_attribution {
+    font-size: .75rem;
+  } 
+
+div.coding_rule span.rule_attribution span.source,
+div.coding_assumption span.assumption_attribution span.source {
+  display: block;
+}
+
 div.coding_rule div.rule_justifications,
 div.coding_assumption div.assumption_justifications {
   grid-column: 1/10;
