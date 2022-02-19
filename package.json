@@ -23,6 +23,7 @@
     "@parcel/transformer-sass": "^2.0.0-rc.0",
     "@parcel/transformer-webmanifest": "^2.0.0-rc.0",
     "parcel": "^2.0.0-rc.0",
+    "parcel-plugin-nuke-dist": "^1.0.1",
     "sass": "^1.32.13"
   }
 }
