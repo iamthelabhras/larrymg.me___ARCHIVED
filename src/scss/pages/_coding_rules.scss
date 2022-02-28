@@ -1,9 +1,6 @@
-/*  To Do:  Refactoring  */
+/* #region Card Sticky Headers & Totals */
 
-/* #region Page-wide Styles */
-
-main#coding_rules_and_assumptions div#coding_rules-header_and_home_link,
-main#coding_rules_and_assumptions div#coding_assumptions-header_and_home_link {
+div.card_count {
   position: sticky;
   top: 0;
   display: flex;
@@ -17,27 +14,11 @@ main#coding_rules_and_assumptions div#coding_assumptions-header_and_home_link {
   background: #feffd0;
 }
 
-main#coding_rules_and_assumptions div#coding_rules-header_and_home_link h2,
-main#coding_rules_and_assumptions
-  div#coding_assumptions-header_and_home_link
-  h2 {
-  font-size: 3rem;
-}
+/* #endregion Card Sticky Headers & Totals */
 
-main#coding_rules_and_assumptions div#coding_rules-header_and_home_link i,
-main#coding_rules_and_assumptions
-  div#coding_assumptions-header_and_home_link
-  i {
-  padding-top: 10px;
-  padding-bottom: 5px;
-  color: blue;
-  font-size: 3rem;
-}
+/* #region Cards */
 
-/* #region Coding Rules & Assumptions ("CRs&As") */
-
-div#container--coding_rules,
-div#container--coding_assumptions {
+div.card_container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -47,8 +28,7 @@ div#container--coding_assumptions {
   margin: 3rem 0;
 }
 
-div#container--coding_rules div.coding_rule,
-div#container--coding_assumptions div.coding_assumption {
+div.card {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: auto auto auto;
@@ -58,25 +38,18 @@ div#container--coding_assumptions div.coding_assumption {
   background-color: #ffffff;
 }
 
-
-
-div.coding_rule span.rule_number,
-div.coding_rule span.rule_image,
-div.coding_assumption span.assumption_number,
-div.coding_assumption span.assumption_image
-{
+div.card span.card_number,
+div.card span.card_image {
   display: grid;
   place-items: center;
 }
 
-div.coding_rule span.rule_attribution,
-div.coding_assumption span.assumption_attribution  {
-  justify-self: center;
-  align-self: center;
-}
+// div.card span.card_attribution {
+//   justify-self: center;
+//   align-self: center;
+// }
 
-div.coding_rule span.rule_number,
-div.coding_assumption span.assumption_number {
+div.card span.card_number {
   grid-column: 1 / 4;
   grid-row: 1;
   justify-self: center;
@@ -90,20 +63,16 @@ div.coding_assumption span.assumption_number {
   font-size: 0.9rem;
 }
 
-div.coding_rule span.rule_image,
-div.coding_assumption span.assumption_image {
+div.card span.card_image {
   grid-column: 10 / 12;
   grid-row: 1;
-
 }
 
-div.coding_rule span.rule_image img,
-div.coding_assumption span.assumption_image img {
+div.card span.card_image img {
   max-width: 20px;
 }
 
-div.coding_rule span.rule_attribution,
-div.coding_assumption span.assumption_attribution {
+div.card span.card_attribution {
   grid-column: 15/21;
   grid-row: 1;
   text-align: right;
@@ -112,15 +81,14 @@ div.coding_assumption span.assumption_attribution {
   font-size: 0.95rem;
 }
 
-div.coding_rule p.rule_text,
-div.coding_assumption p.assumption_text {
+div.card p.card_text {
   grid-column: 1 / 21;
   grid-row: 2;
-  justify-self: center; 
+  justify-self: center;
   text-align: center;
   max-width: 30ch;
   margin-top: 25px;
-  margin-bottom: 45px; 
+  margin-bottom: 45px;
   border-radius: 15px;
   padding: 25px;
   // background: rgba(173, 216, 230, 0.5);
@@ -128,92 +96,97 @@ div.coding_assumption p.assumption_text {
   font-weight: 700;
 }
 
-div.coding_rule div.rule_justifications span,
-div.coding_rule div.rule_concrete_applications span,
-div.coding_assumption div.assumption_justifications span,
-div.coding_assumption div.assumption_concrete_applications span {
+div.card div.card_justifications span,
+div.card div.card_concrete_applications span {
   display: grid;
   place-items: center;
 }
 
-div.coding_rule div.rule_justifications li,
-div.coding_rule div.rule_concrete_applications li,
-div.coding_assumption div.assumption_justifications li,
-div.coding_assumption div.assumption_concrete_applications li {
+div.card div.card_justifications li,
+div.card div.card_concrete_applications li {
   margin-top: 2.5px;
   max-width: 45ch;
   font-size: 0.75rem;
 }
 
-div.coding_rule div.rule_justifications li:first-of-type,
-div.coding_rule div.rule_concrete_applications li:first-of-type,
-div.assumption_rule div.assumption_justifications li:first-of-type,
-div.assumption_rule div.assumption_concrete_applications li:first-of-type {
+div.card div.card_justifications li:first-of-type,
+div.card div.card_concrete_applications li:first-of-type {
   margin-top: 0px;
 }
 
-div.coding_rule div.rule_justifications,
-div.coding_assumption div.assumption_justifications {
+div.card div.card_justifications {
   grid-column: 1/10;
   grid-row: 3;
 }
 
-div.coding_rule div.rule_concrete_applications,
-div.coding_assumption div.assumption_concrete_applications {
+div.card div.card_concrete_applications,
+div.card div.card_concrete_applications {
   grid-column: 13/21;
   grid-row: 3;
 }
 
-/* #endregion CRs&As */
+/* #endregion Cards */
 
 /* #region CRs&As -- Coding Assumptions Only */
 
-div.coding_assumption span.no_icons {
-  padding-top: 10px;
-  margin-left: -10px;
-}
+// div.coding_assumption span.no_icons {
+//   padding-top: 10px;
+//   margin-left: -10px;
+// }
 
 /* #endregion CRs&As -- Coding Assumptions Only */
 
 /* #region Media Queries */
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  main#coding_rules_and_assumptions div#coding_rules-header_and_home_link, main#coding_rules_and_assumptions div#coding_assumptions-header_and_home_link {
+  main#coding_rules_and_assumptions div.card_count {
     width: 100%;
   }
-  
+
   main#coding_rules_and_assumptions h2 {
     font-size: 2rem;
   }
 
-  div#container--coding_rules div.coding_rule,
-  div#container--coding_assumptions div.coding_assumption {
+  div.card_container div.card {
     width: 95%;
   }
 }
 
 @media screen and (min-width: 0px) and (max-width: 575px) {
+  div.card span.card_attribution {
+    font-size: 0.75rem;
+  }
 
-  div.coding_rule span.rule_attribution,
-  div.coding_assumption span.assumption_attribution {
-    font-size: .75rem;
-  } 
+  div.card span.card_attribution span.card_source {
+    display: block;
+  }
 
-div.coding_rule span.rule_attribution span.source,
-div.coding_assumption span.assumption_attribution span.source {
-  display: block;
-}
+  div.card div.card_justifications {
+    grid-column: 1/10;
+  }
 
-div.coding_rule div.rule_justifications,
-div.coding_assumption div.assumption_justifications {
-  grid-column: 1/10;
-}
-
-div.coding_rule div.rule_concrete_applications,
-div.coding_assumption div.assumption_concrete_applications {
-  grid-column: 11/21;
-}
-
+  div.card div.card_concrete_applications {
+    grid-column: 11/21;
+  }
 }
 
 /* #endregion Media Queries */
+
+// to do: improve nav!
+
+// main#coding_rules_and_assumptions div#coding_rules-header_and_home_link h2,
+// main#coding_rules_and_assumptions
+//   div#coding_assumptions-header_and_home_link
+//   h2 {
+//   font-size: 3rem;
+// }
+
+// main#coding_rules_and_assumptions div#coding_rules-header_and_home_link i,
+// main#coding_rules_and_assumptions
+//   div#coding_assumptions-header_and_home_link
+//   i {
+//   padding-top: 10px;
+//   padding-bottom: 5px;
+//   color: blue;
+//   font-size: 3rem;
+// }
