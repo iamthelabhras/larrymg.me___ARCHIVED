@@ -96,7 +96,7 @@ export let allPersonalRules = [
     source_link: "",
     source: "Mise Mé Féin",
     body: "Trust that it will all come together.",
-    justifications: "All knowledge is unified: it just takes time (and mental preparation to make connections.",
+    justifications: ["All knowledge is unified: it just takes time (and mental preparation to make connections."],
     concrete_applications: ["Reject <a href='https://www.voorhees.k12.nj.us/Page/336' target='_blank'>AEP</a> hyper-competitive conditioning: it's not about speed, it's about retention.", "You are smarted and more capable than you think."],
   }, 
 
@@ -266,7 +266,7 @@ export let allPersonalRules = [
     source_link: "",
     source: "Mise Mé Féin",
     body: "Hope with your body if you cannot hope with your mind.",
-    justifications: "<a href='https://www.youtube.com/watch?v=HJCC3QPtv5o' target='_blank'>'When my mind's uncertain / My body decides ...'</a>",
+    justifications: ["<a href='https://www.youtube.com/watch?v=HJCC3QPtv5o' target='_blank'>'When my mind's uncertain / My body decides ...'</a>"],
     concrete_applications: "",
   },
   
@@ -366,7 +366,7 @@ export let allPersonalRules = [
     source_link: "",
     source: "Mise Mé Féin",
     body: "Do the workout / exercise routine you like the least first. ",
-    justifications: "Learned this the hard way through my core exercise routine!",
+    justifications: ["Learned this the hard way through my core exercise routine!"],
     concrete_applications: "",
   }, 
 
@@ -427,7 +427,7 @@ export let allPersonalRules = [
     source: "Anonymous",
     body: "Respect / appreciate how little you really know about your impact online, especially on social media.",
     justifications: "",
-    concrete_applications: "Never 'share and share'.",
+    concrete_applications: ["Never 'share and share'."],
   },
   
   {
@@ -437,7 +437,7 @@ export let allPersonalRules = [
     source: "Mise Mé Féin",
     body: "The first thing you should do when you find yourself in a hole is stop digging.",
     justifications: "",
-    concrete_applications: "Applied this mostly to Personal Log backlogs, but I'm confident this can readily be applied to other contexts.",
+    concrete_applications: ["Applied this mostly to Personal Log backlogs, but I'm confident this can readily be applied to other contexts."],
   }, 
 
   {
