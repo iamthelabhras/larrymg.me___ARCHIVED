@@ -14,13 +14,16 @@ export let letsConnect =
   };
 
 
-// Sitewide data-attribute-driven variabes for working with social media and networking data in the DOM.
+// Sitewide data-attribute-driven variables for working with social media and networking data in the DOM.
 
-export const codepen = document.querySelector("[data-lets_connect ='codepen']");
+export const codepen = 
+document.querySelector("[data-lets_connect ='codepen']");
 
-export const emailPersonal = document.querySelector("[data-lets_connect ='emailPersonal']");
+export const emailPersonal = 
+document.querySelector("[data-lets_connect ='emailPersonal']");
 
-export const emailWork = document.querySelector("[data-lets_connect ='emailWork']");
+export const emailWork = 
+document.querySelector("[data-lets_connect ='emailWork']");
 
 export const letterboxd = 
 document.querySelector("[data-lets_connect ='letterboxd']");
@@ -39,4 +42,5 @@ document.querySelector("[data-lets_connect ='spotify'");
 
 export const twitter = document.querySelector("[data-lets_connect ='twitter'");
 
-export const website = document.querySelector("[data-lets_connect ='website'");
+export const website = 
+document.querySelector("[data-lets_connect ='website'");
