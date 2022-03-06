@@ -154,7 +154,7 @@ export function generateThisWeekWatching() {
       html += `<a href="`;
       html += `${video.videoTrailer}`;
       html += `" target="_blank">`;
-      html+= `${video.videoTitle}`;
+      html+= `${video.videoTitle} `;
       html += `</a>`;
       }
     else {
