@@ -1,4 +1,10 @@
-import { letsConnect, codepen, emailPersonal, letterboxd, linkedin, spotify, twitter, resume } from "../data/lets_connect";
+import { letsConnect, codepen, emailPersonal, letterboxd, linkedin, resume, spotify, twitter } from "../data/lets_connect";
+
+import { generateThisWeekLearning } from "../js/utility_functions";
+import { generateThisWeekReading } from "../js/utility_functions";
+import { generateThisWeekWatching } from "../js/utility_functions";
+import { generateThisWeekHotTrack} from "../js/utility_functions";
+import { generateThisWeekHotLaugh} from "../js/utility_functions";
 
 // Let's Connect
 
@@ -10,17 +16,10 @@ resume.setAttribute("href", `${letsConnect.resume}`);
 spotify.setAttribute("href", `${letsConnect.spotify}`);
 twitter.setAttribute("href", `${letsConnect.twitter}`);
 
-// TO DO: Figure out why I put this in here?
+// This Week
 
-const font = new FontFace(
-  "cursive_flourish",
-  "url(./fonts/learning_curve_bold_ot_tt.ttf)"
-);
-
-font.load().then(() => {
-  document.fonts.add(font);
-  document.body.style.fontFamily = "cursive_flourish, cursive";
-});
-
-console.log ("INDEX.JS READ.");
-console.log (twitter);
+generateThisWeekLearning();
+generateThisWeekReading();
+generateThisWeekWatching();
+generateThisWeekHotTrack();
+generateThisWeekHotLaugh();
