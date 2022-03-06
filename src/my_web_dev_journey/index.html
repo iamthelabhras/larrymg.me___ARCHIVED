@@ -62,25 +62,23 @@
         <!-- #region Sidebar -->
         <aside class="larrymg_me--sidebar">
           <div class="lets_connect">
-            <a href="http://www.twitter.com/iamthelabhras" target="_blank"
+            <a href="" target="_blank" data-lets_connect="twitter"
               ><i
                 class="fab fa-twitter-square"
                 width="2.75rem"
                 height="2.75rem"
               ></i
             ></a>
-            <a href="https://www.linkedin.com/in/larrymg/" target="_blank"
+            <a href="" target="_blank" data-lets_connect="linkedin"
               ><i class="fab fa-linkedin" width="2.75rem" height="2.75rem"></i
             ></a>
-            <a
-              href="https://open.spotify.com/user/1287879969?si=feuL7qGwStCY3DLiKp1viw"
-              target="_blank"
+            <a href="" target="_blank" data-lets_connect="spotify"
               ><i class="fab fa-spotify" width="2.75rem" height="2.75rem"></i
             ></a>
-            <a href="https://letterboxd.com/iamthelabhras/" target="_blank"
+            <a href="" target="_blank" data-lets_connect="letterboxd"
               ><i class="fas fa-film" width="2.75rem" height="2.75rem"></i
             ></a>
-            <a href="mailto:hello@larrymg.me"
+            <a href="" data-lets_connect="emailPersonal"
               ><i
                 class="fas fa-envelope-square"
                 width="2.75rem"
@@ -94,109 +92,33 @@
               What I'm Learning
               <span class="clean_break_on_wrap">This Week</span>:
             </h2>
-            <ul>
-              <li>JavaScript Fundamentals</li>
-              <ul>
-                <li>This week's deep focus 👀: objects & arrays.</li>
-              </ul>
-            </ul>
+            <ul id="what_im_learning_list"></ul>
           </div>
           <div class="what_im_reading">
             <h2>
               What I'm Reading
               <span class="clean_break_on_wrap">This Week:</span>
             </h2>
-            <ul>
-              <li>
-                <em>JavaScript: The Definitive Guide</em
-                ><span class="author"
-                  ><a href="https://twitter.com/__DavidFlanagan" target="_blank"
-                    >David Flanagan</a
-                  ></span
-                >
-              </li>
-            </ul>
+            <ul id="what_im_reading_list"></ul>
           </div>
           <div class="what_im_watching">
             <h2>
               What I'm Watching
               <span class="clean_break_on_wrap">This Week</span>:
             </h2>
-            <ul>
-              <li></li>
-              <li>
-                <a
-                  href="https://www.youtube.com/watch?v=Fs0XYssIlbo"
-                  target="_blank"
-                  ><span class="text_emphasis">Le Samouraï</span></a
-                >.
-              </li>
-            </ul>
+            <ul id="what_im_watching_list"></ul>
           </div>
           <div class="this_weeks_hot_track">
             <h2>
               This Week's<span class="clean_break_on_wrap">Hot Track:</span>
             </h2>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/MVTbRt7jWPg"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-            <span class="text_center"
-              ><a
-                href="https://en.wikipedia.org/wiki/Mort_Garson"
-                target="_blank"
-                >Mort Garson's</a
-              >
-
-              <span class="clean_break_on_wrap"
-                ><a
-                  href="https://www.youtube.com/watch?v=MVTbRt7jWPg"
-                  target="_blank"
-                  >This Is My Beloved"</a
-                ></span
-              ></span
-            >
+            <div id="hot_track_container"></div>
           </div>
           <div class="this_weeks_hot_laugh">
             <h2>
               This Week's<span class="clean_break_on_wrap">Hot Laugh</span>:
             </h2>
-            <!-- <video controls>
-              <source src="./videos/file_name_goes_here.mp4" type="video/mp4" />
-              Sorry, it looks like your browser doesn't support embedded
-              videos!.
-            </video> -->
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/xA6EXvyWlpY"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-
-            <span class="text_center">
-              <a
-                href="https://en.wikipedia.org/wiki/Upright_Citizens_Brigade"
-                target="_blank"
-                >Upright Citizens Brigade's</a
-              >
-
-              <span class="clean_break_on_wrap">
-                <a
-                  href="https://www.youtube.com/watch?v=xA6EXvyWlpY"
-                  target="_blank"
-                >
-                  "Bug Juice" Sketch
-                </a></span
-              ></span
-            >
+            <div id="hot_laugh_container"></div>
           </div>
           <!-- #endregion Side Bar -- This Week -->
         </aside>
@@ -1503,5 +1425,6 @@
       async
       defer
     ></script>
+    <script type="module" src="../js/my_web_dev_journey.js"></script>
   </body>
 </html>
