@@ -1,7 +1,7 @@
 export let allPersonalAssumptions = [
 
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Mise Mé Féin",
@@ -11,7 +11,7 @@ export let allPersonalAssumptions = [
   },  
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Mise Mé Féin",
@@ -21,7 +21,7 @@ export let allPersonalAssumptions = [
   }, 
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Mise Mé Féin",
@@ -31,7 +31,7 @@ export let allPersonalAssumptions = [
   }, 
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Mise Mé Féin",
@@ -41,7 +41,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "https://twitter.com/scotthyoung/",
     source_link: "https://www.scotthyoung.com/blog/2016/04/12/no-hard-subjects/",
     source: "Scott Young",
@@ -51,7 +51,7 @@ export let allPersonalAssumptions = [
   }, 
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "https://twitter.com/rjallain",
     source_link: "https://www.wired.com/2014/09/two-common-misconceptions-about-learning/",
     source: "Rhett Allain",
@@ -61,7 +61,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Dermot Curtin",
@@ -71,7 +71,7 @@ export let allPersonalAssumptions = [
   }, 
 
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Mise Mé Féin",
@@ -81,7 +81,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "https://twitter.com/nntaleb",
     source_link: "",
     source: "Nassim Taleb",
@@ -91,7 +91,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Mise Mé Féin",
@@ -101,7 +101,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Mise Mé Féin",
@@ -111,7 +111,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "https://www.youtube.com/watch?v=AKt_Lp9B-tg",
     source: "The Young Pope",
@@ -121,7 +121,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "https://twitter.com/briancervino",
     source_link: "https://blog.trello.com/send-tasks-to-trello-boar",
     source: "Brian Cervino",
@@ -131,7 +131,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Mise Mé Féin",
@@ -141,7 +141,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Mise Mé Féin",
@@ -151,7 +151,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Mise Mé Féin",
@@ -161,7 +161,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Mise Mé Féin",
@@ -171,7 +171,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Mise Mé Féin",
@@ -181,7 +181,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "https://twitter.com/BernardMarr",
     source_link: "",
     source: "Bernard Marr",
@@ -191,7 +191,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "https://twitter.com/awealthofcs",
     source_link: "https://awealthofcommonsense.com/2019/01/predictable-and-unpredictable-expenses/",
     source: "Ben Carlson",
@@ -201,7 +201,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Mise Mé Féin",
@@ -211,7 +211,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Maj. Garland Briggs",
@@ -221,7 +221,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Mise Mé Féin",
@@ -231,7 +231,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "https://twitter.com/AriannaSimpson",
     source_link: "",
     source: "Arianna Simpson",
@@ -241,7 +241,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Anonymous",
@@ -251,7 +251,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "https://twitter.com/GallowsRooster",
     source_link: "https://letterboxd.com/herb_gallow/films/reviews/",
     source: "Herb Gallow",
@@ -262,7 +262,7 @@ export let allPersonalAssumptions = [
   
     
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Mise Mé Féin",
@@ -273,7 +273,7 @@ export let allPersonalAssumptions = [
   
       
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "",
     source: "Jason Custer",
@@ -283,7 +283,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "https://twitter.com/wesbos",
     source_link: "",
     source: "Wes Bos",
@@ -293,7 +293,7 @@ export let allPersonalAssumptions = [
   },
   
   {
-    card_number: undefined,  // this value is dynamically via a .forEach method.
+    card_number: undefined,  // this value is dynamically generated via a .forEach method.
     social_link: "",
     source_link: "https://en.wikipedia.org/wiki/Jean-Michel_Basquiat",
     source: "Jean-Michel Basquiat",
