@@ -1,7 +1,7 @@
 export let allCodingRules = [
 
   {
-    card_number: undefined,  // value is dynamically via .forEach method below.
+    card_number: undefined,  // this value is dynamically generated via .forEach method below.
     social_link: "https://twitter.com/billsourour",
     source_link: "",
     source: "B. Sourour",
@@ -11,7 +11,7 @@ export let allCodingRules = [
   },    
   
   {
-    card_number: undefined,  // value is dynamically via .forEach method below.
+    card_number: undefined,  // this value is dynamically generated via .forEach method below.
     social_link: "https://twitter.com/bradwestfall",
     source_link: "https://css-tricks.com/how-well-do-you-know-css-layout/",
     source: "B. Westfall",
@@ -21,7 +21,7 @@ export let allCodingRules = [
   },
 
   {
-    card_number: undefined,  // value is dynamically via .forEach method below.
+    card_number: undefined,  // this value is dynamically generated via .forEach method below.
     social_link: "https://twitter.com/bradwestfall",
     source_link: "",
     source: "B. Westfall",
@@ -31,7 +31,7 @@ export let allCodingRules = [
   },
 
   {
-    card_number: undefined,  // value is dynamically via .forEach method below.
+    card_number: undefined,  // this value is dynamically generated via .forEach method below.
     social_link: "https://twitter.com/billsourour",
     source_link: "",
     source: "B. Sourour",
@@ -41,7 +41,7 @@ export let allCodingRules = [
   },
 
   {
-    card_number: undefined,  // value is dynamically via .forEach method below.
+    card_number: undefined,  // this value is dynamically generated via .forEach method below.
     social_link: "https://twitter.com/holtbt",
     source_link: "",
     source: "B. Holt",
@@ -51,7 +51,7 @@ export let allCodingRules = [
   },
 
   {
-    card_number: undefined,  // value is dynamically via .forEach method below.
+    card_number: undefined,  // this value is dynamically generated via .forEach method below.
     social_link: "https://twitter.com/martinfowler",
     source_link: "",
     source: "M. Fowler",
@@ -61,7 +61,7 @@ export let allCodingRules = [
   },
 
   {
-    card_number: undefined,  // value is dynamically via .forEach method below.
+    card_number: undefined,  // this value is dynamically generated via .forEach method below.
     social_link: "https://twitter.com/iamthelabhras",
     source_link: "",
     source: "Mise Mé Féin",
@@ -71,7 +71,7 @@ export let allCodingRules = [
   },
 
   {
-    card_number: undefined,  // value is dynamically via .forEach method below.
+    card_number: undefined,  // this value is dynamically generated via .forEach method below.
     social_link: "https://twitter.com/MikeRiethmuller",
     source_link: "https://www.smashingmagazine.com/2016/05/fluid-typography/",
     source: "M. Riethmuller",
@@ -81,7 +81,7 @@ export let allCodingRules = [
   },
 
   {
-    card_number: undefined,  // value is dynamically via .forEach method below.
+    card_number: undefined,  // this value is dynamically generated via .forEach method below.
     social_link: "https://twitter.com/CoreyMSchafer",
     source_link: "https://www.youtube.com/watch?v=HVsySz-h9r4",
     source: "C. Schafer",
@@ -91,7 +91,7 @@ export let allCodingRules = [
   },
 
   {
-    card_number: undefined,  // value is dynamically via .forEach method below.
+    card_number: undefined,  // this value is dynamically generated via .forEach method below.
     social_link: "https://twitter.com/goldbergyoni",
     source_link: "https://github.com/goldbergyoni/javascript-testing-best-practices",
     source: "Y. Goldberg",
