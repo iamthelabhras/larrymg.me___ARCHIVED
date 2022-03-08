@@ -1,8 +1,8 @@
-import { thisWeekLearning } from "../data/this_week";
-import { thisWeekReading } from "../data/this_week";
-import { thisWeekWatching } from "../data/this_week";
-import { thisWeekHotTrack } from "../data/this_week";
-import { thisWeekHotLaugh } from "../data/this_week";
+import { thisWeekLearning } from "../data/this_week.js";
+import { thisWeekReading } from "../data/this_week.js";
+import { thisWeekWatching } from "../data/this_week.js";
+import { thisWeekHotTrack } from "../data/this_week.js";
+import { thisWeekHotLaugh } from "../data/this_week.js";
 
 export function generateCardStack(arrayOfCards, cardContainerSelector) {
   // Initialize a variable to collect the HTML for our entire card stack. 

@@ -1,8 +1,8 @@
 // Import relevant modules.
 
-import { allPersonalAssumptions } from "../data/all_personal_assumptions";
-import { allPersonalRules } from "../data/all_personal_rules";
-import { generateCardStack } from "./utility_functions";
+import { allPersonalAssumptions } from "../data/all_personal_assumptions.js";
+import { allPersonalRules } from "../data/all_personal_rules.js";
+import { generateCardStack } from "./utility_functions.js";
 
 // Grab total number of Coding Assumptions & insert into HTML.
 

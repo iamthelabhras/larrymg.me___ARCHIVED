@@ -1,8 +1,8 @@
 // Import relevant modules.
 
-import { allCodingAssumptions } from "../data/all_coding_assumptions";
-import { allCodingRules } from "../data/all_coding_rules";
-import { generateCardStack } from "./utility_functions";
+import { allCodingAssumptions } from "../data/all_coding_assumptions.js";
+import { allCodingRules } from "../data/all_coding_rules.js"
+import { generateCardStack } from "./utility_functions.js";
 
 // Grab total number of Coding Assumptions & insert into HTML.
 

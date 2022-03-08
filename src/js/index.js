@@ -1,10 +1,10 @@
-import { letsConnect, codepen, emailPersonal, letterboxd, linkedin, resume, spotify, twitter } from "../data/lets_connect";
+import { letsConnect, codepen, emailPersonal, letterboxd, linkedin, resume, spotify, twitter } from "../data/lets_connect.js";
 
-import { generateThisWeekLearning } from "../js/utility_functions";
-import { generateThisWeekReading } from "../js/utility_functions";
-import { generateThisWeekWatching } from "../js/utility_functions";
-import { generateThisWeekHotTrack} from "../js/utility_functions";
-import { generateThisWeekHotLaugh} from "../js/utility_functions";
+import { generateThisWeekLearning } from "../js/utility_functions.js";
+import { generateThisWeekReading } from "../js/utility_functions.js";
+import { generateThisWeekWatching } from "../js/utility_functions.js";
+import { generateThisWeekHotTrack} from "../js/utility_functions.js";
+import { generateThisWeekHotLaugh} from "../js/utility_functions.js";
 
 // Let's Connect
 
