@@ -3,6 +3,7 @@
 import { allCodingAssumptions } from "../data/all_coding_assumptions.js";
 import { allCodingRules } from "../data/all_coding_rules.js"
 import { generateCardStack } from "./utility_functions.js";
+import { generateCardStackIcons } from "./utility_functions.js";
 
 // Grab total number of Coding Assumptions & insert into HTML.
 
@@ -18,4 +19,5 @@ totalCodingAssumptions.innerHTML = `Coding Assumptions (${allCodingAssumptions.l
 
 generateCardStack(allCodingRules, container_coding_rules);
 generateCardStack(allCodingAssumptions, container_coding_assumptions);
+generateCardStackIcons();
 
