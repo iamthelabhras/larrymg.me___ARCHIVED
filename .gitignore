@@ -1,5 +1,4 @@
 # Tell Git to ignore these folders:
-.cache/
 .parcel-cache/
 archived/
 attributions/
@@ -10,6 +9,5 @@ node_modules/
 .DS_store
 .htaccess
 .htpasswd
-.parcelrc
 audio/appletone.mp3
 pdfs/ALIAS_on_website
