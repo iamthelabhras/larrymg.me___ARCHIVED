@@ -18,19 +18,18 @@ export function generateCardStack(arrayOfCards, cardContainerSelector) {
       `<div class="card" id="${card.card_number}">` + 
       `<span class="card_number">#${card.card_number}</span>` +
       `<p class="card_text">${card.body}</p>`;
-    // If card links to Twitter, grab link & icon & insert into card. 
+    // If card links to Twitter, grab link & insert into card. 
+
+    // NOTE:  Linked icon is added via a separate call to generateCardStickIcons() to ensure Parcel can 'see' it at build time.  See: https://parceljs.org/languages/javascript/#url-dependencies for more details.
+
       if (card.social_link !== "") {
         cardStackHTML+= 
           `<span class="card_image">`  + 
-          `<a href="${card.social_link}" target="_blank">` +
-          `<img 
-              src="../images/icons/icons8-twitter-blue.png"
-              alt="Blue Twitter icon."
-              loading="lazy" />` +
+          `<a href="${card.social_link}" class="card_icon" target="_blank">` +
           `</a>` +
           `</span>`;
       };
-  
+
     cardStackHTML+=
       `<span class="card_attribution">`;
     
@@ -52,9 +51,9 @@ export function generateCardStack(arrayOfCards, cardContainerSelector) {
            `<span class="cursive">Justifications:</span>` +
            `<ul>`;  
  
-// If card has justifications , insert them as list items.
+    // If card has justifications , insert them as list items.
 
-// Note that we are looping within an array within the object we are currently looping over here!
+    // Note that we are looping within an array within the object we are currently looping over here!
 
       if (card.justifications !== "") {
         card.justifications.forEach (justification => {
@@ -70,9 +69,9 @@ export function generateCardStack(arrayOfCards, cardContainerSelector) {
           `<span class="cursive">Concrete Applications:</span>` +
           `<ul>`;
  
-// If card has concrete applications, instert them as list items.
+    // If card has concrete applications, instert them as list items.
 
-// Note that we are looping within an array within the object we are currently looping over here!
+    // Note that we are looping within an array within the object we are currently looping over here!
  
       if (card.concrete_applications !== "") {
         card.concrete_applications.forEach (application => {
@@ -80,7 +79,8 @@ export function generateCardStack(arrayOfCards, cardContainerSelector) {
             `<li>${application}</li>`;
           });
         }            
-// Add the final HTML to each card in our looped array.   
+    
+    // Add the final HTML to each card in our looped array.   
 
     cardStackHTML+=   
               `</ul>` + 
@@ -90,12 +90,25 @@ export function generateCardStack(arrayOfCards, cardContainerSelector) {
   
   });
 
-// Collect each stacked card's HTML in a single variable for insertion into the DOM. 
+    // Collect each stacked card's HTML in a single variable for insertion into the DOM. 
 
   html+= cardStackHTML;
   console.log(html);
   cardContainerSelector.innerHTML = `${html}</div>`;
+};
 
+export function generateCardStackIcons() {
+  //  NOTE: This function must be run *after* generateCardStack(). 
+  
+  //  Select all cards in the DOM that need icons.
+  const cardsWithIcons = document.querySelectorAll(".card_icon");
+
+  //  Loop over all cards in the DOM that need icons & add icons.
+  cardsWithIcons.forEach((card,index)  => {
+  const icon  = document.createElement('img');
+  icon.src = new URL('../images/icons/icons8-twitter-blue.png', import.meta.url);
+  card.appendChild(icon);
+  });
 };
 
 export function generateThisWeekLearning() {
