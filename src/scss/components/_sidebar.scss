@@ -1,206 +1,74 @@
-/* #region Sidebar -- Platonic Idea of a Sidebar*/
-
 aside.larrymg_me--sidebar {
   display: flex;
   flex-direction: column;
   padding: 0px 10px;
   background: #e8e8e8;
+
+  div h2 {
+    text-align: center;
+    border: 1px solid whitesmoke;
+    background: #cecece;
+    font-size: 1.65rem;
+  }
+
+  div h2 span.clean_break_on_wrap {
+    /* Make sure "This Week" clean break on wrap spans match surrounding H2 font styling. */
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  ul {
+    padding: 0px;
+    font-family: "main_text", sans-serif;
+    font-family: "cursive_flourish", cursive;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    list-style: none;
+  }
+
+  ul li,
+  ul span {
+    margin-top: 8px;
+    padding: 0px 2px;
+    list-style: none;
+    list-style-position: inside;
+  }
+
+  ul ul > li,
+  ul span {
+    display: block;
+    font-family: main_text, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  span.cursive {
+    display: block;
+    font-family: "cursive_flourish", cursive;
+    font-size: 1.25rem;
+  }
+
+  div:last-of-type {
+    /* Keep last sidebar div in view as visitors scroll through content divs. */
+    position: sticky;
+    top: 0;
+  }
 }
 
-/* Keep last sidebar div in view as visitors scroll through content divs. */
-aside.larrymg_me--sidebar div:last-of-type {
-  position: sticky;
-  top: 0;
+div.what_im_watching,
+div.this_weeks_hot_track,
+div.this_weeks_hot_laugh {
+  iframe,
+  video,
+  img {
+    display: block;
+    width: 100%;
+    max-height: 200px;
+    margin-bottom: 3px;
+    border: 1px solid gray;
+  }
 }
-
-aside li {
-  list-style: none;
-  list-style-position: inside;
-  padding: 0px 20px 5px 20px;
-  background: url("../images/my_work/resume/bullets/square-shadow.svg")
-    no-repeat scroll 0 0 transparent;
-  background-size: 6px 6px;
-  /* Nudges square-shadow.svg down to the baseline of each li span text. */
-  background-position-y: 6px;
-}
-
-/* #endregion Sidebar -- Platonic Idea of a Sidebar*/
-
-/* #region Sidebar -- Let's Connect / Social Media Profiles & Icons */
-
-aside.larrymg_me--sidebar div.lets_connect {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: center;
-  height: 50px;
-  /* A little bit more margin on the bottom of this div to separate
-        it from each of the 'What I'm Learning' h2 elements that follow. */
-  margin-bottom: 20px;
-  border-bottom: 5px solid #cecece;
-  padding: calc(10px + 2.75rem) 0px;
-}
-
-aside.larrymg_me--sidebar div.lets_connect a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 2.75rem;
-  height: 2.75rem;
-  color: black;
-  text-decoration: none;
-}
-aside.larrymg_me--sidebar div.lets_connect a:link {
-  color: black;
-}
-aside.larrymg_me--sidebar div.lets_connect a:visited {
-  color: gray;
-}
-aside.larrymg_me--sidebar div.lets_connect a:focus,
-aside.larrymg_me--sidebar div.lets_connect a:hover {
-  color: #fdff9d;
-}
-
-aside.larrymg_me--sidebar div.lets_connect a:active {
-  color: black;
-}
-
-aside.larrymg_me--sidebar div.lets_connect i {
-  font-size: 2.5rem;
-  transition: all 0.25s ease-in-out;
-}
-
-aside.larrymg_me--sidebar div.lets_connect i:hover {
-  font-size: 2.75rem;
-}
-
-/* #endregion Sidebar -- Let's Connect / Social Media Profiles & Icons */
-
-/* #region Sidebar -- H2 Gray Blocks */
-
-aside.larrymg_me--sidebar div h2 {
-  text-align: center;
-  margin: 15px 0px;
-  padding: 5px;
-  border: 1px solid whitesmoke;
-  background: #cecece;
-  font-size: 1.65rem;
-}
-
-aside.larrymg_me--sidebar div h2 > span.clean_break_on_wrap {
-  /* Make sure "This Week" clean break on wrap spans match surrounding H2 font styling. */
-  font-family: inherit;
-  font-size: inherit;
-}
-
-aside.larrymg_me--sidebar div span.cursive {
-  display: block;
-  margin-top: 5px;
-  font-family: "cursive_flourish", cursive;
-  font-size: 1.25rem;
-}
-
-/* #endregion Sidebar -- H2 Gray Blocks */
-
-/* #region Sidebar -- ALL "THIS WEEK" BLOCKS & CONTENT */
-
-/* #region Sidebar -- What I'm Learning This Week */
-
-div.what_im_learning ul li {
-  margin-bottom: 10px;
-}
-
-div.what_im_learning ul ul > li {
-  margin-top: 8px;
-  padding: 0;
-  font-family: main_text, sans-serif;
-  font-size: 0.8rem;
-  font-weight: 500;
-  list-style: none;
-  background-image: none;
-}
-
-/* #endregion Sidebar -- What I'm Learning This Week */
-
-/* #region Sidebar -- What I'm Reading This Week  */
-div.what_im_reading span.author {
-  display: block;
-  text-align: center;
-  font-family: main_text, sans-serif-serif;
-  font-size: 0.8rem;
-  font-weight: 500;
-}
-
-div.what_im_reading li {
-  margin-bottom: 15px;
-}
-
-/* #endregion Sidebar -- What I'm Reading This Week */
-
-/* #region Sidebar -- What I'm Learning This Week, What I'm Reading This Week, & What I'm Watching This Week Sections */
-
-div.what_im_learning ul,
-div.what_im_reading ul,
-div.what_im_watching ul,
-div.this_weeks_hot_track span,
-div.this_weeks_hot_laugh span {
-  padding-left: 5px;
-  font-family: "main_text", sans-serif;
-  font-family: "cursive_flourish", cursive;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-/* #endregion Sidebar -- What I'm Learning This Week, What I'm Reading This Week, & What I'm Watching This Week Sections */
-
-/* #region Sidebar -- This Week's Hot Track & This Week's Hot Laugh */
-div.what_im_watching ul span.clean_break_on_wrap,
-div.this_weeks_hot_track ul span.clean_break_on_wrap,
-div.this_weeks_hot_laugh ul span.clean_break_on_wrap {
-  /* Add "back" underline to cleanly broken spans for stylistic consistency. */
-  text-decoration: underline;
-}
-
-/* #endregion Sidebar -- This Week's Hot Track & This Week's Hot Laugh */
-
-/* #region Sidebar -- What I'm Watching This Week */
-
-div.what_im_watching li {
-  /* Assumes everything I'm watching would require italicization. */
-  font-style: italic;
-}
-
-/* #endregion Sidebar -- What I'm Watching This Week */
-
-/* #region Sidebar -- This Week's Hot Track */
-
-div.this_weeks_hot_track {
-  display: grid;
-}
-
-div.this_weeks_hot_track video {
-  /* Embedded Spotify player overflows container at max-width: 100%? */
-  max-width: 100%;
-  max-height: 400px;
-  border: 1px solid gray;
-}
-
-/* #endregion - Sidebar -- This Week's Hot Track*/
-
-/* #region Sidebar -- This Week's Hot Laugh */
-
-div.this_weeks_hot_laugh iframe,
-div.this_weeks_hot_laugh video,
-div.this_weeks_hot_laugh img {
-  max-width: 100%;
-  max-height: 200px;
-  border: 1px solid gray;
-}
-
-/* #endregion Sidebar -- This Week's Hot Laugh */
-
-/* #endregion Sidebar -- All "THIS WEEK" BLOCKS & CONTENTS */
 
 /* #region Sidebar -- Media Queries */
 
