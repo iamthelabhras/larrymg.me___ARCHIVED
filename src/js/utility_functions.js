@@ -163,10 +163,10 @@ export function generateThisWeekWatching() {
   thisWeekWatching.videos.forEach(function (video, index) {
     let html = "";
     index += 1;
-    emptyWatchingListItem = document.createElement(`li`);
-    emptyWatchingListItem.id = "thisWeekWatching-" + `${index}`;
-    watchingList.appendChild(emptyWatchingListItem);
-    watchingListItem = document.querySelector(`#thisWeekWatching-${index}`);
+    const li = document.createElement(`li`);
+    li.id = "thisWeekWatching-" + `${index}`;
+    watchingList.appendChild(li);
+    const watchingListItem = document.querySelector(`#thisWeekWatching-${index}`);
     if (video.videoTrailer !== "") {
       const trailer = document.createElement(`video`);
       trailer.id = "video-" + `${index}`;
@@ -187,9 +187,9 @@ export function generateThisWeekWatching() {
     html += ` (${video.videoYear}, `;
     if (video.videoDirectorLink !== "") {
       html += `dir. `;
-      html += `<a href="`
+      html += `<a href="`;
       html += `${video.videoDirectorLink}`;
-      html += `" target="_blank">`
+      html += `" target="_blank">`;
       html += `${video.videoDirector}`;
       html += `</a>)`;
     }
@@ -206,47 +206,62 @@ export function generateThisWeekWatching() {
 export function generateThisWeekHotTrack () {
     let hotTrack = document.querySelector("#hot_track_container");
     let html = "";
+    const ul = document.createElement(`ul`);
+    const li = document.createElement(`li`);
+    hotTrack.appendChild(ul);
+    const hotTrackUnorderedList = document.querySelector("#hot_track_container ul");
+    hotTrackUnorderedList.appendChild(li);
+    const hotTrackListItem = document.querySelector("#hot_track_container li");
     const video = document.createElement(`video`);
     video.id = `trackVideoLink`;
     video.controls = true;
-    hotTrack.appendChild(video);
+    hotTrackListItem.appendChild(video);
     const videoSource = document.createElement(`source`);
     videoSource.src = new URL(`${thisWeekHotTrack.trackVideoLink}`, import.meta.url);
     videoSource.type = `video/mp4`;
     const appendedVideo = document.querySelector("#trackVideoLink");
     appendedVideo.appendChild(videoSource);
     appendedVideo.innerHTML += `Sorry, your browser doesn't support embedded videos.`;
-    html += `<span class="text_center">`;
-    html += `<a href="${thisWeekHotTrack.trackArtistLink}" target="_blank">`;
-    html += `${thisWeekHotTrack.trackArtist}'s</a> `;
-    html += `<span class="clean_break_on_wrap">`
     html += `<a href="${thisWeekHotTrack.trackTitleLink}" target="_blank">`;
-    html += `"${thisWeekHotTrack.trackTitle}"`;
+    html += `${thisWeekHotTrack.trackTitle}</a>`;
+    html += `<span class="clean_break_on_wrap">`;
+    html += `(${thisWeekHotTrack.trackYear}, `;
+    html += `<a href="${thisWeekHotTrack.trackArtistLink}" target="_blank">`;
+    html += `${thisWeekHotTrack.trackArtist}`;
     html += `</a>`;
+    html += `)`;
     html += `</span>`;
-    hotTrack.innerHTML += html;
+    hotTrackListItem.innerHTML += html;
 };
+
 
 export function generateThisWeekHotLaugh () {
   let hotLaugh = document.querySelector("#hot_laugh_container");
   let html = "";
+  const ul = document.createElement(`ul`);
+  const li = document.createElement(`li`);
+  hotLaugh.appendChild(ul);
+  const hotLaughUnorderedList = document.querySelector("#hot_laugh_container ul");
+  hotLaughUnorderedList.appendChild(li);
+  const hotLaughListItem = document.querySelector("#hot_laugh_container li");
   const video = document.createElement(`video`);
   video.id = `laughVideoLink`;
   video.controls = true;
-  hotLaugh.appendChild(video);
-  const videoSource = document.createElement('source');
+  hotLaughListItem.appendChild(video);
+  const videoSource = document.createElement(`source`);
   videoSource.src = new URL(`${thisWeekHotLaugh.laughVideoLink}`, import.meta.url);
   videoSource.type = `video/mp4`;
   const appendedVideo = document.querySelector("#laughVideoLink");
   appendedVideo.appendChild(videoSource);
   appendedVideo.innerHTML += `Sorry, your browser doesn't support embedded videos.`;
-  html += `<span class="text_center">`;
-  html += `<a href="${thisWeekHotLaugh.laughArtistLink}" target="_blank">`;
-  html += `${thisWeekHotLaugh.laughArtist}'s</a> `;
-  html += `<span class="clean_break_on_wrap">`;
   html += `<a href="${thisWeekHotLaugh.laughTitleLink}" target="_blank">`;
-  html += `${thisWeekHotLaugh.laughTitle}`;
+  html += `${thisWeekHotLaugh.laughTitle}</a>`;
+  html += `<span class="clean_break_on_wrap">`;
+  html += `(${thisWeekHotLaugh.laughYear}, `;
+  html += `<a href="${thisWeekHotLaugh.laughArtistLink}" target="_blank">`;
+  html += `${thisWeekHotLaugh.laughArtist}`;
   html += `</a>`;
+  html+= `)`;
   html += `</span>`;
-  hotLaugh.innerHTML += html;
+  hotLaughListItem.innerHTML += html;
 };
