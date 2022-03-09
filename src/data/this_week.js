@@ -36,7 +36,7 @@ export let thisWeekHotTrack =
     trackTitleLink: "https://www.youtube.com/watch?v=MVTbRt7jWPg",
     trackArtist: "Mort Garson",
     trackArtistLink: "https://en.wikipedia.org/wiki/Mort_Garson", 
-    iframeSrc: "https://www.youtube.com/embed/MVTbRt7jWPg",
+    trackVideoLink: "https://larrymg.me/video/hot_track.mp4",
   };
 
 export let thisWeekHotLaugh =
@@ -44,6 +44,6 @@ export let thisWeekHotLaugh =
     laughTitle: "'Bug Juice' Sketch",
     laughTitleLink: "https://www.youtube.com/watch?v=xA6EXvyWlpY",
     laughArtist: "Upright Citizens Brigade",
-    laughtArtistLink: "https://en.wikipedia.org/wiki/Upright_Citizens_Brigade", 
-    iframeSrc: "https://www.youtube.com/embed/xA6EXvyWlpY",
+    laughArtistLink: "https://en.wikipedia.org/wiki/Upright_Citizens_Brigade", 
+    laughVideoLink: "https://larrymg.me/video/hot_laugh.mp4",
   };
