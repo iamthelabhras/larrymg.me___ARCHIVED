@@ -1,3 +1,14 @@
+body#scoped_to_snippets {
+  /* Sounds of Marathon Christmas Custom Variables */
+  --santa_black: rgba(1, 2, 3, 0.95);
+  --santa_red: #ec5e95;
+  --santa_white: #ffff;
+  --santa_yellow: #f9fb22;
+  --santa_box_shadow_primary: rgba(128, 128, 128, 0.5);
+  --santa_body_bg: #1f253c;
+  --santa_body_bg-lighter: #353b50;
+}
+
 /* #region larrymg.me in-a-inch index--hello styling.
     TO DO: Componentize this! */
 
@@ -69,17 +80,6 @@ div.snippet_code_container {
 /* #endregion Page-specific snippet components. */
 
 /* #region Sounds of Marathon Christmas Snippet Specific Styling */
-
-:root {
-  /* Sounds of Marathon Christmas Custom Variables */
-  --santa_black: rgba(1, 2, 3, 0.95);
-  --santa_red: #ec5e95;
-  --santa_white: #ffff;
-  --santa_yellow: #f9fb22;
-  --santa_box_shadow_primary: rgba(128, 128, 128, 0.5);
-  --santa_body_bg: #1f253c;
-  --santa_body_bg-lighter: #353b50;
-}
 
 span#pink_bar {
   display: inline-block;

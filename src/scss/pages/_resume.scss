@@ -1,5 +1,5 @@
 /* #region Resume -- Custom Variables */
-:root {
+body#scoped_to_resume {
   /* #region Widths */
   --width__container--header_and_columns: 95%;
   --width__container--resume_columns: 100%;
@@ -852,7 +852,7 @@ section#objective_wrapped {
 
 @media screen and (min-width: 0px) and (max-width: 1079px) {
   /* Set resume column width custom variable to 100% at breakpoint where right-hand column / column 2 wraps. */
-  :root {
+  body#scoped_to_resume {
     --width__container--resume-col_1: 100%;
     --width__container--resume-col_2: 100%;
   }

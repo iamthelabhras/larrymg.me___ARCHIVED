@@ -1,0 +1,6 @@
+/*      Site-wide CSS variables are scoped to ROOT & collected here.  
+        Page-specific CSS variable are scoped to a page's BODY & collected in their respecitve Sass partials.   */
+
+:root {
+  --site_wide--scroll_padding: 10px;
+}
