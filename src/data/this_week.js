@@ -22,7 +22,7 @@ export let thisWeekWatching = {
     videos: [
     { 
       videoTitle: "Le Samourai",
-      videoTrailer: "https://www.youtube.com/watch?v=Fs0XYssIlbo",
+      videoTrailer: "https://larrymg.me/video/watching_this_week.mp4",
       videoYear: "1967",
       videoDirector: "Melville",
       videoDirectorLink: "https://en.wikipedia.org/wiki/Jean-Pierre_Melville",

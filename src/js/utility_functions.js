@@ -159,19 +159,29 @@ export function generateThisWeekReading() {
 };
 
 export function generateThisWeekWatching() {
-  let watchingList = document.querySelector("#what_im_watching_list");
-  thisWeekWatching.videos.forEach(function (video) {
+  let watchingList = document.querySelector("ul#what_im_watching_list");
+  thisWeekWatching.videos.forEach(function (video, index) {
     let html = "";
-    html += `<li>`
+    index += 1;
+    emptyWatchingListItem = document.createElement(`li`);
+    emptyWatchingListItem.id = "thisWeekWatching-" + `${index}`;
+    watchingList.appendChild(emptyWatchingListItem);
+    watchingListItem = document.querySelector(`#thisWeekWatching-${index}`);
     if (video.videoTrailer !== "") {
-      html += `<a href="`;
-      html += `${video.videoTrailer}`;
-      html += `" target="_blank">`;
-      html+= `${video.videoTitle} `;
-      html += `</a>`;
+      const trailer = document.createElement(`video`);
+      trailer.id = "video-" + `${index}`;
+      trailer.controls = true;
+      watchingListItem.appendChild(trailer);
+      const trailerSource = document.createElement(`source`);
+      trailerSource.src = new URL(`${video.videoTrailer}`, import.meta.url);
+      trailerSource.type = `video/mp4`;
+      const appendedTrailer = document.querySelector(`#video-${index}`);
+      appendedTrailer.appendChild(trailerSource);
+      appendedTrailer.innerHTML += `Sorry, your browser doesn't support embedded videos.`;
+      watchingListItem.innerHTML += `${video.videoTitle}`;
       }
     else {
-      html += `${video.videoTitle}`;
+      watchingListItem.innerHTML += `${video.videoTitle}`;
       }
     html += `<span class="clean_break_on_wrap">`;
     html += ` (${video.videoYear}, `;
@@ -189,7 +199,7 @@ export function generateThisWeekWatching() {
     };
     html += `</span>`;
     html += `</li>`;
-    watchingList.innerHTML += html;
+    watchingListItem.innerHTML += html;
     });
 };
 
