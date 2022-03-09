@@ -104,7 +104,7 @@ export function generateCardStackIcons() {
   const cardsWithIcons = document.querySelectorAll(".card_icon");
 
   //  Loop over all cards in the DOM that need icons & add icons.
-  cardsWithIcons.forEach((card,index)  => {
+  cardsWithIcons.forEach(card  => {
   const icon  = document.createElement('img');
   icon.src = new URL('../images/icons/icons8-twitter-blue.png', import.meta.url);
   card.appendChild(icon);
@@ -196,11 +196,17 @@ export function generateThisWeekWatching() {
 export function generateThisWeekHotTrack () {
     let hotTrack = document.querySelector("#hot_track_container");
     let html = "";
-    html += `<iframe width="560" height="315"`;
-    html += `src="${thisWeekHotTrack.iframeSrc}"`;
-    html += `title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
-    html += `</iframe>`
-    html += `<span class="text_center">`
+    const video = document.createElement(`video`);
+    video.id = `trackVideoLink`;
+    video.controls = true;
+    hotTrack.appendChild(video);
+    const videoSource = document.createElement(`source`);
+    videoSource.src = new URL(`${thisWeekHotTrack.trackVideoLink}`, import.meta.url);
+    videoSource.type = `video/mp4`;
+    const appendedVideo = document.querySelector("#trackVideoLink");
+    appendedVideo.appendChild(videoSource);
+    appendedVideo.innerHTML += `Sorry, your browser doesn't support embedded videos.`;
+    html += `<span class="text_center">`;
     html += `<a href="${thisWeekHotTrack.trackArtistLink}" target="_blank">`;
     html += `${thisWeekHotTrack.trackArtist}'s</a> `;
     html += `<span class="clean_break_on_wrap">`
@@ -214,14 +220,20 @@ export function generateThisWeekHotTrack () {
 export function generateThisWeekHotLaugh () {
   let hotLaugh = document.querySelector("#hot_laugh_container");
   let html = "";
-  html += `<iframe width="560" height="315"`;
-  html += `src="${thisWeekHotLaugh.iframeSrc}"`;
-  html += `title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>`
-  html += `</iframe>`
-  html += `<span class="text_center">`
+  const video = document.createElement(`video`);
+  video.id = `laughVideoLink`;
+  video.controls = true;
+  hotLaugh.appendChild(video);
+  const videoSource = document.createElement('source');
+  videoSource.src = new URL(`${thisWeekHotLaugh.laughVideoLink}`, import.meta.url);
+  videoSource.type = `video/mp4`;
+  const appendedVideo = document.querySelector("#laughVideoLink");
+  appendedVideo.appendChild(videoSource);
+  appendedVideo.innerHTML += `Sorry, your browser doesn't support embedded videos.`;
+  html += `<span class="text_center">`;
   html += `<a href="${thisWeekHotLaugh.laughArtistLink}" target="_blank">`;
   html += `${thisWeekHotLaugh.laughArtist}'s</a> `;
-  html += `<span class="clean_break_on_wrap">`
+  html += `<span class="clean_break_on_wrap">`;
   html += `<a href="${thisWeekHotLaugh.laughTitleLink}" target="_blank">`;
   html += `${thisWeekHotLaugh.laughTitle}`;
   html += `</a>`;
