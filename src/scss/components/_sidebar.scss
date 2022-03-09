@@ -1,6 +1,4 @@
 aside.larrymg_me--sidebar {
-  display: flex;
-  flex-direction: column;
   padding: 0px 10px;
   background: #e8e8e8;
 
@@ -49,12 +47,12 @@ aside.larrymg_me--sidebar {
     font-size: 1.25rem;
   }
 
-  div:first-of-type {
+  > div:first-of-type {
     /* Push the first sidebar div down a bit so it's not flush with the document. */
     margin-top: 20px;
   }
 
-  div:last-of-type {
+  > div:last-of-type {
     /* Keep last sidebar div in view as visitors scroll through content divs. */
     position: sticky;
     top: 0;
@@ -75,9 +73,10 @@ div.this_weeks_hot_laugh {
   }
 }
 
-div.lets_connect_container {
+div.lets_connect {
   align-self: flex-end;
   margin-top: 25px;
+  padding: 0px 2px;
 }
 
 /* #region Sidebar -- Media Queries */
