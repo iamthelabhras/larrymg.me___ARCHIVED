@@ -179,15 +179,11 @@ div.this_weeks_hot_track {
   display: grid;
 }
 
-div.this_weeks_hot_track iframe {
+div.this_weeks_hot_track video {
   /* Embedded Spotify player overflows container at max-width: 100%? */
-  place-self: center;
   max-width: 100%;
-  max-height: 75px;
-}
-
-div.this_weeks_hot_track iframe.youtube_iframe {
   max-height: 400px;
+  border: 1px solid gray;
 }
 
 /* #endregion - Sidebar -- This Week's Hot Track*/
