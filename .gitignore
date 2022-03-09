@@ -4,6 +4,7 @@ archived/
 attributions/
 dist/
 node_modules/
+video/
 
 # Tell Git to ignore these files:
 .DS_store
