@@ -37,13 +37,15 @@ export let thisWeekHotTrack =
     trackArtist: "Mort Garson",
     trackArtistLink: "https://en.wikipedia.org/wiki/Mort_Garson", 
     trackVideoLink: "https://larrymg.me/video/hot_track.mp4",
+    trackYear: 2020,
   };
 
 export let thisWeekHotLaugh =
   {
-    laughTitle: "'Bug Juice' Sketch",
+    laughTitle: "Bug Juice",
     laughTitleLink: "https://www.youtube.com/watch?v=xA6EXvyWlpY",
     laughArtist: "Upright Citizens Brigade",
     laughArtistLink: "https://en.wikipedia.org/wiki/Upright_Citizens_Brigade", 
     laughVideoLink: "https://larrymg.me/video/hot_laugh.mp4",
+    laughYear: 1998, 
   };
