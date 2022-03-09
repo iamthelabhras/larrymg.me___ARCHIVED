@@ -357,11 +357,4 @@ div.explore_item:hover p#my_work-current_job_status {
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1075px) {
-  div.this_weeks_hot_track video {
-    /* Embedded Spotify player overflows container at max-width: 100%? */
-    max-width: 75%;
-  }
-}
-
 /* #endregion Media Queries */
