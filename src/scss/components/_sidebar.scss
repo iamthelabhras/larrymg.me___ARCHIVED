@@ -49,6 +49,11 @@ aside.larrymg_me--sidebar {
     font-size: 1.25rem;
   }
 
+  div:first-of-type {
+    /* Push the first sidebar div down a bit so it's not flush with the document. */
+    margin-top: 20px;
+  }
+
   div:last-of-type {
     /* Keep last sidebar div in view as visitors scroll through content divs. */
     position: sticky;
