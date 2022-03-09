@@ -141,7 +141,7 @@ div.larrymg_me_index--intro p {
 
 /* #region Content -- Explore */
 
-div.larrymg_me--content nav.explore_concise {
+div.larrymg_me--content div.explore_concise {
   width: 80%;
   max-width: 1102px;
   margin: 50px 0px;
@@ -152,7 +152,7 @@ div.larrymg_me--content nav.explore_concise {
 }
 
 div.larrymg_me--content
-  nav.explore_concise
+  div.explore_concise
   div.concise_menu_instructions-nav_gray_block_and_text {
   display: flex;
   flex-direction: column;
@@ -202,7 +202,7 @@ div.concise_menu_instructions-nav_gray_block_and_text
   margin-bottom: 20px;
 }
 
-div.larrymg_me--content nav.explore_concise div.explore_link_roll {
+div.larrymg_me--content div.explore_concise div.explore_link_roll {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -210,7 +210,7 @@ div.larrymg_me--content nav.explore_concise div.explore_link_roll {
   max-width: 100%;
 }
 
-div.larrymg_me--content nav.explore_concise div.explore_link_roll a {
+div.larrymg_me--content div.explore_concise div.explore_link_roll a {
   padding: 15px;
 }
 
