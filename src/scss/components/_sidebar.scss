@@ -55,7 +55,7 @@ aside.larrymg_me--sidebar {
   > div:last-of-type {
     /* Keep last sidebar div in view as visitors scroll through content divs. */
     position: sticky;
-    top: 0;
+    top: 20px;
   }
 }
 
