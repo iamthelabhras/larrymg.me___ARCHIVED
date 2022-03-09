@@ -50,33 +50,3 @@ p.show_mobile-encourage_larger_screen span {
     max-width: 40ch;
   }
 }
-
-.text_center {
-  text-align: center;
-}
-
-.text_bold {
-  font-weight: 700;
-}
-
-.text_emphasis {
-  font-style: italic;
-}
-
-.clean_break_on_wrap {
-  display: inline-block;
-  word-wrap: break-word;
-}
-
-.cursive {
-  font-family: cursive_flourish, cursive;
-}
-
-.code {
-  line-height: 1.55;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  padding: 0px 15px;
-  background: whitesmoke;
-  font-family: monospace;
-  color: grey;
-}
