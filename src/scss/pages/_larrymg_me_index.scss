@@ -92,7 +92,8 @@ div.larrymg_me_index--intro {
 }
 
 div.larrymg_me_index--intro p {
-  margin: 10px 0px;
+  // Hacky layout & spacing fix!  Address when I refactor & consolidate CSS!
+  padding: 20px 0px;
 }
 
 /* #endregion *?
