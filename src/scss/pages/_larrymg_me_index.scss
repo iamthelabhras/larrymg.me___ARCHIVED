@@ -291,7 +291,7 @@ div.explore_item:hover p#my_work-current_job_status {
 /* #endregion Content */
 
 /* #region Media Queries */
-@media screen and (min-width: 0px) and (max-width: 575px) {
+@media screen and (min-width: 0px) and (max-width: 900px) {
   div.larrymg_me--grid_container--sidebar_and_content {
     display: grid;
     grid-template-columns: 1fr;
