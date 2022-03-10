@@ -3,10 +3,8 @@ html {
 }
 
 main#larrymg_me_index {
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 /* #region Content */
@@ -176,16 +174,15 @@ div.larrymg_me--content nav.explore_verbose {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  /* width: 90%;
-  max-width: 1102px; */
+  width: 90%;
+  max-width: 1102px;
   width: clamp(90%, 90%, 1102px);
   margin: 50px 0px;
   /* To prevent scrolling to right. */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 div.explore_item {
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   min-height: 225px;
