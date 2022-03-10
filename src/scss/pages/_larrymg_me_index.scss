@@ -226,8 +226,9 @@ div.explore_item h3 {
   /* Bottom margin ensures a minimal amount of space between h2 &
       proceeding p element on cards with more text. */
   margin-bottom: 3%;
-  max-width: 10ch;
+  max-width: 20ch;
   color: #252627;
+  font-family: "cursive_flourish";
 }
 
 div.explore_item p {
