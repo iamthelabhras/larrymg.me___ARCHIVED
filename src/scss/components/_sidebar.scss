@@ -2,6 +2,7 @@ aside.larrymg_me--sidebar {
   padding: 0px 10px;
   background: #e8e8e8;
 
+<<<<<<< HEAD
   > div:first-of-type {
     /* Push the first sidebar div down a bit so it's not flush with document top. */
     margin-top: 20px;
@@ -20,6 +21,13 @@ aside.larrymg_me--sidebar {
     margin-top: 25px;
     padding: 0px 2px;
   }
+=======
+div.lets_connect {
+  align-self: flex-end;
+  width: 100%;
+  margin-top: 25px;
+  padding: 0px 2px;
+>>>>>>> dc58f3074cfcd0e442e06186330f657ef9de8b42
 }
 
 /* #region Sidebar -- Media Queries */
