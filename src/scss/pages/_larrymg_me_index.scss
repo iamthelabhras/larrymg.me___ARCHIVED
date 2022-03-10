@@ -122,6 +122,8 @@ div.larrymg_me--content
 
 div.concise_menu_instructions-nav_gray_block_and_text
   h2.concise_menu_instructions-nav_gray_block {
+  // Hacky fix: Refactor CSS so flexbox consistently formats everything!
+  margin: 0 auto;
   text-align: center;
   border-radius: 10px;
   padding: 15px;
