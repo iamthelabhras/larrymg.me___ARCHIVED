@@ -5,6 +5,8 @@ aside.larrymg_me--sidebar {
 
 div.lets_connect {
   align-self: flex-end;
+  // Set width to 100% so Let's Connect flexbox stretches across entire sidebar.
+  width: 100%;
   margin-top: 25px;
   padding: 0px 2px;
 }
