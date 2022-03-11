@@ -9,17 +9,17 @@ main#larrymg_me_index {
 
 /* #region Content */
 
-/* Note: div.larrymg_me--content is a COMPONENT shared across several webpages.  
-      To view its code, see "content.scss" in scss -- components folder. */
+/* NOTE: div.larrymg_me--content is a COMPONENT shared across several webpages.  
+      To view its code, see "_content.scss" in scss -- components folder. */
 
 /* #region Content -- Block Quote */
 
-/* Note: Content -- Block Quotes are a COMPONENT shared across several webpages.  
-      To view its code, see "content.scss" in scss -- components folder. */
+/* NOTE: Content -- Block Quote is a COMPONENT shared across several webpages.  
+      To view its code, see "_block_quotes.scss" in scss -- components folder. */
 
 /* #endregion Content -- Block Quote */
 
-/* #region Content -- Hello  */
+/* #region Index -- Hello  */
 
 div.larrymg_me_index--hello {
   width: 80%;
@@ -61,9 +61,9 @@ span#current_location {
   text-align: center;
 }
 
-/* #endregion Content - - Hello */
+/* #endregion Index -- Hello */
 
-/* #region Content -- Intro */
+/* #region Index -- Intro */
 
 div.larrymg_me_index--intro {
   text-indent: 3%;
@@ -76,14 +76,11 @@ div.larrymg_me_index--intro p {
   padding: 20px 0px;
 }
 
-/* #endregion *?
+/* #endregion Index -- Intro */
 
+/* #region Index -- Explore */
 
-/* #endregion Content -- Hello & Intro */
-
-/* #endregion Content */
-
-/* #region Content -- Explore */
+/* #region Index -- Explore Concise */
 
 div.larrymg_me--content div.explore_concise {
   width: 80%;
@@ -155,17 +152,9 @@ div.larrymg_me--content div.explore_concise div.explore_link_roll a {
   padding: 15px;
 }
 
-// div.larrymg_me--content nav.explore_verbose {
-//   display: grid;
-//   grid-gap: 1rem;
-//   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-//   width: 90%;
-//   max-width: 1102px;
-//   width: clamp(90%, 90%, 1102px);
-//   margin: 50px 0px;
-//   /* To prevent scrolling to right. */
-//   overflow: hidden;
-// }
+/* #endregion Index -- Explore Concise */
+
+/* #region Index -- Explore Verbose  & Explore Items */
 
 div.larrymg_me--content nav.explore_verbose {
   display: flex;
@@ -245,14 +234,9 @@ div.explore_item i {
   margin-top: 5px;
 }
 
-div#my_work {
-  position: relative;
-}
+/* #region Index -- Explore Verbose & Explore Items -- My Work */
 
 p#my_work-current_job_status {
-  // position: absolute;
-  // bottom: 10px;
-  // right: 8px;
   flex-grow: 0;
   display: inline-block;
   margin-bottom: 5px;
@@ -269,6 +253,10 @@ div.explore_item:hover p#my_work-current_job_status {
   background: blue;
   color: white;
 }
+
+/* #endregion Index -- Explore Verbose & Explore Items -- My Work */
+
+/* #endregion Index -- Explore Verbose & Explore Items */
 
 /* #endregion Content -- Explore */
 
