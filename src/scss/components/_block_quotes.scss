@@ -1,0 +1,31 @@
+div.block_quotes {
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 800px;
+  padding: 1rem;
+  margin-bottom: 50px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background: #fff9fb;
+}
+
+div.block_quotes p,
+div.block_quotes span {
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+div.block_quotes p {
+  max-width: 55ch;
+}
+
+div.block_quotes span.block_quote--attribution {
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+/* Links to attribution's text, article, or other media. */
+div.block_quotes a {
+  font-style: italic;
+}
