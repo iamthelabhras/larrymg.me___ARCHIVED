@@ -3,100 +3,100 @@ main#my_web_dev_journey {
 
 /* #region TL;DR Sidebar */
 
-main#my_web_dev_journey aside ul {
-  margin: 0;
-  padding: 0;
-}
+// TO DO: Go back & re-implement TL;DR sidebar.
 
-div#tldr {
-  margin-top: 100px;
-  color: rgba(128, 128, 128, 0.6);
-  transition: color 0.5s ease-in-out;
-}
+// main#my_web_dev_journey aside ul {
+//   margin: 0;
+//   padding: 0;
+// }
 
-div#tldr h2 {
-  color: black !important;
-}
+// div#tldr {
+//   margin-top: 100px;
+//   color: rgba(128, 128, 128, 0.6);
+//   transition: color 0.5s ease-in-out;
+// }
 
-div#tldr:hover {
-  color: black;
-}
+// div#tldr h2 {
+//   color: black !important;
+// }
 
-div#tldr p#hound_of_heaven_quote {
-  font-family: cursive_flourish, cursive;
-  margin-bottom: 20px;
-}
+// div#tldr:hover {
+//   color: black;
+// }
 
-div#tldr a {
-  font-size: 1rem;
-}
+// div#tldr p#hound_of_heaven_quote {
+//   font-family: cursive_flourish, cursive;
+//   margin-bottom: 20px;
+// }
 
-div#tldr p {
-  margin: 10px 0px;
-  font-size: 0.85rem;
-}
+// div#tldr a {
+//   font-size: 1rem;
+// }
 
-div#tldr details,
-div#tldr details a {
-  font-weight: 700;
-  font-size: 0.85rem;
-}
+// div#tldr p {
+//   margin: 10px 0px;
+//   font-size: 0.85rem;
+// }
 
-div#tldr details p {
-  display: none;
-  height: 0px;
-  border-bottom: 2px solid #cecece;
-}
+// div#tldr details,
+// div#tldr details a {
+//   font-weight: 700;
+//   font-size: 0.85rem;
+// }
 
-div#tldr details[open] p {
-  display: inline-block;
-  height: auto;
-  padding: 5px 15px 15px 15px;
-}
+// div#tldr details p {
+//   display: none;
+//   height: 0px;
+//   border-bottom: 2px solid #cecece;
+// }
 
-div#tldr details[open] {
-  border-bottom: 5px solid black;
-}
+// div#tldr details[open] p {
+//   display: inline-block;
+//   height: auto;
+//   padding: 5px 15px 15px 15px;
+// }
 
-div#tldr details:first-of-type {
-  margin-top: 25px;
-  margin-bottom: 30px;
-}
+// div#tldr details[open] {
+//   border-bottom: 5px solid black;
+// }
 
-div#tldr details {
-  padding: 2px;
-  background: white;
-}
+// div#tldr details:first-of-type {
+//   margin-top: 25px;
+//   margin-bottom: 30px;
+// }
 
-div#tldr summary {
-  text-align: left;
-  border: 1px solid black;
-  padding: 5px;
-  font-size: 0.95rem;
-  background: #cecece;
-}
+// div#tldr details {
+//   padding: 2px;
+//   background: white;
+// }
+
+// div#tldr summary {
+//   text-align: left;
+//   border: 1px solid black;
+//   padding: 5px;
+//   font-size: 0.95rem;
+//   background: #cecece;
+// }
 
 /* #endregion TL;DR Sidebar */
 
 /* #region My Web Dev Journey Content */
 
-main#my_web_dev_journey div.larrymg_me--content iframe {
-  width: 100%;
-  height: 250px;
-  border-radius: 10px;
-}
-
-main#my_web_dev_journey div.container--iframe_and_caption {
+main#my_web_dev_journey
+  div.larrymg_me--content
+  div.container--video_and_caption {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 45px 0px;
 }
 
-main#my_web_dev_journey span#iframe_journey_vaporwave_caption {
+main#my_web_dev_journey .larrymg_me--content video {
+  width: 100%;
+}
+
+main#my_web_dev_journey span#video_journey_vaporwave_caption {
   margin-top: 10px;
   font-family: cursive_flourish, cursive;
   font-size: 1.25rem;
