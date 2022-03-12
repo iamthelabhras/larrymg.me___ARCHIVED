@@ -28,6 +28,6 @@ generateThisWeekHotLaugh();
 
 // Current Location
 
-currentLocation = document.querySelector("#current_location");
+const currentLocation = document.querySelector("#current_location");
 console.log(currentLocation);
 currentLocation.textContent = `${personal_data.current_location}`;
