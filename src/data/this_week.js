@@ -1,8 +1,8 @@
 export let thisWeekLearning = {
   subjects: [
     {
-      subjectName: "JavaScript Fundamentals",
-      subjectBullets: ["This week's deep focus 👀: objects & arrays."],
+      subjectName: "Vue.js",
+      subjectBullets: [],
     }, 
   ],
 };
@@ -10,9 +10,9 @@ export let thisWeekLearning = {
 export let thisWeekReading = {
   readings: [
     {
-      readingTitle: "JavaScript: The Definitive Guide",
-      readingAuthor: "David Flanagan",
-      readingAuthorLink: "https://twitter.com/__DavidFlanagan"
+      readingTitle: "Vue.js In Action",
+      readingAuthor: "Erik Hanchett",
+      readingAuthorLink: "https://twitter.com/erikch"
     }
   ],
 };
@@ -21,31 +21,31 @@ export let thisWeekReading = {
 export let thisWeekWatching = {
     videos: [
     { 
-      videoTitle: "Le Samourai",
+      videoTitle: "The Guard",
       videoTrailer: "https://larrymg.me/video/watching_this_week.mp4",
-      videoYear: "1967",
-      videoDirector: "Melville",
-      videoDirectorLink: "https://en.wikipedia.org/wiki/Jean-Pierre_Melville",
+      videoYear: "2011",
+      videoDirector: "McDonagh",
+      videoDirectorLink: "https://en.wikipedia.org/wiki/John_Michael_McDonagh",
     },
   ],
 };
 
 export let thisWeekHotTrack = 
   {
-    trackTitle: "This Is My Beloved",
-    trackTitleLink: "https://www.youtube.com/watch?v=MVTbRt7jWPg",
-    trackArtist: "Mort Garson",
-    trackArtistLink: "https://en.wikipedia.org/wiki/Mort_Garson", 
+    trackTitle: "The Lobster",
+    trackTitleLink: "https://www.youtube.com/watch?v=_Scs_z-SIfA",
+    trackArtist: "The Gloaming",
+    trackArtistLink: "https://en.wikipedia.org/wiki/The_Gloaming", 
     trackVideoLink: "https://larrymg.me/video/hot_track.mp4",
-    trackYear: 2020,
+    trackYear: 2019,
   };
 
 export let thisWeekHotLaugh =
   {
-    laughTitle: "Bug Juice",
-    laughTitleLink: "https://www.youtube.com/watch?v=xA6EXvyWlpY",
-    laughArtist: "Upright Citizens Brigade",
-    laughArtistLink: "https://en.wikipedia.org/wiki/Upright_Citizens_Brigade", 
+    laughTitle: "The Greatest Story Every Told",
+    laughTitleLink: "https://www.youtube.com/watch?v=3ZUinZz_Q2Q",
+    laughArtist: "Peter O'Toole",
+    laughArtistLink: "https://en.wikipedia.org/wiki/Peter_O%27Toole", 
     laughVideoLink: "https://larrymg.me/video/hot_laugh.mp4",
-    laughYear: 1998, 
+    laughYear: "2010?", 
   };
