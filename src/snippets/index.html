@@ -97,34 +97,91 @@
     <main class="sidebar_and_content" id="snippets">
       <div class="larrymg_me--grid_container--sidebar_and_content">
         <!-- #region Sidebar -->
-        <aside class="larrymg_me--sidebar">
-          <div class="lets_connect">
-            <a href="http://www.twitter.com/iamthelabhras" target="_blank"
-              ><i
-                class="fab fa-twitter-square"
-                width="2.75rem"
-                height="2.75rem"
-              ></i
-            ></a>
-            <a href="https://www.linkedin.com/in/larrymg/" target="_blank"
-              ><i class="fab fa-linkedin" width="2.75rem" height="2.75rem"></i
-            ></a>
-            <a
-              href="https://open.spotify.com/user/1287879969?si=feuL7qGwStCY3DLiKp1viw"
-              target="_blank"
-              ><i class="fab fa-spotify" width="2.75rem" height="2.75rem"></i
-            ></a>
-            <a href="https://letterboxd.com/iamthelabhras/" target="_blank"
-              ><i class="fas fa-film" width="2.75rem" height="2.75rem"></i
-            ></a>
-            <a href="mailto:hello@larrymg.me"
-              ><i
-                class="fas fa-envelope-square"
-                width="2.75rem"
-                height="2.75rem"
-              ></i
-            ></a>
+        <aside class="flexbox_basic--column larrymg_me--sidebar">
+          <!-- #region Side Bar -- This Week -->
+          <div class="this_week" id="what_im_learning">
+            <h2>
+              What I'm Learning
+              <span class="clean_break_on_wrap">This Week</span>:
+            </h2>
+            <ul id="what_im_learning_list"></ul>
           </div>
+          <div class="this_week" id="what_im_reading">
+            <h2>
+              What I'm Reading
+              <span class="clean_break_on_wrap">This Week:</span>
+            </h2>
+            <ul id="what_im_reading_list"></ul>
+          </div>
+          <div class="this_week" id="what_im_watching">
+            <h2>
+              What I'm Watching
+              <span class="clean_break_on_wrap">This Week</span>:
+            </h2>
+            <ul id="what_im_watching_list"></ul>
+          </div>
+          <div class="this_week" id="this_weeks_hot_track">
+            <h2>
+              This Week's <span class="clean_break_on_wrap">Hot Track:</span>
+            </h2>
+            <div id="hot_track_container"></div>
+          </div>
+          <div class="this_week" id="this_weeks_hot_laugh">
+            <h2>
+              This Week's <span class="clean_break_on_wrap">Hot Laugh:</span>
+            </h2>
+            <div id="hot_laugh_container"></div>
+          </div>
+          <!-- #endregion Side Bar -- This Week -->
+          <!-- #region Let's Connect -->
+          <div class="lets_connect">
+            <h2>Let's Connect!</h2>
+            <div class="flexbox_basic--row lets_connect_links">
+              <a
+                href=""
+                target="_blank"
+                class="flexbox_basic--row"
+                data-lets_connect="twitter"
+                ><i
+                  class="fab fa-twitter-square"
+                  width="2.75rem"
+                  height="2.75rem"
+                ></i
+              ></a>
+              <a
+                href=""
+                target="_blank"
+                class="flexbox_basic--row"
+                data-lets_connect="linkedin"
+                ><i class="fab fa-linkedin" width="2.75rem" height="2.75rem"></i
+              ></a>
+              <a
+                href=""
+                target="_blank"
+                class="flexbox_basic--row"
+                data-lets_connect="spotify"
+                ><i class="fab fa-spotify" width="2.75rem" height="2.75rem"></i
+              ></a>
+              <a
+                href=""
+                target="_blank"
+                class="flexbox_basic--row"
+                data-lets_connect="letterboxd"
+                ><i class="fas fa-film" width="2.75rem" height="2.75rem"></i
+              ></a>
+              <a
+                href=""
+                class="flexbox_basic--row"
+                data-lets_connect="emailPersonal"
+                ><i
+                  class="fas fa-envelope-square"
+                  width="2.75rem"
+                  height="2.75rem"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <!-- #endregion Let's Connect -->
         </aside>
         <!-- #endregion -->
         <!-- #region Content -->
@@ -489,6 +546,7 @@
       defer
     ></script>
     <script src="../js/snippets/sounds_of_marathon_christmas.js"></script>
+    <script src="../js/snippets.js" type="module"></script>
     <!-- #endregion -->
   </body>
 </html>
