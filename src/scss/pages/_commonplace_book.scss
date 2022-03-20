@@ -23,3 +23,29 @@ main#commonplace_book {
     margin-left: 2px;
   }
 }
+
+/* #region Media Queries */
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  main#commonplace_book div.card_count {
+    width: 100%;
+  }
+
+  main#commonplace_book h2 {
+    font-size: 2rem;
+  }
+
+  div.card_container div.card {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  div.card span.card_attribution {
+    font-size: 0.75rem;
+  }
+
+  div.card span.card_attribution span.card_source {
+    display: block;
+  }
+}
