@@ -22,7 +22,7 @@ export function generateCardStack(arrayOfCards, cardContainerSelector) {
 
     // NOTE:  Linked icon is added via a separate call to generateCardStickIcons() to ensure Parcel can 'see' it at build time.  See: https://parceljs.org/languages/javascript/#url-dependencies for more details.
 
-      if (card.social_link !== "") {
+      if ('social_link' in card) {
         cardStackHTML+= 
           `<span class="card_image">`  + 
           `<a href="${card.social_link}" class="card_icon" target="_blank">` +
@@ -34,7 +34,7 @@ export function generateCardStack(arrayOfCards, cardContainerSelector) {
       `<span class="card_attribution">`;
     
     // If card links to source, insert a linked span element.
-      if (card.source_link !== "")  {
+      if ('source_link' in card)  {
         cardStackHTML+= 
           `<span class="card_source">` + 
            `<a href="${card.source_link}" target="_blank">Source:</a>` +
@@ -46,47 +46,51 @@ export function generateCardStack(arrayOfCards, cardContainerSelector) {
           `<span class="source">Source:</span>`;
       }
               
-   cardStackHTML+=` ${card.source}</span>` +
-           `<div class="card_justifications">` +
-           `<span class="cursive">Justifications:</span>` +
-           `<ul>`;  
+   cardStackHTML+=
+    ` ${card.source}</span>`;
+  
  
     // If card has justifications , insert them as list items.
 
     // Note that we are looping within an array within the object we are currently looping over here!
 
-      if (card.justifications !== "") {
+      if (card.justifications !== undefined ) {
+        cardStackHTML+=
+          `<div class="card_justifications">` +
+          `<span class="cursive">Justifications:</span>` + 
+          `<ul>`;
         card.justifications.forEach (justification => {
           cardStackHTML+=
             `<li>${justification}</li>`;
         });
+        cardStackHTML += 
+          `</ul>` +
+          `</div>`;
       }
   
-        cardStackHTML+=  
-          `</ul>` +
-          `</div>` +
-          `<div class="card_concrete_applications">` +
-          `<span class="cursive">Concrete Applications:</span>` +
-          `<ul>`;
- 
     // If card has concrete applications, instert them as list items.
 
     // Note that we are looping within an array within the object we are currently looping over here!
  
-      if (card.concrete_applications !== "") {
+      if (card.concrete_applications !== undefined ) {
+        cardStackHTML+=  
+          `<div class="card_concrete_applications">` +
+          `<span class="cursive">Concrete Applications:</span>` +
+          `<ul>`;
         card.concrete_applications.forEach (application => {
           cardStackHTML+=
             `<li>${application}</li>`;
           });
-        }            
+       cardStackHTML+=   
+          `</ul>` + 
+          `</div>`;
+        }    
+        
     
     // Add the final HTML to each card in our looped array.   
 
     cardStackHTML+=   
-              `</ul>` + 
-              `</div>` +
-              `</div>`;
-  
+      `</div>`;
   
   });
 
@@ -234,7 +238,6 @@ export function generateThisWeekHotTrack () {
     hotTrackListItem.innerHTML += html;
 };
 
-
 export function generateThisWeekHotLaugh () {
   let hotLaugh = document.querySelector("#hot_laugh_container");
   let html = "";
@@ -265,3 +268,6 @@ export function generateThisWeekHotLaugh () {
   html += `</span>`;
   hotLaughListItem.innerHTML += html;
 };
+
+
+
