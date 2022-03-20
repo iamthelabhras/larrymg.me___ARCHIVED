@@ -1,67 +1,58 @@
 main#commonplace_book {
-  div.card span.card_attribution {
-    grid-column: 10/21;
-    font-size: 0.95rem;
-  }
-
-  div.card p.card_text {
-    text-align: initial;
-    max-width: 50ch;
-    font-size: 1.05rem;
-    font-weight: 500;
-  }
-
-  div.card p.card_text::before,
-  div.card p.card_text::after {
-    content: '"';
-  }
-  div.card p.card_text::before {
-    margin-right: 2px;
-  }
-
-  div.card p.card_text::after {
-    margin-left: 2px;
-  }
-
-  div.card_commonplace_author {
-    grid-row: 3;
-    grid-column: 1/21;
-    margin-bottom: 10px;
-    text-align: center;
-    span.commonplace_author {
-      font-family: "cursive_flourish", cursive;
-      font-size: 1.5rem;
-      font-weight: 700;
+  div.card {
+    span.card_attribution {
+      grid-column: 10/21;
+      font-size: 0.95rem;
     }
-    span.commonplace_year {
-      display: block;
-      font-size: 0.75rem;
+
+    p.card_text {
+      text-align: initial;
+      max-width: 50ch;
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+
+    p.card_text::before,
+    p.card_text::after {
+      content: '"';
+    }
+
+    p.card_text::before {
+      margin-right: 2px;
+    }
+
+    p.card_text::after {
+      margin-left: 2px;
+    }
+
+    div.card_commonplace_author {
+      grid-row: 3;
+      grid-column: 1/21;
+      margin-bottom: 10px;
+      text-align: center;
+
+      span.commonplace_author {
+        font-family: "cursive_flourish", cursive;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+
+      span.commonplace_year {
+        display: block;
+        font-size: 0.75rem;
+      }
     }
   }
 }
 
 /* #region Media Queries */
 
-@media screen and (min-width: 0px) and (max-width: 768px) {
-  main#commonplace_book div.card_count {
-    width: 100%;
-  }
-
-  main#commonplace_book h2 {
-    font-size: 2rem;
-  }
-
-  div.card_container div.card {
-    width: 95%;
-  }
-}
-
 @media screen and (min-width: 0px) and (max-width: 575px) {
-  div.card span.card_attribution {
-    font-size: 0.85rem !important;
-  }
-
-  div.card span.card_attribution span.card_source {
-    display: block;
+  main#commonplace_book {
+    div.card {
+      span.card_attribution {
+        font-size: 0.85rem !important;
+      }
+    }
   }
 }

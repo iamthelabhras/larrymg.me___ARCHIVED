@@ -1,3 +1,33 @@
+// Pages with cards have a div positioned above each respective card container that contains:
+//  An h2 element describing the card collection
+//  A Font Awesome icon linking back to the site's main page.
+
+div.card_count {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  margin: 0 auto;
+  border-bottom: 3px dotted black;
+  padding-bottom: 5px;
+  background: #feffd0;
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  i {
+    margin: 10px 0px;
+    font-size: 3.052rem;
+    color: blue;
+  }
+}
+
+//  CSS for the generic card container.
+
 div.card_container {
   display: flex;
   flex-direction: column;
@@ -8,99 +38,136 @@ div.card_container {
   margin: 3rem 0;
 }
 
+// CSS Grid layouts for individual cards
+
 div.card {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: auto auto auto;
+
+  div.card_justifications {
+    grid-column: 1/10;
+    grid-row: 3;
+  }
+
+  div.card_concrete_applications {
+    grid-column: 13/21;
+    grid-row: 3;
+  }
+}
+
+// CSS for individual cards.
+
+div.card {
   margin: 2vh 0;
   border: 1px dotted black;
   width: 55%;
   background-color: #ffffff;
+
+  span.card_number,
+  span.card_image {
+    display: grid;
+    place-items: center;
+  }
+
+  span.card_number {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    width: 35px;
+    height: 35px;
+    margin: 5px 0px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 0.9rem;
+  }
+
+  span.card_image {
+    grid-column: 10 / 12;
+    grid-row: 1;
+    img {
+      max-width: 20px;
+    }
+  }
+
+  span.card_attribution {
+    grid-column: 15/21;
+    grid-row: 1;
+    text-align: right;
+    width: 100%;
+    padding-right: 15px;
+    font-size: 0.95rem;
+  }
+
+  p.card_text {
+    grid-column: 1 / 21;
+    grid-row: 2;
+    justify-self: center;
+    text-align: center;
+    max-width: 30ch;
+    margin-top: 25px;
+    margin-bottom: 45px;
+    border-radius: 15px;
+    padding: 25px;
+    // background: rgba(173, 216, 230, 0.5);
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  // CSS for Rules & Assumptions cards.
+  //  This CSS is applied on Coding Rules & Assumptions & Personal Rules & Assumptions Pages.
+
+  div.card_justifications,
+  div.card_concrete_applications {
+    span {
+      display: grid;
+      place-items: center;
+    }
+    li {
+      margin-top: 2.5px;
+      max-width: 45ch;
+      font-size: 0.75rem;
+    }
+    li:first-of-type {
+      margin-top: 0px;
+    }
+  }
 }
 
-div.card span.card_number,
-div.card span.card_image {
-  display: grid;
-  place-items: center;
+/* #region Media Queries */
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  div.card_count {
+    width: 100%;
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  div.card_container {
+    div.card {
+      width: 95%;
+    }
+  }
 }
 
-// div.card span.card_attribution {
-//   justify-self: center;
-//   align-self: center;
-// }
-
-div.card span.card_number {
-  grid-column: 1 / 4;
-  grid-row: 1;
-  justify-self: center;
-  align-self: center;
-  width: 35px;
-  height: 35px;
-  margin: 5px 0px;
-  background: black;
-  color: white;
-  border-radius: 50%;
-  font-size: 0.9rem;
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  div.card {
+    span.card_attribution {
+      font-size: 0.75rem;
+      span.card_source {
+        display: block;
+      }
+    }
+    div.card_justifications {
+      grid-column: 1/10;
+    }
+    div.card_concrete_applications {
+      grid-column: 11/21;
+    }
+  }
 }
 
-div.card span.card_image {
-  grid-column: 10 / 12;
-  grid-row: 1;
-}
-
-div.card span.card_image img {
-  max-width: 20px;
-}
-
-div.card span.card_attribution {
-  grid-column: 15/21;
-  grid-row: 1;
-  text-align: right;
-  width: 100%;
-  padding-right: 15px;
-  font-size: 0.95rem;
-}
-
-div.card p.card_text {
-  grid-column: 1 / 21;
-  grid-row: 2;
-  justify-self: center;
-  text-align: center;
-  max-width: 30ch;
-  margin-top: 25px;
-  margin-bottom: 45px;
-  border-radius: 15px;
-  padding: 25px;
-  // background: rgba(173, 216, 230, 0.5);
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
-div.card div.card_justifications span,
-div.card div.card_concrete_applications span {
-  display: grid;
-  place-items: center;
-}
-
-div.card div.card_justifications li,
-div.card div.card_concrete_applications li {
-  margin-top: 2.5px;
-  max-width: 45ch;
-  font-size: 0.75rem;
-}
-
-div.card div.card_justifications li:first-of-type,
-div.card div.card_concrete_applications li:first-of-type {
-  margin-top: 0px;
-}
-
-div.card div.card_justifications {
-  grid-column: 1/10;
-  grid-row: 3;
-}
-
-div.card div.card_concrete_applications,
-div.card div.card_concrete_applications {
-  grid-column: 13/21;
-  grid-row: 3;
-}
+/* #endregion Media Queries */

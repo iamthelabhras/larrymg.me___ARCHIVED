@@ -1,360 +1,262 @@
-main#my_web_dev_journey {
-}
-
-/* #region TL;DR Sidebar */
-
-// TO DO: Go back & re-implement TL;DR sidebar.
-
-// main#my_web_dev_journey aside ul {
-//   margin: 0;
-//   padding: 0;
-// }
-
-// div#tldr {
-//   margin-top: 100px;
-//   color: rgba(128, 128, 128, 0.6);
-//   transition: color 0.5s ease-in-out;
-// }
-
-// div#tldr h2 {
-//   color: black !important;
-// }
-
-// div#tldr:hover {
-//   color: black;
-// }
-
-// div#tldr p#hound_of_heaven_quote {
-//   font-family: cursive_flourish, cursive;
-//   margin-bottom: 20px;
-// }
-
-// div#tldr a {
-//   font-size: 1rem;
-// }
-
-// div#tldr p {
-//   margin: 10px 0px;
-//   font-size: 0.85rem;
-// }
-
-// div#tldr details,
-// div#tldr details a {
-//   font-weight: 700;
-//   font-size: 0.85rem;
-// }
-
-// div#tldr details p {
-//   display: none;
-//   height: 0px;
-//   border-bottom: 2px solid #cecece;
-// }
-
-// div#tldr details[open] p {
-//   display: inline-block;
-//   height: auto;
-//   padding: 5px 15px 15px 15px;
-// }
-
-// div#tldr details[open] {
-//   border-bottom: 5px solid black;
-// }
-
-// div#tldr details:first-of-type {
-//   margin-top: 25px;
-//   margin-bottom: 30px;
-// }
-
-// div#tldr details {
-//   padding: 2px;
-//   background: white;
-// }
-
-// div#tldr summary {
-//   text-align: left;
-//   border: 1px solid black;
-//   padding: 5px;
-//   font-size: 0.95rem;
-//   background: #cecece;
-// }
-
-/* #endregion TL;DR Sidebar */
-
-/* #region My Web Dev Journey Content */
-
-main#my_web_dev_journey
-  div.larrymg_me--content
-  div.container--video_and_caption {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 45px 0px;
-}
-
-main#my_web_dev_journey .larrymg_me--content video {
-  width: 100%;
-}
-
-main#my_web_dev_journey span#video_journey_vaporwave_caption {
-  margin-top: 10px;
-  font-family: cursive_flourish, cursive;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #b9b9b9;
-}
-
-main#my_web_dev_journey div.container--journey_text {
-  display: grid;
-  place-self: center;
-  grid-template-columns: 1fr 55ch 1.25fr;
-  grid-template-columns: 55ch 1fr;
-  grid-template-rows: repeat(auto, 1fr);
-  gap: 2.5rem;
-  width: 90%;
-}
-
-main#my_web_dev_journey div.container--journey_text ul {
-  /* Styles ul to the right of .journey_text. */
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  /* This value creates a "gap" between text & links by pushing links all the way to the right 
-        of their respective columns. */
-  justify-self: left;
-
-  /* This value controls the size of the minimum "gap" between text & links. */
-  min-width: 75%;
-}
-
-main#my_web_dev_journey div.container--journey_text li {
-  /* Styles li to the right of .journey_text. */
-  display: flex;
-  list-style: none;
-  list-style-position: inside;
-  /* This value controls the maximum size of the link text's lines. */
-  max-width: 35ch;
-  // Add extra padding to bottom of links.
-  padding: 0px 20px 10px 20px;
-  // background: url("../images/my_work/resume/bullets/square-shadow.svg")
-  //   no-repeat scroll 0 0 transparent;
-  // background-size: 6px 6px;
-  /* Nudges square-shadow.svg down to the baseline of each li span text. */
-  // background-position-y: 6px;
-  font-size: 0.85rem;
-}
-
-main#my_web_dev_journey div.container--journey_text li i {
-  /* Styles Font Awesome icons to the right of .journey_text. */
-  align-self: center;
-  font-size: 1.1rem;
-  color: darkgrey;
-  transform: translateX(-20px);
-}
-
-main#my_web_dev_journey div.container--journey_text ul#moonrocks {
-  // Align @TheMooninites tweet with "Nerd Alert" picture.
-  align-self: flex-end;
-}
-
-main#my_web_dev_journey div.container--journey_text p {
-  max-width: 55ch;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 25px;
-}
-
-main#my_web_dev_journey div.container--journey_text p.paragraph_emphasis {
-  max-width: 45ch;
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
-main#my_web_dev_journey div.container--journey_text p.grid_text_center {
-  place-self: center;
-}
-
-// div.container--journey_text--1 {
-//   grid-column: 1 / 3;
-//   background: green;
-// }
-
-main#my_web_dev_journey div.container--journey_text .journey_text {
-  grid-column: 1 / 2;
-}
-
-main#my_web_dev_journey div.container--journey_text div.journey_text,
-main#my_web_dev_journey div.container--journey_text div.journey_text ul,
-main#my_web_dev_journey div.container--journey_text div.journey_text li {
-  display: flex;
-  flex-direction: column;
-}
-
-main#my_web_dev_journey div.container--journey_text div.journey_text li {
-  list-style: none;
-  list-style-position: inside;
-  background: url("../images/my_work/resume/bullets/square-shadow.svg")
-    no-repeat scroll 0 0 transparent;
-  background-size: 6px 6px;
-  /* Nudges square-shadow.svg down to the baseline of each li span text. */
-  background-position-y: 6px;
-  /* This value controls the maximum size of the link text's lines. */
-  max-width: 55ch;
-  // Add extra padding to bottom of links.
-  padding: 0px 20px 10px 20px;
-  // background: url("../images/my_work/resume/bullets/square-shadow.svg")
-  //   no-repeat scroll 0 0 transparent;
-  // background-size: 6px 6px;
-  /* Nudges square-shadow.svg down to the baseline of each li span text. */
-  // background-position-y: 6px;
-  font-size: 0.95rem;
-  font-weight: 700;
-}
-
-main#my_web_dev_journey figure.journey_figure {
-  grid-column: 1 / 2;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-width: 223px;
-  max-width: 350px;
-  margin-top: 30px;
-  border: 2px solid darkgrey;
-  padding: 15px;
-  background: #e8e8e8;
-  opacity: 0.9;
-  box-shadow: 2px 1px 1px 1px black;
-}
-
-main#my_web_dev_journey figure.journey_figure img {
-  width: 100%;
-  height: 100%;
-  box-shadow: 1px 1px 1px 1px black;
-  border-radius: 10px;
-  background: white;
-}
-
-main#my_web_dev_journey figure.journey_figure figcaption {
-  display: grid;
-  place-items: center;
-  // font-style: italic;
-  width: 100%;
-  margin-top: 15px;
-  padding: 10px;
-  // Currently loaded into CSS via Google link.
-  // Need to go back and host this font locally if I decided to use it!
-  font-family: "Kalam", cursive;
-  font-size: 0.95rem;
-  font-size: 15px;
-  font-weight: 500;
-  background: white;
-  border: 1px solid darkgrey;
-  // transform: rotate(-5deg);
-}
-
-main#my_web_dev_journey figure.click_here_smaller_text span:first-of-type {
-  margin-bottom: 15px;
-}
-
-main#my_web_dev_journey figure.click_here_smaller_text span:nth-of-type(2) {
-  font-size: 0.85rem;
-}
-
-main#my_web_dev_journey div.journey_text#final_paragraph_with_bullets li {
-  display: initial;
-  font-weight: 500;
-}
-
-main#my_web_dev_journey
-  div.journey_text#final_paragraph_with_bullets
-  li
-  span.first_line {
-  font-size: 1.1rem;
-  font-weight: 700;
-}
-
-/* #endregion My Web Dev Journey Content */
-
-/* #region Media Queries */
-@media screen and (min-width: 0px) and (max-width: 575px) {
-  main#my_web_dev_journey div.larrymg_me--grid_container--sidebar_and_content {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-    height: 100%;
-    place-items: center;
-  }
-
-  main#my_web_dev_journey div.block_quotes {
-    max-width: 90%;
-    margin-top: 10px;
-  }
-}
-
-@media screen and (min-width: 0px) and (max-width: 955px) {
-  main#my_web_dev_journey div#container--home_and_header {
-    position: sticky;
-    top: 0;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    border-bottom: 3px dotted black;
-    background: #feffd0;
-    z-index: 2;
-  }
-
-  main#my_web_dev_journey div.larrymg_me--content iframe {
-    width: 75%;
-  }
-
-  main#my_web_dev_journey div.container--iframe_and_caption {
+body#scoped_to_my_web_dev_journey {
+  div#container--video_and_caption {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 45px 0px;
+
+    video {
+      width: 100%;
+    }
+
+    span#video_journey_vaporwave_caption {
+      margin-top: 10px;
+      font-family: cursive_flourish, cursive;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #b9b9b9;
+    }
   }
 
-  main#my_web_dev_journey div.container--journey_text {
+  div.container--journey_text {
     display: grid;
     place-self: center;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 55ch 1.25fr;
+    grid-template-columns: 55ch 1fr;
     grid-template-rows: repeat(auto, 1fr);
-    gap: 0.5rem;
-    width: 100%;
+    gap: 2.5rem;
+    width: 90%;
+
+    .journey_text {
+      grid-column: 1 / 2;
+    }
+
+    div.journey_text,
+    div.journey_text ul,
+    div.journey_text li {
+      display: flex;
+      flex-direction: column;
+    }
+
+    div.journey_text {
+      // These are the bullet points after the last paragraph of journey_text.
+      li {
+        list-style: none;
+        list-style-position: inside;
+        background: url("../images/my_work/resume/bullets/square-shadow.svg")
+          no-repeat scroll 0 0 transparent;
+        background-size: 6px 6px;
+        /* Nudges square-shadow.svg down to the baseline of each li span text. */
+        background-position-y: 6px;
+        /* This value controls the maximum size of the link text's lines. */
+        max-width: 55ch;
+        // Add extra padding to bottom of links.
+        padding: 0px 20px 10px 20px;
+        font-size: 0.95rem;
+        font-weight: 700;
+      }
+      figure.journey_figure {
+        grid-column: 1 / 2;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 223px;
+        max-width: 350px;
+        margin-top: 30px;
+        border: 2px solid darkgrey;
+        padding: 15px;
+        background: #e8e8e8;
+        opacity: 0.9;
+        box-shadow: 2px 1px 1px 1px black;
+        img {
+          width: 100%;
+          height: 100%;
+          box-shadow: 1px 1px 1px 1px black;
+          border-radius: 10px;
+          background: white;
+        }
+
+        figcaption {
+          display: grid;
+          place-items: center;
+          // font-style: italic;
+          width: 100%;
+          margin-top: 15px;
+          padding: 10px;
+          // Currently loaded into CSS via Google link.
+          // Need to go back and host this font locally if I decided to use it!
+          font-family: "Kalam", cursive;
+          font-size: 0.95rem;
+          font-size: 15px;
+          font-weight: 500;
+          background: white;
+          border: 1px solid darkgrey;
+        }
+        figure.click_here_smaller_text span:first-of-type {
+          margin-bottom: 15px;
+        }
+
+        figure.click_here_smaller_text span:nth-of-type(2) {
+          font-size: 0.85rem;
+        }
+      }
+    }
+
+    div#final_paragraph_with_bullets {
+      li {
+        display: initial;
+        font-weight: 500;
+      }
+
+      span.first_line {
+        font-size: 1.1rem;
+        font-weight: 700;
+      }
+    }
+
+    p {
+      max-width: 55ch;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 25px;
+    }
+
+    p.paragraph_emphasis {
+      max-width: 45ch;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    p.grid_text_center {
+      place-self: center;
+    }
+
+    ul {
+      /* Styles ul to the right of .journey_text. */
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      /* This value creates a "gap" between text & links by pushing links all the way to the right 
+              of their respective columns. */
+      justify-self: left;
+      /* This value controls the size of the minimum "gap" between text & links. */
+      min-width: 75%;
+    }
+
+    ul#moonrocks {
+      // Align @TheMooninites tweet with "Nerd Alert" picture.
+      align-self: flex-end;
+    }
+
+    li {
+      /* Styles li to the right of .journey_text. */
+      display: flex;
+      list-style: none;
+      list-style-position: inside;
+      /* This value controls the maximum size of the link text's lines. */
+      max-width: 35ch;
+      // Add extra padding to bottom of links.
+      padding: 0px 20px 10px 20px;
+      // background: url("../images/my_work/resume/bullets/square-shadow.svg")
+      //   no-repeat scroll 0 0 transparent;
+      // background-size: 6px 6px;
+      /* Nudges square-shadow.svg down to the baseline of each li span text. */
+      // background-position-y: 6px;
+      font-size: 0.85rem;
+      i {
+        /* Styles Font Awesome icons to the right of .journey_text. */
+        align-self: center;
+        font-size: 1.1rem;
+        color: darkgrey;
+        transform: translateX(-20px);
+      }
+    }
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1075px) {
-  main#my_web_dev_journey div.this_weeks_hot_track iframe {
-    /* Embedded Spotify player overflows container at max-width: 100%? */
-    max-width: 75%;
+/* #region Media Queries */
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  body#scoped_to_my_web_dev_journey {
+    div.larrymg_me--grid_container--sidebar_and_content {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+      height: 100%;
+      place-items: center;
+    }
+    div.block_quotes {
+      max-width: 90%;
+      margin-top: 10px;
+    }
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1120px) {
-  main#my_web_dev_journey div.container--journey_text ul {
-    display: none;
-  }
-  main#my_web_dev_journey div.container--journey_text {
-    grid-template-columns: auto;
-  }
+@media screen and (min-width: 0px) and (max-width: 955px) {
+  body#scoped_to_my_web_dev_journey {
+    div#container--home_and_header {
+      position: sticky;
+      top: 0;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      border-bottom: 3px dotted black;
+      background: #feffd0;
+      z-index: 2;
+    }
 
-  main#my_web_dev_journey div.container--journey_text > * {
-    place-self: center;
+    div#container--video_and_caption {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      video {
+        width: 75%;
+      }
+    }
+
+    div.container--journey_text {
+      display: grid;
+      place-self: center;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(auto, 1fr);
+      gap: 0.5rem;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1275px) {
+  body#scoped_to_my_web_dev_journey {
+    div.container--journey_text ul {
+      display: none;
+    }
+
+    div.container--journey_text {
+      grid-template-columns: auto;
+    }
+
+    div.container--journey_text > * {
+      place-self: center;
+    }
   }
 }
 
 @media screen and (min-width: 1440px) {
-  main#my_web_dev_journey div.container--journey_text {
-    /* Push <ul> paired with .journey_text further right on larger screens.
-          Note that we cannot use "gap" here because it will add an equal amount of gap 
-          between each successive block of journey_text.  Not a good look! */
-    column-gap: 15.5rem;
+  body#scoped_to_my_web_dev_journey {
+    div.larrymg_me--content {
+      div.container--journey_text {
+        /* Push <ul> paired with .journey_text further right on larger screens.
+            Note that we cannot use "gap" here because it will add an equal amount of gap 
+            between each successive block of journey_text.  Not a good look! */
+        column-gap: 15.5rem;
+      }
+    }
   }
 }
 
