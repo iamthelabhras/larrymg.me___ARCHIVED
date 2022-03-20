@@ -101,6 +101,7 @@ div.container--resume_columns {
   flex-direction: row;
   width: var(--width__container--resume_columns);
   justify-content: space-between;
+
   div.container--resume-col_1,
   div.container--resume-col_2 {
     display: flex;
@@ -108,6 +109,7 @@ div.container--resume_columns {
     /* Prevents top of each resume column from being flush with header's thick bottom black border. */
     margin-top: 20px;
   }
+
   div.container--resume-col_1 {
     /* Minimum width is an absolute pixel value that prevents column from shrinking & contained text
         from shrinking to illegibly small size. */
@@ -117,6 +119,7 @@ div.container--resume_columns {
     /* Apply padding to left-hand side of Column 1 so it's not flush with container's border. */
     padding-left: 10px;
   }
+
   div.container--resume-col_2 {
     /* Minimum width is an absolute pixel value that prevents column from shrinking & contained text
         from shrinking to illegibly small size. */
@@ -141,6 +144,7 @@ section.resume_section {
       AppleGothic, “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
     font-size: var(--font_size__section_titles);
     font-weight: 800;
+
     span {
       display: inline-block;
       margin-right: 15px;
@@ -149,6 +153,7 @@ section.resume_section {
       color: white;
     }
   }
+
   span {
     max-width: var(--max_width__resume_section_span);
   }
@@ -195,11 +200,13 @@ section.resume_section {
   ul {
     max-width: var(--max_width_resume_section_ul);
     // Remove list-styling for stack & megaphone list items.
+
     ul li {
       background: none;
       list-style: none;
     }
   }
+
   li {
     display: flex;
     list-style: none;
@@ -229,13 +236,16 @@ section.resume_section {
   a:link {
     text-decoration: none;
   }
+
   a:visited {
     color: var(--red);
   }
+
   a:focus,
   a:hover {
     text-decoration: underline dotted blue;
   }
+
   a:active {
     color: var(--yellow);
   }
@@ -255,6 +265,7 @@ div.resume_section_with_bullets {
     li.resume_section_list_item {
       margin-bottom: 10px;
     }
+
     // Style List-Within-List Stack & Megaphone Icons
     ul img {
       height: 14px;
@@ -279,12 +290,14 @@ header#resume_header {
   border-bottom: 5px solid black;
   padding-bottom: 15px;
   background: white;
+
   h1 {
     margin-top: 10px;
     font-family: "resume_main_text", "Century Gothic", “Apple Gothic”,
       AppleGothic, “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
     font-size: var(--font_size__header_name);
   }
+
   a#download_pdf_link {
     /* position: absolute;
     top: 5px;
@@ -292,6 +305,7 @@ header#resume_header {
     display: flex;
     justify-content: right;
   }
+
   img#download_pdf {
     width: 35px;
     height: 35px;
@@ -300,35 +314,42 @@ header#resume_header {
     opacity: 0.35;
     transition: opacity 0.5s ease-in-out;
   }
+
   img#download_pdf:hover {
     opacity: 1;
   }
+
   div.header_contact_info {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+
     > * {
       width: 25%;
     }
+
     div {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
+
       a:link {
         display: flex;
         justify-content: center;
         align-items: center;
         transition: transform 0.5s ease-in-out;
       }
+
       a:hover {
         /* Prevent defaulted dotted underline text from appearingunder contact info links on hover. */
         text-decoration: none;
         /* Enlarge head contact info links on hover. */
         transform: scale(1.2);
       }
+
       img {
         width: 40px;
         height: 40px;
@@ -354,10 +375,12 @@ div.container--resume-col_1 {
     font-family: "resume_main_text", "Century Gothic", “Apple Gothic”,
       AppleGothic, “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
   }
+
   // Scale down font size on non-Experience list items.
   li.resume_section_list_item {
     font-size: var(--font_size__bullets-col_1);
   }
+
   div.resume_hover {
     position: relative;
     display: inline-block;
@@ -406,6 +429,7 @@ section#courses_and_certifications {
     max-width: none;
     padding-left: 0px;
   }
+
   ul {
     display: flex;
     flex-direction: column;
@@ -428,14 +452,17 @@ section#courses_and_certifications {
     span:first-of-type {
       width: 100%;
     }
+
     span:nth-of-type(2) {
       text-align: left;
       width: 50%;
     }
+
     span:nth-of-type(3) {
       width: 50%;
     }
   }
+
   li.resume_section_list_item {
     span:first-of-type {
       display: block;
@@ -456,6 +483,7 @@ section#objective_unwrapped {
   h2 {
     margin: var(--margin__objective_h2);
   }
+
   p {
     display: block;
     padding: var(--padding__objective_p);
@@ -484,17 +512,21 @@ section#education {
     > * {
       width: 100%;
     }
+
     span:first-of-type {
       width: 50%;
     }
+
     span:nth-of-type(3) {
       text-align: right;
     }
   }
+
   li.resume_section_list_item {
     span {
       line-height: 20px;
     }
+
     span:first-of-type {
       display: block;
       font-size: var(--font_size__col_1_titles);
@@ -502,11 +534,13 @@ section#education {
       font-family: "resume_main_text", "Century Gothic", “Apple Gothic”,
         AppleGothic, “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
     }
+
     span:nth-of-type(2),
     span:nth-of-type(3) {
       display: block;
     }
   }
+
   span.asterisk_top {
     display: inline-block !important;
     font-family: "resume_monospace", monospace !important;
@@ -533,10 +567,12 @@ section#skills {
       width: 50%;
       text-align: left;
     }
+
     span:nth-of-type(2) {
       text-align: left;
       width: 50%;
     }
+
     span:nth-of-type(3) {
       max-width: none;
       width: 100%;
@@ -545,14 +581,17 @@ section#skills {
       text-align: left;
     }
   }
+
   li.resume_section_list_item {
     span:nth-of-type(2),
     span:nth-of-type(3) {
       display: block;
     }
+
     span:nth-of-type(2) {
       font-size: var(--font_weight__bullets);
     }
+
     span:nth-of-type(3) {
       img {
         display: inline-block;
@@ -586,6 +625,7 @@ section#projects_and_side_hustles {
     font-size: var(--font_size__side_hustle);
     font-weight: var(--font_weight__project_and_side_hustles_titles);
   }
+
   span.resume_dates {
     text-align: right;
   }
@@ -601,31 +641,38 @@ section#interests_and_hobbies {
       job history / experience text. */
   position: sticky;
   top: 10px;
+
   h3 {
     font-family: "resume_main_text", "Century Gothic", “Apple Gothic”,
       AppleGothic, “URW Gothic L”, “Avant Garde”, Futura, sans-serif;
   }
+
   div#container--currently_studying_icons_and_text {
     position: relative;
     display: inline-block;
     width: 63px;
     height: 35px;
+
     img,
     span {
       position: absolute;
     }
+
     img {
       width: 20px;
       height: 20px;
     }
+
     img:first-of-type {
       top: 0;
       left: 2px;
     }
+
     img:nth-of-type(2) {
       top: 0;
       left: 40px;
     }
+
     span {
       position: absolute;
       top: 20px;
@@ -663,9 +710,11 @@ div.container--resume-col_2 {
 
 section#experience {
   padding-right: 10px;
+
   h2 {
     margin-bottom: 25px;
   }
+
   /* Custom Styling for Experience job titles, employers, & dates */
   span.job_title {
     display: inline-block;
@@ -684,6 +733,7 @@ section#experience {
     /* Subtle Texture SVG BG for Job Title "tab". */
     background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ij4KPHJlY3Qgd2lkdGg9IjYiIGhlaWdodD0iNiIgZmlsbD0iI2VlZSI+PC9yZWN0Pgo8ZyBpZD0iYyI+CjxyZWN0IHdpZHRoPSIzIiBoZWlnaHQ9IjMiIGZpbGw9IiNlNmU2ZTYiPjwvcmVjdD4KPHJlY3QgeT0iMSIgd2lkdGg9IjMiIGhlaWdodD0iMiIgZmlsbD0iI2Q4ZDhkOCI+PC9yZWN0Pgo8L2c+Cjx1c2UgeGxpbms6aHJlZj0iI2MiIHg9IjMiIHk9IjMiPjwvdXNlPgo8L3N2Zz4=");
   }
+
   span.employer {
     display: inline-block;
     align-self: flex-end;
@@ -696,6 +746,7 @@ section#experience {
     font-weight: var(--font_weight__employer);
     color: var(--light_grey);
   }
+
   span.resume_dates {
     display: inline-block;
     /* Use align-self to ensure job title remains flush with solid border line when 
@@ -706,6 +757,7 @@ section#experience {
     padding-bottom: 2.5px;
     padding-right: 5px;
   }
+
   /* Custom styling of unordered lists with job responsibilities. */
   ul.resume_section_list {
     /* background: #f7f6f6; */
@@ -735,6 +787,7 @@ div.resume_flex_title_and_date_wraps {
   /* Pushes dates to far-right of column. */
   justify-content: space-between;
   border-bottom: 2px solid var(--darkest_grey);
+
   > * {
     max-width: initial;
     width: 50%;
@@ -853,10 +906,12 @@ section#objective_wrapped {
         width: 50%;
         text-align: left;
       }
+
       span:nth-of-type(2) {
         text-align: right;
         width: 50%;
       }
+
       span:nth-of-type(3) {
         max-width: none;
         width: 100%;
@@ -877,6 +932,7 @@ section#objective_wrapped {
           Resume will shrink to fit screen below 635px. */
     width: initial;
     max-width: 635px;
+
     h1 {
       span.clean_break_on_wrap {
         /* Force "Mac Gabhann" to wrap from a screen width of 835px down to 
@@ -897,6 +953,7 @@ section#objective_wrapped {
     span.job_title {
       font-size: calc(var(--font_size__job_titles) * 0.85);
     }
+
     span.resume_dates {
       font-size: calc(var(--font_size__dates) * 0.85);
     }
@@ -909,6 +966,7 @@ section#objective_wrapped {
           titles & dates. */
       font-size: calc(var(--font_size__job_titles) * 0.85);
     }
+
     span.resume_dates {
       /* This code doesn't have to be here - it's actually redundant - but it serves
           to remind me that, below 835px, I align the font sizes for job & side hustle
@@ -993,6 +1051,7 @@ section#objective_wrapped {
         var(--font_size__job_titles) * var(--small_phone_scaledown)
       );
     }
+
     span.employer {
       /* Resizes employer by fixed percent ('var(--small_phone_scaledown'). */
       font-size: calc(
@@ -1048,6 +1107,7 @@ section#objective_wrapped {
         width: 60%;
         text-align: left;
       }
+
       span:nth-of-type(2) {
         text-align: right;
         width: 70%;
