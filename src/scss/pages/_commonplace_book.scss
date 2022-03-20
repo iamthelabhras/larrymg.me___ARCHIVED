@@ -22,6 +22,22 @@ main#commonplace_book {
   div.card p.card_text::after {
     margin-left: 2px;
   }
+
+  div.card_commonplace_author {
+    grid-row: 3;
+    grid-column: 1/21;
+    margin-bottom: 10px;
+    text-align: center;
+    span.commonplace_author {
+      font-family: "cursive_flourish", cursive;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    span.commonplace_year {
+      display: block;
+      font-size: 0.75rem;
+    }
+  }
 }
 
 /* #region Media Queries */
@@ -42,7 +58,7 @@ main#commonplace_book {
 
 @media screen and (min-width: 0px) and (max-width: 575px) {
   div.card span.card_attribution {
-    font-size: 0.75rem;
+    font-size: 0.85rem !important;
   }
 
   div.card span.card_attribution span.card_source {
