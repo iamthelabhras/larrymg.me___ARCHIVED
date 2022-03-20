@@ -1,0 +1,25 @@
+main#commonplace_book {
+  div.card span.card_attribution {
+    grid-column: 10/21;
+    font-size: 0.95rem;
+  }
+
+  div.card p.card_text {
+    text-align: initial;
+    max-width: 50ch;
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+
+  div.card p.card_text::before,
+  div.card p.card_text::after {
+    content: '"';
+  }
+  div.card p.card_text::before {
+    margin-right: 2px;
+  }
+
+  div.card p.card_text::after {
+    margin-left: 2px;
+  }
+}
