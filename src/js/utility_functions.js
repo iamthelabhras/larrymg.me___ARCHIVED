@@ -85,7 +85,33 @@ export function generateCardStack(arrayOfCards, cardContainerSelector) {
           `</ul>` + 
           `</div>`;
         }    
-        
+      
+      if (card.author !== undefined ) {
+          cardStackHTML+=  
+            `<div class="card_commonplace_author">`;
+            if (card.author_link !== undefined) {
+              cardStackHTML +=
+              `<span class="commonplace_author">` +
+              `<a href="${card.author_link}" target="_blank">` +
+              `${card.author}` +
+              `</a>` + 
+              `</span>`;
+            }
+            else {
+              cardStackHTML +=
+              `<span class="commonplace_author">` +
+              `${card.author}` +
+              `</span>`;
+            }
+            if (card.source_date !== undefined) {
+              cardStackHTML+= 
+                `<span class="commonplace_year">` + 
+                ` (${card.source_date})` +
+                `</span>`;
+            } 
+            cardStackHTML+=
+              `</div>`;
+         }  
     
     // Add the final HTML to each card in our looped array.   
 
